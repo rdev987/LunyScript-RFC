@@ -376,7 +376,7 @@ Current `Variable` struct doesn't support Vector2/Vector3 types. Options:
 - ✅ Cleaner design (no boxing, type-safe)
 - ✅ Future-proof (all vector types supported)
 - ❌ Rippling effect across codebase (VariableBlock, Table, all existing code)
-- ❌ Time cost (2-3 days minimum)
+- ❌ Time cost (2-4 hours)
 
 **If we defer Variable<T>:**
 - ✅ Faster to MVP (add Vector2 case to existing struct)
@@ -384,13 +384,13 @@ Current `Variable` struct doesn't support Vector2/Vector3 types. Options:
 - ❌ Technical debt (will need refactor eventually)
 - ❌ Boxing for vector types (performance hit, but acceptable for demo)
 
-**Decision: Defer Variable<T> refactoring until post-demo.**
+**Decision: SEE BOTTOM ADDENDUM.**
 
-**Rationale:**
+**Notes:**
 - Demo deadline is 4 weeks away
-- Variable<T> is large architectural change (affects everything)
-- Workaround is acceptable for demo performance
-- Can refactor after Epic submission
+- Variable<T> is large architectural change (but well encapsulated, and mostly opaque usage)
+- Workaround would be acceptable for demo (boxing allocations) but wouldn't look good if someone checked the code
+- Could refactor later ...
 
 **Workaround for demo:**
 ```csharp
@@ -687,3 +687,80 @@ class TestInputScript : Script
 - Main demo plan: `LunyScript_Demo_Plan_Feb+Mar_2026.md`
 - Input API design: `LunyScript_Demo_Plan_Feb+Mar_2026__Input.md`
 - Current task list: `.junie/tasks.md`
+
+
+---
+
+
+You're absolutely right - I massively overestimated. Let me reconsider.
+
+## Why I Was Wrong
+
+**My inflated estimate assumed:**
+- Changing every call site manually
+- Rewriting all variable arithmetic operators
+- Complex migration strategy
+- Extensive testing of edge cases
+
+**Reality check:**
+- `Variable` is already well-encapsulated
+- Most code uses `Variable` as opaque type (doesn't care about internals)
+- Arithmetic operators already exist, just need type forwarding
+- Tests are isolated to `Luny-Test/` and `LunyScript-Test/`
+
+## Actual Scope
+
+**Files that need changes:**
+
+1. **Core Variable types** (~1 hour)
+    - `Luny/Variables/Variable.cs` → `Variable<T>` generic
+    - `Luny/Variables/Number.cs` (probably fine as-is)
+    - Add `Vector2Variable`, `Vector3Variable` specializations
+
+2. **VariableBlock** (~30 min)
+    - `LunyScript/Blocks/Variables/VariableBlock.cs`
+    - Change `GetValue()` return from `Variable` to `IVariable` or keep as `Variable` (base type)
+    - Arithmetic/comparison blocks likely just work
+
+3. **Table storage** (~30 min)
+    - `Luny/Variables/Table.cs` - ensure it can store `Variable<T>`
+    - Might already work if using `IVariable` interface
+
+4. **Tests** (~1 hour)
+    - Update variable tests
+    - Most should still compile/pass
+
+**Total: ~3 hours, maybe 4 with unexpected issues.**
+
+## The Real Question
+
+**Should we do Variable<T> refactor BEFORE input implementation?**
+
+**Arguments FOR doing it now:**
+- ✅ Cleaner Input API (no boxing for Vector2)
+- ✅ Sets proper foundation for Transform, Physics, etc.
+- ✅ Only 3-4 hours cost
+- ✅ Easier to do before more code depends on current Variable
+
+**Arguments AGAINST:**
+- ❌ Risk of breaking existing tests/code
+- ❌ Delays input implementation (critical path)
+- ❌ Boxing isn't actually a problem for demo (60fps is fine)
+
+## Revised Recommendation
+
+**Do Variable<T> refactor first thing tomorrow morning** (3-4 hours), THEN proceed with input implementation.
+
+**Rationale:**
+- 3-4 hours is acceptable cost
+- Better foundation for all vector-based APIs (Input, Transform, Physics)
+- Avoids technical debt before it compounds
+- Less risky now than after demo is half-built
+
+**Revised timeline for tomorrow:**
+- **Morning (3-4h):** Variable<T> refactoring
+- **Afternoon (3-4h):** LunyEngine input service + mocks (Steps 1-2)
+- **Evening (2-3h):** LunyScript Input API + blocks (Steps 4-6)
+- **End of day:** Quick integration test
+
+**Does this revised assessment change your preference? Should we tackle Variable<T> first, or stick with the workaround?**
