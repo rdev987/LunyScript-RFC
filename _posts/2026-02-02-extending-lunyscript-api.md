@@ -17,7 +17,7 @@ First, an up-to-date example of the current LunyScript API.
 
 This script logs a string every update. It's complete as is, nothing missing. To make it work, the user merely has to have an object of the same name `LogUpdate` in the active scene and it will start logging every update.
 
-    public class LogUpdate : LunyScript.LunyScript
+    public class LogUpdate : LunyScript.Script
     {
         public override void Build()
         {
@@ -40,7 +40,7 @@ To share scripts with others frictionless, you can write a static class with API
 This API is automatically usable in any LunyScript-derived class in the same project:
 
     // Usage in a LunyScript
-    public class Player : LunyScript.LunyScript
+    public class Player : LunyScript.Script
     {
         public override void Build()
         {
@@ -58,7 +58,7 @@ For a frightening large number of developers, subclassing is the first (and only
 
 The subclassing approach follows the same fluent API pattern LunyScript uses via properties and stack-allocated API implementations: 
 
-    public abstract class OurLunyScriptBase : LunyScript.LunyScript
+    public abstract class OurLunyScriptBase : LunyScript.Script
     {
         public InventoryApi Inventory => new InventoryApi();
     }
@@ -110,7 +110,7 @@ The API implementation remains the same but is tagged with the `[LunyScriptApi]`
 You can then use the extension API by implementing the `IInventory` interface in a `partial` LunyScript-derived class. API usage is identical to the first two examples thanks to Roslyn generators:
 
     public partial class Player // 'partial' required for Roslyn 
-        : LunyScript.LunyScript, IInventory // <== extension interface
+        : LunyScript.Script, IInventory // <== extension interface
     {
         public override void Build()
         {

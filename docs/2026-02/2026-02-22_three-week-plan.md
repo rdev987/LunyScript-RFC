@@ -36,8 +36,8 @@ it would suffice to map this out for the first 3 weeks: core loop, and wave spaw
 Name Mashups:
 Bro3D
 Brothreeto
-Brorrito
-(Sweet) Sistato
+Brorito / Brorrito
+Sistato / Sweet Sistato
 Girtato
 Soritato
 
@@ -59,36 +59,32 @@ Decisions:
 
 **Day 1: Player Movement & Camera**
 Goal: Player moves across screen, followed by top-down camera (Cinemachine)
-- Create new scene "Brotato3D_Main"
-- Add ground plane (10x10 scale) with checker texture to visualize movement
-- Add 4-5 scattered cube obstacles (different heights) to ensure camera parallax visible
-- Import Cinemachine package
-- Setup Virtual Camera: top-down angle (60-70° from horizontal), orthographic or perspective?
-- Set Follow target to Player (decide: tight follow or dampened?)
-- Create Player object (capsule, scale 1x2x1, blue material)
-- Create PlayerMovement_LunyScript: `On.FrameUpdate(Transform.MoveBy(Input.Direction("Move"), speed: 5))`
-- Test: keyboard WASD + gamepad left stick both work
-- Decisions:
-  - Should camera zoom be fixed or dynamic based on action?
+- [X] Create new scene "Sistato Demo"
+- [X] Add ground plane (10x10 scale) with checker texture to visualize movement
+- [X] Add 4-5 scattered cube obstacles (different heights) to ensure camera parallax visible
+- [X] Setup Cinemachine Camera: top-down angle (60-70° from horizontal), orthographic or perspective?
+- [X] Set Follow target to Player (decide: tight follow or dampened?)
+- [X] Create Player object (capsule, scale 1x2x1, green material)
+- [X] Create PlayerMovement_LunyScript: `On.FrameUpdate(Transform.MoveBy(Input.Direction("Move"), speed: 5))`
+- [X] Test: keyboard WASD + gamepad left stick both work
 
 **Day 2: Enemy Spawning & AI**
 Goal: Enemies appear and move towards player, enemies die on contact with player
-- Define map bounds: Create "SpawnArea" empty GameObject with BoxCollider (10x10, isTrigger)
-- Create Enemy prefab: capsule (scale 0.8x1.5x0.8, red material, Rigidbody + SphereCollider)
-- Rigidbody settings: freeze rotation XYZ, drag 0, mass 1
-- Create EnemyAI_LunyScript: `On.FrameUpdate(AI.ChaseTarget(Object.Named("Player"), speed: 3))`
-- Create EnemySpawner_LunyScript:
+- [X] Define map bounds: Create "SpawnArea" empty GameObject with BoxCollider (10x10, isTrigger)
+- [X] Create Enemy prefab: capsule (scale 0.8x1.5x0.8, red material, Rigidbody + SphereCollider)
+- [X] Rigidbody settings: freeze rotation XYZ, drag 0, mass 1
+- [X] Create EnemySpawner_LunyScript:
     - `Timer("Spawn").Every(2).Seconds().Do(Object.Create(enemyPrefab).At(Spatial.RandomInBounds(spawnArea)))`
-    - add spawn with parenting
+    - [X] spawn enemy prefab with path
+    - [X] spawn to a parent object
+    - [ ] take spawn position from spawn area or just random in range
+- [X] Create EnemyAI_LunyScript: `On.FrameUpdate(AI.ChaseTarget(Object.Named("Player"), speed: 3))`
+  - Uses transform move, not physics
 - Create PlayerHealth_LunyScript:
     - `Health.Set(100)`
     - `On.Collision.WithTag("Enemy").Do(Health.TakeDamage(10), Object.Destroy(Collision.GetObject()))`
 - Test: enemies spawn, chase, damage player on touch, then die
 - Decision:
-  - What is "health"? Who stores it, where?
-  - Does update vs lateupdate suffice, or do we need deterministic process order + setting? 
-  - Should enemies push player (current) or pass through? Test both.
-  - should camera be bound to map border
 
 **Day 3: Weapon & Projectile System**
 Goal: Shoot enemies (dead) with projectiles
