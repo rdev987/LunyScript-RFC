@@ -91,15 +91,15 @@ Goal: Enemies appear and move towards player, enemies die on contact with player
   - collision handling: no collision event handling yet
   - spawn position
 
-**Day 3 (prep): Collision API**
+**Day 3 (prep): Collision API & Googly Eyes**
 - [X] add googly eyes to enemies (spent too much time on this but it's fun)
 - [X] implementing collision/trigger event callbacks (Unity only)
 
-**Day 4: Bug Report **
+**Day 4: API Builder Auto-Finalize & Bug Report (w/ workaround) **
 - [X] Identified and reported a "Console double-click opens wrong line" issue caused by calling a method with a UnityEngine.Object parameter
 - [X] Removed the necessity of trailing .Do() calls to finalize builders
 
-**Day 3: Weapon & Projectile System**
+**Day 5: Weapon & Projectile System**
 Goal: Shoot enemies (dead) with projectiles
 - Create Projectile prefab: sphere (scale 0.3, yellow material, Rigidbody kinematic, SphereCollider trigger)
 - Create ProjectileMovement_LunyScript:
