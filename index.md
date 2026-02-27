@@ -12,12 +12,9 @@ But Godot/Unity code is confusing, complex, and completely different everywhere?
 LunyScript is your **🫵 fast-lane, front-row ticket 👑** to **C#** game programming!🕹️🧑‍💻
 
 ```csharp
-public MyPlayer()
-{
-    On.Collision.With("ball")
-        .Begins(Audio.Play("energy_buildup"))
-        .Ends(Prefab.Spawn("sparkles"), Event.Send("kick").To("ball"));
-}
+On.Collision.With("ball")
+    .Begins(Audio.Play("energy_buildup"))
+    .Ends(Prefab.Spawn("sparkles"), Event.Send("kick").To("ball"));
 ```
 Why learn pointless differences like`_init`,`Awake`,`BeginPlay`when you just want to make your dream game come true? 😄 Learn the editor first, engine code later. 🥳 
 <br/><sub>I used LunyScript to create a game in three engines simultaneously:<sub>
