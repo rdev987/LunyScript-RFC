@@ -4268,6 +4268,36 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/Luny-logo-133x54.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Luny-logo-133x54.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Luny-logo-56x56.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Luny-logo-56x56.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/Luny-logo-75x75.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Luny-logo-75x75.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
