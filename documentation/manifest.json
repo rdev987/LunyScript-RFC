@@ -1,4 +1,8 @@
 {
+  "sitemap": {
+    "baseUrl": "https://lunyscript.com/documentation/",
+    "changefreq": "daily"
+  },
   "source_base_path": "/home/runner/work/LunyScript_Examples_Unity/LunyScript_Examples_Unity/Packages/de.codesmile.lunyscript/Documentation~",
   "xrefmap": "xrefmap.yml",
   "files": [

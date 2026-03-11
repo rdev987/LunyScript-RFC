@@ -102,7 +102,7 @@ Class Table
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class Table : ITable, IEnumerable&lt;KeyValuePair&lt;string, Variable&gt;&gt;, IEnumerable</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class Table : ITable</code></pre>
   </div>
 
 
@@ -111,7 +111,7 @@ Class Table
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">object</span></div>
       <div><span class="xref">Table</span></div>
     </dd>
   </dl>
@@ -120,31 +120,10 @@ Class Table
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Luny.ITable.html">ITable</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Luny.Variable.html">Variable</a>&gt;&gt;</div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
     </dd>
   </dl>
 
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-  </dd></dl>
 
 
 
@@ -206,7 +185,7 @@ Class Table
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><span class="xref">int</span></dt>
     <dd></dd>
   </dl>
 
@@ -234,7 +213,7 @@ Class Table
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>key</code> <span class="xref">string</span></dt>
     <dd></dd>
   </dl>
 
@@ -275,7 +254,7 @@ Class Table
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>key</code> <span class="xref">string</span></dt>
     <dd><p>The constant name.</p>
 </dd>
     <dt><code>value</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
@@ -317,7 +296,7 @@ Class Table
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>key</code> <span class="xref">string</span></dt>
     <dd></dd>
     <dt><code>value</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
     <dd></dd>
@@ -338,7 +317,7 @@ Class Table
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dt><span class="xref">InvalidOperationException</span></dt>
     <dd></dd>
   </dl>
 
@@ -361,7 +340,7 @@ Class Table
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Luny.Variable.html">Variable</a>&gt;&gt;</dt>
+    <dt><span class="xref">IEnumerator</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">string</span>, <a class="xref" href="Luny.Variable.html">Variable</a>&gt;&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -392,7 +371,7 @@ Class Table
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>key</code> <span class="xref">string</span></dt>
     <dd></dd>
   </dl>
 
@@ -429,7 +408,7 @@ Class Table
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>key</code> <span class="xref">string</span></dt>
     <dd></dd>
   </dl>
 
@@ -471,7 +450,7 @@ Class Table
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>key</code> <span class="xref">string</span></dt>
     <dd></dd>
   </dl>
 
@@ -513,13 +492,13 @@ Class Table
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>key</code> <span class="xref">string</span></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><span class="xref">bool</span></dt>
     <dd></dd>
   </dl>
 
@@ -550,13 +529,13 @@ Class Table
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>key</code> <span class="xref">string</span></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><span class="xref">bool</span></dt>
     <dd></dd>
   </dl>
 
@@ -614,7 +593,7 @@ Class Table
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>key</code> <span class="xref">string</span></dt>
     <dd></dd>
   </dl>
 
@@ -674,7 +653,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><span class="xref">string</span></dt>
     <dd></dd>
   </dl>
 
@@ -713,7 +692,7 @@ public override string ToString()</code></pre>
 
   <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="Luny.VariableChangedArgs.html">VariableChangedArgs</a>&gt;</dt>
+    <dt><span class="xref">EventHandler</span>&lt;<a class="xref" href="Luny.VariableChangedArgs.html">VariableChangedArgs</a>&gt;</dt>
     <dd></dd>
   </dl>
 
