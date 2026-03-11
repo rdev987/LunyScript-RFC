@@ -10,7 +10,7 @@
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="">
+      <meta name="docfx:navrel" content="../toc.html">
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
@@ -113,7 +113,7 @@ Subscribes to InputSystem action map callbacks and raises Luny input events.</p>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="Luny.Engine.LunyEngineServiceBase.html">LunyEngineServiceBase</a></div>
+      <div><a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html">LunyEngineServiceBase</a></div>
       <div><a class="xref" href="Luny.Engine.Services.LunyInputServiceBase.html">LunyInputServiceBase</a></div>
       <div><span class="xref">UnityInputService</span></div>
     </dd>
@@ -123,7 +123,7 @@ Subscribes to InputSystem action map callbacks and raises Luny input events.</p>
     <dt>Implements</dt>
     <dd>
       <div><a class="xref" href="Luny.Engine.Services.ILunyInputService.html">ILunyInputService</a></div>
-      <div><a class="xref" href="Luny.Engine.ILunyEngineService.html">ILunyEngineService</a></div>
+      <div><a class="xref" href="Luny.Engine.Services.ILunyEngineService.html">ILunyEngineService</a></div>
     </dd>
   </dl>
 
@@ -131,9 +131,6 @@ Subscribes to InputSystem action map callbacks and raises Luny input events.</p>
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="Luny.Engine.Services.LunyInputServiceBase.html#Luny_Engine_Services_LunyInputServiceBase_OnInputAction">LunyInputServiceBase.OnInputAction</a>
-    </div>
     <div>
       <a class="xref" href="Luny.Engine.Services.LunyInputServiceBase.html#Luny_Engine_Services_LunyInputServiceBase_GetDirection_System_String_">LunyInputServiceBase.GetDirection(string)</a>
     </div>
@@ -156,24 +153,57 @@ Subscribes to InputSystem action map callbacks and raises Luny input events.</p>
       <a class="xref" href="Luny.Engine.Services.LunyInputServiceBase.html#Luny_Engine_Services_LunyInputServiceBase_GetButtonJustPressed_System_String_">LunyInputServiceBase.GetButtonJustPressed(string)</a>
     </div>
     <div>
+      <a class="xref" href="Luny.Engine.Services.LunyInputServiceBase.html#Luny_Engine_Services_LunyInputServiceBase_OnInputAction">LunyInputServiceBase.OnInputAction</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
     </div>
   </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Luny_Unity_Engine_Services_UnityInputService__ctor_" data-uid="Luny.Unity.Engine.Services.UnityInputService.#ctor*"></a>
+
+  <h3 id="Luny_Unity_Engine_Services_UnityInputService__ctor" data-uid="Luny.Unity.Engine.Services.UnityInputService.#ctor">
+  UnityInputService()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityInputService()</code></pre>
+  </div>
+
+
+
+
+
+
+
 
 
 
@@ -370,8 +400,8 @@ Subscribes to InputSystem action map callbacks and raises Luny input events.</p>
 
   <a id="Luny_Unity_Engine_Services_UnityInputService_SetControlSchemes_" data-uid="Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes*"></a>
 
-  <h3 id="Luny_Unity_Engine_Services_UnityInputService_SetControlSchemes_Luny_Unity_Engine_Native_PlayerInputProfile_System_String___" data-uid="Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(Luny.Unity.Engine.Native.PlayerInputProfile,System.String[])">
-  SetControlSchemes(PlayerInputProfile, params string[])
+  <h3 id="Luny_Unity_Engine_Services_UnityInputService_SetControlSchemes_Luny_Engine_Bridge_LunyInputUserProfile_System_String___" data-uid="Luny.Unity.Engine.Services.UnityInputService.SetControlSchemes(Luny.Engine.Bridge.LunyInputUserProfile,System.String[])">
+  SetControlSchemes(LunyInputUserProfile, params string[])
   
   </h3>
 
@@ -379,12 +409,12 @@ Subscribes to InputSystem action map callbacks and raises Luny input events.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetControlSchemes(PlayerInputProfile profile, params string[] schemeNames)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetControlSchemes(LunyInputUserProfile profile, params string[] schemeNames)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>profile</code> <a class="xref" href="Luny.Unity.Engine.Native.PlayerInputProfile.html">PlayerInputProfile</a></dt>
+    <dt><code>profile</code> <a class="xref" href="Luny.Engine.Bridge.LunyInputUserProfile.html">LunyInputUserProfile</a></dt>
     <dd></dd>
     <dt><code>schemeNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd></dd>
@@ -408,7 +438,8 @@ Subscribes to InputSystem action map callbacks and raises Luny input events.</p>
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Activate a given control scheme eg <code>Gamepad</code> or <code>Keyboard&amp;Mouse</code> to prevent other device input from coming through.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">

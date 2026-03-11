@@ -12,10 +12,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "CHANGELOG.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
         ".html": {
           "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api-index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api-index.html"
         }
       },
       "version": ""
@@ -176,6 +196,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Luny.Engine.Bridge.LunyAssetRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.Engine.Bridge.LunyAssetRef.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.Engine.Bridge.LunyAssetRef",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Luny.Engine.Bridge.LunyCollider.yml",
       "output": {
         ".html": {
@@ -302,6 +336,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Luny.Engine.Bridge.LunyInputUserProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.Engine.Bridge.LunyInputUserProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.Engine.Bridge.LunyInputUserProfile",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Luny.Engine.Bridge.LunyMath.yml",
       "output": {
         ".html": {
@@ -372,6 +420,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Luny.Engine.Bridge.LunyObjectRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.Engine.Bridge.LunyObjectRef.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.Engine.Bridge.LunyObjectRef",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Luny.Engine.Bridge.LunyPath.yml",
       "output": {
         ".html": {
@@ -438,6 +500,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Luny.Engine.Bridge.LunyQuaternion",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Luny.Engine.Bridge.LunyRef-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.Engine.Bridge.LunyRef-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.Engine.Bridge.LunyRef<T>",
       "Summary": null
     },
     {
@@ -694,132 +770,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Engine.ILunyEngineNativeAdapter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Engine.ILunyEngineNativeAdapter.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Engine.ILunyEngineNativeAdapter",
-      "Summary": "<p sourcefile=\"api/Luny.Engine.ILunyEngineNativeAdapter.yml\" sourcestartlinenumber=\"1\">Interface for the native engine adapter.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Engine.ILunyEngineObserver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Engine.ILunyEngineObserver.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Engine.ILunyEngineObserver",
-      "Summary": "<p sourcefile=\"api/Luny.Engine.ILunyEngineObserver.yml\" sourcestartlinenumber=\"1\">Lifecycle observer interface - receives callbacks from LunyEngine.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Engine.ILunyEngineService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Engine.ILunyEngineService.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Engine.ILunyEngineService",
-      "Summary": "<p sourcefile=\"api/Luny.Engine.ILunyEngineService.yml\" sourcestartlinenumber=\"1\">Marker interface for engine-agnostic services: APIs such as Debug, Input, etc.\nImplementations are auto-discovered and registered at startup.</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Engine.LunyEngineServiceBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Engine.LunyEngineServiceBase.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Engine.LunyEngineServiceBase",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Engine.Registries.ILunyObjectRegistry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Engine.Registries.ILunyObjectRegistry.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Engine.Registries.ILunyObjectRegistry",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Engine.Registries.ILunyObserverRegistry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Engine.Registries.ILunyObserverRegistry.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Engine.Registries.ILunyObserverRegistry",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Engine.Registries.ILunyServiceRegistry.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Engine.Registries.ILunyServiceRegistry.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Engine.Registries.ILunyServiceRegistry",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Engine.Registries.ILunyServiceRegistryInternal.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Engine.Registries.ILunyServiceRegistryInternal.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Engine.Registries.ILunyServiceRegistryInternal",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Engine.Registries.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Engine.Registries.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Engine.Registries",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Luny.Engine.Services.ILunyApplicationService.yml",
       "output": {
         ".html": {
@@ -873,6 +823,20 @@
       "IsMRef": true,
       "Title": "Luny.Engine.Services.ILunyEditorService",
       "Summary": "<p sourcefile=\"api/Luny.Engine.Services.ILunyEditorService.yml\" sourcestartlinenumber=\"1\">Engine-agnostic editor service.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Luny.Engine.Services.ILunyEngineService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.Engine.Services.ILunyEngineService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.Engine.Services.ILunyEngineService",
+      "Summary": "<p sourcefile=\"api/Luny.Engine.Services.ILunyEngineService.yml\" sourcestartlinenumber=\"1\">Marker interface for engine-agnostic services: APIs such as Debug, Input, etc.\nImplementations are auto-discovered and registered at startup.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -988,6 +952,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Luny.Engine.Services.LunyEngineServiceBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.Engine.Services.LunyEngineServiceBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.Engine.Services.LunyEngineServiceBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Luny.Engine.Services.LunyInputServiceBase.yml",
       "output": {
         ".html": {
@@ -1054,20 +1032,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Luny.Engine.Services",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Engine.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Engine.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Engine",
       "Summary": null
     },
     {
@@ -1170,6 +1134,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Luny.ILunyEngineNativeAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.ILunyEngineNativeAdapter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.ILunyEngineNativeAdapter",
+      "Summary": "<p sourcefile=\"api/Luny.ILunyEngineNativeAdapter.yml\" sourcestartlinenumber=\"1\">Interface for the native engine adapter.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Luny.ILunyEngineObserver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.ILunyEngineObserver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.ILunyEngineObserver",
+      "Summary": "<p sourcefile=\"api/Luny.ILunyEngineObserver.yml\" sourcestartlinenumber=\"1\">Lifecycle observer interface - receives callbacks from LunyEngine.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Luny.ILunyLogger.yml",
       "output": {
         ".html": {
@@ -1180,6 +1172,62 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Luny.ILunyLogger",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Luny.ILunyObjectRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.ILunyObjectRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.ILunyObjectRegistry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Luny.ILunyObserverRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.ILunyObserverRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.ILunyObserverRegistry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Luny.ILunyServiceRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.ILunyServiceRegistry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.ILunyServiceRegistry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Luny.ILunyServiceRegistryInternal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.ILunyServiceRegistryInternal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.ILunyServiceRegistryInternal",
       "Summary": null
     },
     {
@@ -1226,20 +1274,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Luny.LunyAssetRef.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.LunyAssetRef.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.LunyAssetRef",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Luny.LunyEngine.yml",
       "output": {
         ".html": {
@@ -1265,34 +1299,6 @@
       "IsMRef": true,
       "Title": "Luny.LunyLogger",
       "Summary": "<p sourcefile=\"api/Luny.LunyLogger.yml\" sourcestartlinenumber=\"1\">Engine-agnostic logger entry point. Delegates to an installable engine-specific logger.\nDefault fallback logs to console until an engine replaces it.\nAlso provides internal logging system for Luny-specific logs (opt-in).</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.LunyObjectRef.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.LunyObjectRef.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.LunyObjectRef",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.LunyRef-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.LunyRef-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.LunyRef<T>",
-      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -1464,44 +1470,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Unity.Engine.Bridge.Physics.UnityCollider.yml",
+      "source_relative_path": "api/Luny.Unity.Engine.Bridge.UnityCollider.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Luny.Unity.Engine.Bridge.Physics.UnityCollider.html"
+          "relative_path": "api/Luny.Unity.Engine.Bridge.UnityCollider.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Luny.Unity.Engine.Bridge.Physics.UnityCollider",
+      "Title": "Luny.Unity.Engine.Bridge.UnityCollider",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Unity.Engine.Bridge.Physics.UnityCollision.yml",
+      "source_relative_path": "api/Luny.Unity.Engine.Bridge.UnityCollision.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Luny.Unity.Engine.Bridge.Physics.UnityCollision.html"
+          "relative_path": "api/Luny.Unity.Engine.Bridge.UnityCollision.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Luny.Unity.Engine.Bridge.Physics.UnityCollision",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Unity.Engine.Bridge.Physics.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Unity.Engine.Bridge.Physics.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Unity.Engine.Bridge.Physics",
+      "Title": "Luny.Unity.Engine.Bridge.UnityCollision",
       "Summary": null
     },
     {
@@ -1572,48 +1564,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Luny.Unity.Engine.Bridge",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Unity.Engine.InputUserExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Unity.Engine.InputUserExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Unity.Engine.InputUserExtensions",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Unity.Engine.Native.PlayerInputProfile.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Unity.Engine.Native.PlayerInputProfile.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Unity.Engine.Native.PlayerInputProfile",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Unity.Engine.Native.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.Unity.Engine.Native.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.Unity.Engine.Native",
       "Summary": null
     },
     {
@@ -1744,114 +1694,86 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Unity.Engine.Tools.Note.yml",
+      "source_relative_path": "api/Luny.Unity.InputUserExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Luny.Unity.Engine.Tools.Note.html"
+          "relative_path": "api/Luny.Unity.InputUserExtensions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Luny.Unity.Engine.Tools.Note",
+      "Title": "Luny.Unity.InputUserExtensions",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Unity.Engine.Tools.yml",
+      "source_relative_path": "api/Luny.Unity.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Luny.Unity.Engine.Tools.html"
+          "relative_path": "api/Luny.Unity.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Luny.Unity.Engine.Tools",
+      "Title": "Luny.Unity",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Luny.Unity.Engine.yml",
+      "source_relative_path": "api/Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Luny.Unity.Engine.html"
+          "relative_path": "api/Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Luny.Unity.Engine",
+      "Title": "Luny.UnityEditor.LunyLinkerProcessor.PreserveDetails",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Luny.UnityEditor.Linking.LunyLinkerProcessor.PreserveDetails.yml",
+      "source_relative_path": "api/Luny.UnityEditor.LunyLinkerProcessor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Luny.UnityEditor.Linking.LunyLinkerProcessor.PreserveDetails.html"
+          "relative_path": "api/Luny.UnityEditor.LunyLinkerProcessor.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Luny.UnityEditor.Linking.LunyLinkerProcessor.PreserveDetails",
+      "Title": "Luny.UnityEditor.LunyLinkerProcessor",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Luny.UnityEditor.Linking.LunyLinkerProcessor.yml",
+      "source_relative_path": "api/Luny.UnityEditor.NoteEditor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Luny.UnityEditor.Linking.LunyLinkerProcessor.html"
+          "relative_path": "api/Luny.UnityEditor.NoteEditor.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Luny.UnityEditor.Linking.LunyLinkerProcessor",
+      "Title": "Luny.UnityEditor.NoteEditor",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Luny.UnityEditor.Linking.yml",
+      "source_relative_path": "api/Luny.UnityEditor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Luny.UnityEditor.Linking.html"
+          "relative_path": "api/Luny.UnityEditor.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Luny.UnityEditor.Linking",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.UnityEditor.Tools.NoteEditor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.UnityEditor.Tools.NoteEditor.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.UnityEditor.Tools.NoteEditor",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Luny.UnityEditor.Tools.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Luny.UnityEditor.Tools.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "Luny.UnityEditor.Tools",
+      "Title": "Luny.UnityEditor",
       "Summary": null
     },
     {
@@ -1936,818 +1858,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Luny",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.AIApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.AIApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.AIApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.AccessibilityApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.AccessibilityApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.AccessibilityApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.AccountApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.AccountApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.AccountApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.AnimationApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.AnimationApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.AnimationApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.ApplicationApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.ApplicationApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.ApplicationApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.AssetApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.AssetApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.AssetApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.AsyncApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.AsyncApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.AsyncApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.AudioApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.AudioApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.AudioApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.AvatarApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.AvatarApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.AvatarApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.CameraApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.CameraApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.CameraApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.CloudApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.CloudApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.CloudApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.CutsceneApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.CutsceneApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.CutsceneApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.DiagnosticsApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.DiagnosticsApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.DiagnosticsApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.EngineApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.EngineApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.EngineApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.EnvironmentApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.EnvironmentApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.EnvironmentApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.GraphicsApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.GraphicsApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.GraphicsApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.HUDApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.HUDApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.HUDApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.L18nApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.L18nApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.L18nApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.LocaleApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.LocaleApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.LocaleApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.LocalizationApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.LocalizationApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.LocalizationApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.MenuApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.MenuApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.MenuApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.NPCApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.NPCApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.NPCApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.NavigationApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.NavigationApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.NavigationApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.NetworkApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.NetworkApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.NetworkApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.ParticlesApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.ParticlesApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.ParticlesApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PhysicsApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PhysicsApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PhysicsApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.DesktopApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.DesktopApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PlatformApi.DesktopApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.LinuxApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.LinuxApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PlatformApi.LinuxApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.MobileApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.MobileApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PlatformApi.MobileApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.OSXApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.OSXApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PlatformApi.OSXApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.WebApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.WebApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PlatformApi.WebApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.WindowsApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.WindowsApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PlatformApi.WindowsApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.XRApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.XRApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PlatformApi.XRApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PlatformApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PlatformApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PlayerApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PlayerApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PlayerApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PoolApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PoolApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PoolApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.PostFxApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.PostFxApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.PostFxApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.ProgressApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.ProgressApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.ProgressApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.QualityApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.QualityApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.QualityApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.ScriptApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.ScriptApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.ScriptApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.SessionApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.SessionApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.SessionApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.SettingsApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.SettingsApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.SettingsApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.SpawnApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.SpawnApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.SpawnApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.SpriteApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.SpriteApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.SpriteApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.StageApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.StageApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.StageApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.StorageApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.StorageApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.StorageApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.StoreApi.AppleApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.StoreApi.AppleApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.StoreApi.AppleApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.StoreApi.EpicApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.StoreApi.EpicApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.StoreApi.EpicApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.StoreApi.GoogleApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.StoreApi.GoogleApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.StoreApi.GoogleApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.StoreApi.SteamApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.StoreApi.SteamApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.StoreApi.SteamApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.StoreApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.StoreApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.StoreApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.TerrainApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.TerrainApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.TerrainApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.TilemapApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.TilemapApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.TilemapApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.TutorialApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.TutorialApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.TutorialApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.UIApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.UIApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.UIApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.VFXApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.VFXApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.VFXApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.VideoApi.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.VideoApi.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders.VideoApi",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.ApiPlaceholders.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/LunyScript.ApiPlaceholders.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "LunyScript.ApiPlaceholders",
       "Summary": null
     },
     {
@@ -4050,7 +3160,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.PhysicsEventBuilder<T>",
-      "Summary": "<p sourcefile=\"api/LunyScript.PhysicsEventBuilder-1.yml\" sourcestartlinenumber=\"1\">Fluent builder for filtered collision/trigger event sequences.\nFilters (Tagged, Named, Layered, Masked, Typed) are order-independent and accumulate.\nEvent handlers (Begins, Updates, Ends) are also order-independent.\nParameters within a filter kind are OR-combined; different kinds are AND-combined.\nCall Do to finalize and schedule the event sequences.</p>\n"
+      "Summary": "<p sourcefile=\"api/LunyScript.PhysicsEventBuilder-1.yml\" sourcestartlinenumber=\"1\">Fluent builder for filtered collision/trigger event sequences.\nFilters (Tagged, Named, Layered, Masked, Typed) are order-independent and accumulate.\nEvent handlers (Begins, Updates, Ends) are also order-independent.\nParameters within a filter kind are OR-combined; different kinds are AND-combined.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -4194,72 +3304,72 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.SmokeTests.Coroutine.CoroutineCounter.yml",
+      "source_relative_path": "api/LunyScript.SmokeTests.Coroutines.CoroutineCounter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LunyScript.SmokeTests.Coroutine.CoroutineCounter.html"
+          "relative_path": "api/LunyScript.SmokeTests.Coroutines.CoroutineCounter.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "LunyScript.SmokeTests.Coroutine.CoroutineCounter",
+      "Title": "LunyScript.SmokeTests.Coroutines.CoroutineCounter",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.SmokeTests.Coroutine.CoroutineEvery.yml",
+      "source_relative_path": "api/LunyScript.SmokeTests.Coroutines.CoroutineEvery.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LunyScript.SmokeTests.Coroutine.CoroutineEvery.html"
+          "relative_path": "api/LunyScript.SmokeTests.Coroutines.CoroutineEvery.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "LunyScript.SmokeTests.Coroutine.CoroutineEvery",
+      "Title": "LunyScript.SmokeTests.Coroutines.CoroutineEvery",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.SmokeTests.Coroutine.CoroutineFor.yml",
+      "source_relative_path": "api/LunyScript.SmokeTests.Coroutines.CoroutineFor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LunyScript.SmokeTests.Coroutine.CoroutineFor.html"
+          "relative_path": "api/LunyScript.SmokeTests.Coroutines.CoroutineFor.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "LunyScript.SmokeTests.Coroutine.CoroutineFor",
+      "Title": "LunyScript.SmokeTests.Coroutines.CoroutineFor",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.SmokeTests.Coroutine.CoroutineTimer.yml",
+      "source_relative_path": "api/LunyScript.SmokeTests.Coroutines.CoroutineTimer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LunyScript.SmokeTests.Coroutine.CoroutineTimer.html"
+          "relative_path": "api/LunyScript.SmokeTests.Coroutines.CoroutineTimer.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "LunyScript.SmokeTests.Coroutine.CoroutineTimer",
+      "Title": "LunyScript.SmokeTests.Coroutines.CoroutineTimer",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.SmokeTests.Coroutine.yml",
+      "source_relative_path": "api/LunyScript.SmokeTests.Coroutines.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LunyScript.SmokeTests.Coroutine.html"
+          "relative_path": "api/LunyScript.SmokeTests.Coroutines.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "LunyScript.SmokeTests.Coroutine",
+      "Title": "LunyScript.SmokeTests.Coroutines",
       "Summary": null
     },
     {
@@ -4414,7 +3524,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.SmokeTests.InputMove.InputTransformMove_LunyScript",
-      "Summary": "<p sourcefile=\"api/LunyScript.SmokeTests.InputMove.InputTransformMove_LunyScript.yml\" sourcestartlinenumber=\"1\">LunyScript implementing a 3-way motion relative to object's orientation\n=&gt; 11 lines of code, 327 characters (excluding: empty lines, comments, namespace, usings)</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -4428,7 +3538,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.SmokeTests.InputMove.InputTransformShift_LunyScript",
-      "Summary": "<p sourcefile=\"api/LunyScript.SmokeTests.InputMove.InputTransformShift_LunyScript.yml\" sourcestartlinenumber=\"1\">LunyScript implementing a 3-way world-axis-aligned motion\n=&gt; 11 lines of code, 331 characters (excluding: empty lines, comments, namespace, usings)</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -4470,7 +3580,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.SmokeTests.InputMoveTests.InputTransformMove_MonoBehaviour",
-      "Summary": "<p sourcefile=\"api/LunyScript.SmokeTests.InputMoveTests.InputTransformMove_MonoBehaviour.yml\" sourcestartlinenumber=\"1\">Typical Unity tutorial script implementing a 3-way motion relative to object's orientation\n=&gt; 18 lines of code, 628 characters (excluding: empty lines, comments, namespace, usings)</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -4484,7 +3594,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour",
-      "Summary": "<p sourcefile=\"api/LunyScript.SmokeTests.InputMoveTests.InputTransformShift_MonoBehaviour.yml\" sourcestartlinenumber=\"1\">Typical Unity tutorial script implementing a 3-way world-axis-aligned motion\n=&gt; 33 lines of code, 865 characters (excluding: empty lines, comments, namespace, usings)</p>\n"
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -4656,30 +3766,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.SmokeTests.Object.ObjectCreateTestScript.yml",
+      "source_relative_path": "api/LunyScript.SmokeTests.Object.Create.ObjectCreateTestScript.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LunyScript.SmokeTests.Object.ObjectCreateTestScript.html"
+          "relative_path": "api/LunyScript.SmokeTests.Object.Create.ObjectCreateTestScript.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "LunyScript.SmokeTests.Object.ObjectCreateTestScript",
+      "Title": "LunyScript.SmokeTests.Object.Create.ObjectCreateTestScript",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.SmokeTests.Object.yml",
+      "source_relative_path": "api/LunyScript.SmokeTests.Object.Create.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LunyScript.SmokeTests.Object.html"
+          "relative_path": "api/LunyScript.SmokeTests.Object.Create.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "LunyScript.SmokeTests.Object",
+      "Title": "LunyScript.SmokeTests.Object.Create",
       "Summary": null
     },
     {
@@ -4950,30 +4060,86 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.Unity.ComponentApiExtensions.yml",
+      "source_relative_path": "api/LunyScript.Unity.Blocks.Component.ComponentApiExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LunyScript.Unity.ComponentApiExtensions.html"
+          "relative_path": "api/LunyScript.Unity.Blocks.Component.ComponentApiExtensions.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "LunyScript.Unity.ComponentApiExtensions",
+      "Title": "LunyScript.Unity.Blocks.Component.ComponentApiExtensions",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/LunyScript.Unity.yml",
+      "source_relative_path": "api/LunyScript.Unity.Blocks.Component.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LunyScript.Unity.html"
+          "relative_path": "api/LunyScript.Unity.Blocks.Component.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "LunyScript.Unity",
+      "Title": "LunyScript.Unity.Blocks.Component",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.UnityEditor.SmokeTests.GlobalTestSceneSetup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.UnityEditor.SmokeTests.PrintScriptingSymbols.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.UnityEditor.SmokeTests.PrintScriptingSymbols.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.UnityEditor.SmokeTests.PrintScriptingSymbols",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.UnityEditor.SmokeTests.TestSceneSetup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.UnityEditor.SmokeTests.TestSceneSetup.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.UnityEditor.SmokeTests.TestSceneSetup",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.UnityEditor.SmokeTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.UnityEditor.SmokeTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.UnityEditor.SmokeTests",
       "Summary": null
     },
     {
@@ -5075,6 +4241,16 @@
       "Summary": null
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
@@ -5093,6 +4269,52 @@
       "output": {
         ".html": {
           "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
