@@ -48,7 +48,6 @@ exclude:
   - .bundle/
   - node_modules/
   - scripts/
-  - manual/
 
 # Include specific root files
 include:
