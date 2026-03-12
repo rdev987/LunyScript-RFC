@@ -1,2 +1,2 @@
 
-{"items":[{"name":"Manual","href":"manual/index.html","tocHref":"manual/toc.html","topicHref":"manual/index.html"},{"name":"Scripting API","href":"api/","topicHref":"api/","homepage":"api/"},{"name":"Changelog","href":"CHANGELOG.html","topicHref":"CHANGELOG.html"}]}
+{"items":[{"name":"Manual","href":"manual/index.html","tocHref":"manual/toc.html","topicHref":"manual/index.html"},{"name":"Scripting API","href":"api/","tocHref":"api/toc.html","topicHref":"api/","homepage":"api/"},{"name":"Changelog","href":"CHANGELOG.html","topicHref":"CHANGELOG.html"}]}
