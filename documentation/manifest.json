@@ -7001,20 +7001,30 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/first-script.md",
+      "source_relative_path": "manual/first-script-godot.md",
       "output": {
         ".html": {
-          "relative_path": "manual/first-script.html"
+          "relative_path": "manual/first-script-godot.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/getting-started.md",
+      "source_relative_path": "manual/first-script-overview.md",
       "output": {
         ".html": {
-          "relative_path": "manual/getting-started.html"
+          "relative_path": "manual/first-script-overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/first-script-unity.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/first-script-unity.html"
         }
       },
       "version": ""

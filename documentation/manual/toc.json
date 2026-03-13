@@ -1,2 +1,2 @@
 
-{"items":[{"name":"Introduction","href":"index.html","topicHref":"index.html"}]}
+{"items":[{"name":"Introduction","href":"index.html","topicHref":"index.html"},{"name":"Your First Luny Script","href":"first-script-overview.html","topicHref":"first-script-overview.html","items":[{"name":"Luny Script vs Unity MonoBehaviour","href":"first-script-unity.html","topicHref":"first-script-unity.html"},{"name":"Luny Script vs Godot GDScript","href":"first-script-godot.html","topicHref":"first-script-godot.html"}]}]}

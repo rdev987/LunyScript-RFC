@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Your first Luny Script | LunyScript Documentation </title>
+      <title>Your first Luny Script in Unity | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Your first Luny Script | LunyScript Documentation ">
+      <meta name="title" content="Your first Luny Script in Unity | LunyScript Documentation ">
       
       
       <link rel="icon" href="../images/luny-logo-56x56.png">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script-unity.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -31,6 +31,7 @@
       <meta name="loc:downloadPdf" content="Download PDF">
 
       <script type="module" src="./../public/docfx.min.js"></script>
+      <script type="module" src="./../public/gdscript-loader.js"></script>
       <script src="../public/highlight-custom.js"></script>
 
       <script>
@@ -86,14 +87,16 @@
         </div>
 
         <article data-uid="">
-<h1 id="your-first-luny-script">Your first Luny Script</h1>
+<h1 id="your-first-luny-script-in-unity">Your first Luny Script in Unity</h1>
 
-<p>You have a blank scene in Unity. You want to create a character controller.</p>
-<h2 id="status-quo">Status Quo</h2>
+<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene.</p>
+<h2 id="status-quo-unity">Status Quo (Unity)</h2>
+<p>First, let's see what you would currently have to do in Unity:</p>
 <ul>
-<li><strong>Hierarchy</strong>: <code>Right-click: 3D Object -&gt; Capsule</code>. Name it &quot;Player&quot;.</li>
+<li><strong>Project</strong>: <code>Right-click: Create -&gt; Scene -&gt; Scene</code>. Name it whatever you like.</li>
 <li><strong>Project</strong>: <code>Right-click: Create -&gt; MonoBehaviour Script</code>. Name it &quot;Player&quot;.</li>
-<li><strong>Hierarchy</strong>: Select &quot;Player&quot;. <code>Inspector: Add Component -&gt; Player</code>.</li>
+<li><strong>Hierarchy</strong>: <code>Right-click: 3D Object -&gt; Capsule</code>. Name it &quot;Player&quot;.</li>
+<li><strong>Inspector</strong>: Select &quot;Player&quot;. <code>Inspector: Add Component -&gt; Player</code>.</li>
 <li>You check the Internet for a &quot;simple&quot; Unity 'Player' script and found this:</li>
 </ul>
 <pre><code class="lang-csharp">using UnityEngine;
@@ -149,12 +152,14 @@ public class Player : MonoBehaviour
     }
 }
 </code></pre>
-<p><strong>It's 'only' 51 lines! 🤯</strong></p>
+<p><strong>It's 'only' 52 lines for something trivial. 🤯</strong></p>
 <h2 id="with-lunyscript">With LunyScript</h2>
+<p>Now let's compare the same process with LunyScript:</p>
 <ul>
-<li><strong>Hierarchy</strong>: <code>Right-click: 3D Object -&gt; Capsule</code>. Name it &quot;Player&quot;.</li>
+<li><strong>Project</strong>: <code>Right-click: Create -&gt; Scene -&gt; Scene</code>. Name it whatever you like.</li>
 <li><strong>Project</strong>: <code>Right-click: Create -&gt; Luny Script</code>. Name it &quot;Player&quot;.</li>
-<li><em>Component: optional. Luny scripts run on the object matching the script's name.</em></li>
+<li><strong>Hierarchy</strong>: <code>Right-click: 3D Object -&gt; Capsule</code>. Name it &quot;Player&quot;.</li>
+<li><strong>Inspector</strong>: <em>Optional: Luny scripts run on the object matching the script's name.</em></li>
 <li><strong>Edit</strong> the <code>Player.cs</code> script and add this to its <code>Build()</code> method:</li>
 </ul>
 <pre><code class="lang-csharp">using LunyScript;
@@ -171,13 +176,13 @@ public partial class Player : Script
     }
 }
 </code></pre>
-<p><strong>That's 12 lines! 😎</strong></p>
+<p><strong>That's 13 lines! Four times less! 😎</strong></p>
 <p>Enter playmode and try it.</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script-unity.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
