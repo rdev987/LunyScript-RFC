@@ -7015,6 +7015,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/api-overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/first-script-godot.md",
       "output": {
         ".html": {
@@ -7039,6 +7049,16 @@
       "output": {
         ".html": {
           "relative_path": "manual/first-script-unity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/first-script.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/first-script.html"
         }
       },
       "version": ""

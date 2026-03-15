@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>Your First Luny Script | LunyScript Documentation </title>
+      <title>Your first Luny Script in Unity | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Your First Luny Script | LunyScript Documentation ">
+      <meta name="title" content="Your first Luny Script in Unity | LunyScript Documentation ">
       
       
       <link rel="icon" href="../images/luny-logo-56x56.png">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script-overview.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -87,20 +87,52 @@
         </div>
 
         <article data-uid="">
-<h1 id="your-first-luny-script">Your First Luny Script</h1>
+<h1 id="your-first-luny-script-in-unity">Your first Luny Script in Unity</h1>
 
-<p>Learn how a simple player controller is created in Luny script.
-Then compare the process and scripts with the status quo in Unity (MonoBehaviour) and Godot (GDScript).</p>
+<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene.</p>
+<h2 id="lunyscript-implementation">LunyScript Implementation</h2>
+<p>The setup process for our LunyScript in Unity:</p>
 <ul>
-<li><a href="first-script.html">First Luny Script (Unity)</a></li>
-<li><a href="first-script-unity.html">Compared with MonoBehaviour (Unity)</a></li>
-<li><a href="first-script-godot.html">Compared with GDScript (Godot)</a></li>
+<li><strong>Project</strong>: <code>Right-click: Create -&gt; Scene -&gt; Scene</code>.</li>
+<li><strong>Project</strong>: <code>Right-click: Create -&gt; Luny Script</code>. Name it &quot;Player&quot;.</li>
+<li><strong>Hierarchy</strong>: <code>Right-click: 3D Object -&gt; Capsule</code>. Name it &quot;Player&quot;.</li>
+<li><strong>Edit</strong> the <code>Player.cs</code> script and add this to its <code>Build()</code> method:</li>
+</ul>
+<pre><code class="lang-csharp">using LunyScript;
+
+public partial class Player : Script
+{
+    public override void Build(ScriptContext context)
+    {
+        On.FrameUpdate(
+            Transform.MoveBy(Input.Direction(&quot;Move&quot;), 4),
+            Transform.MoveUp(Input.Button(&quot;Jump&quot;).Strength, 4),
+            Transform.MoveDown(Input.Button(&quot;Crouch&quot;).Strength, 4)
+        );
+    }
+}
+</code></pre>
+<p><strong>That's just 13 lines! 😎</strong> It's 4 times less than MonoBehaviour, and 2.77 times less than GDScript.</p>
+<p>Enter playmode and try it.</p>
+<h2 id="notes">Notes</h2>
+<p>Inspector assignment of Luny scripts is optional.</p>
+<p>By default, a Luny script will run for any object in the active scene that matches the script's class name.
+A LunyScript class named &quot;Player&quot; will run for the object named &quot;Player&quot;.</p>
+<p>In future there will be options to:</p>
+<ul>
+<li>Relax the class name vs object name match:
+<ul>
+<li>disable strict upper-/lowercase matching (eg runs on &quot;player&quot;)</li>
+<li>match start/end of name (eg runs on &quot;Player 1&quot; and &quot;Player 2&quot;)</li>
+</ul>
+</li>
+<li>Directly assign one or more Luny scripts to an object</li>
 </ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script-overview.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/first-script.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

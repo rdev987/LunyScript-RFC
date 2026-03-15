@@ -90,7 +90,7 @@
 <h1 id="your-first-luny-script-in-unity">Your first Luny Script in Unity</h1>
 
 <p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene.</p>
-<h2 id="status-quo-unity">Status Quo (Unity)</h2>
+<h2 id="status-quo-unity">Status Quo: Unity</h2>
 <p>First, let's see what you would currently have to do in Unity:</p>
 <ul>
 <li><strong>Project</strong>: <code>Right-click: Create -&gt; Scene -&gt; Scene</code>. Name it whatever you like.</li>
@@ -152,16 +152,9 @@ public class Player : MonoBehaviour
     }
 }
 </code></pre>
-<p><strong>It's 'only' 52 lines for something trivial. 🤯</strong></p>
+<p><strong>It's <em>only</em> 52 lines for something so trivial. 🤯</strong></p>
 <h2 id="with-lunyscript">With LunyScript</h2>
-<p>Now let's compare the same process with LunyScript:</p>
-<ul>
-<li><strong>Project</strong>: <code>Right-click: Create -&gt; Scene -&gt; Scene</code>. Name it whatever you like.</li>
-<li><strong>Project</strong>: <code>Right-click: Create -&gt; Luny Script</code>. Name it &quot;Player&quot;.</li>
-<li><strong>Hierarchy</strong>: <code>Right-click: 3D Object -&gt; Capsule</code>. Name it &quot;Player&quot;.</li>
-<li><strong>Inspector</strong>: <em>Optional: Luny scripts run on the object matching the script's name.</em></li>
-<li><strong>Edit</strong> the <code>Player.cs</code> script and add this to its <code>Build()</code> method:</li>
-</ul>
+<p>Let's compare it with the same LunyScript:</p>
 <pre><code class="lang-csharp">using LunyScript;
 
 public partial class Player : Script
@@ -177,7 +170,7 @@ public partial class Player : Script
 }
 </code></pre>
 <p><strong>That's 13 lines! Four times less! 😎</strong></p>
-<p>Enter playmode and try it.</p>
+<p>It only gets better from here on. The complexit doesn't scale proportionally, the gap widens the more you script!</p>
 
 </article>
 
