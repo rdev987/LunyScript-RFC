@@ -226,19 +226,10 @@
 <p>With all those editor setup steps out of the way, at least now you need to write <strong>much less code</strong> in GDScript:</p>
 <pre><code class="lang-gdscript">extends Node3D
 
-var moveAction
-var jumpAction
-var crouchAction
-
-func _ready():
-    moveAction = &quot;Move&quot;
-    jumpAction = &quot;Jump&quot;
-    crouchAction = &quot;Crouch&quot;
-
 func _process(delta: float):
     var move_input = Input.get_vector(&quot;MoveLeft&quot;, &quot;MoveRight&quot;, &quot;MoveDown&quot;, &quot;MoveUp&quot;)
-    var jump_input_value = Input.get_action_strength(jumpAction)
-    var crouch_input_value = Input.get_action_strength(crouchAction)
+    var jump_input_value = Input.get_action_strength(&quot;Jump&quot;)
+    var crouch_input_value = Input.get_action_strength(&quot;Crouch&quot;)
 
     var moveX = move_input.x
     var moveZ = move_input.y
@@ -260,16 +251,15 @@ func _process(delta: float):
 
     translate(finalMovement)
 </code></pre>
-<p>Yes, that's not one, not two, but three whole lines you're saving compared to the <a href="first-script-unity.html">Unity MonoBehaviour implementation</a>!</p>
-<p>GDScript provides minor syntactical improvements but the overall code complexity remains exactly (!) the same.</p>
+<p>That's ten lines you're saving compared to the <a href="first-script-unity.html">Unity MonoBehaviour implementation</a>.</p>
+<p>However, the savings derive solely from not declaring the Input map strings as variables. The overall code complexity remains exactly the same.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <blockquote>
-<p>🤔 Hey, wait! This GDScript is 35 lines but Unity's code snippet was 52 lines!</p>
+<p>🤔 Hey, wait! This GDScript is 26 lines but Unity's code snippet was 52 lines!</p>
 </blockquote>
-<p>Correct, but in all fairness we should stop counting C# lines with only <code>{</code> or <code>}</code> when comparing it to GDScript.
-IDEs will thankfully place those curly braces for us anyway.
-That makes Unity's solution 38 <em>actual lines of code</em>.</p>
+<p>Correct, but in all fairness we should stop counting empty lines, and those with only <code>{</code> or <code>}</code> when directly comparing it to GDScript.
+That makes Unity's solution 30 and the GDScript version 20 <em>actual lines of code</em>.</p>
 </div>
 <h2 id="with-lunyscript">With LunyScript</h2>
 <p>Here's the LunyScript C# implementation once again for reference - identical to its Unity version since Luny scripts represent portable code:</p>
