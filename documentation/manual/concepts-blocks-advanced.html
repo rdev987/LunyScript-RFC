@@ -147,13 +147,13 @@ private ActionBlock[] DisableMessages() =&gt; new[]
     On.Destroyed(createEnemy);
 }
 </code></pre>
-<p>A variable can also hold multiple blocks, for instance the <code>ActionBlock[]</code> arrays returned from the methods above can be assigned to a variable and used multiple time, instead of calling the method multiple times.</p>
+<p>A variable can also hold multiple blocks, for instance the <code>ActionBlock[]</code> arrays returned from the methods above can be assigned to a variable and used multiple times.</p>
 <h2 id="re-using-vs-re-creating-blocks">Re-Using vs Re-Creating Blocks</h2>
 <p>There is an important distinction: once a block has been created, you can use it multiple times. But you can no longer modify the block without modifying all uses of that block.</p>
 <p>If you need individual block behaviour (eg different names) you will have to create separate block instances instead. This is what we'll be doing next, but cleverly so.</p>
 <h2 id="using-loops-to-create-blocks">Using Loops To Create Blocks</h2>
 <p><strong>Question</strong>: What if I wanted to create ten enemies, each with a unique name?</p>
-<p><strong>Dumb Answer</strong>: You'll copy-paste the line ten times. &lt;-- This is not maintainable!</p>
+<p><strong>Dumb Answer</strong>: You'll copy-paste the line ten times. &lt;-- <em>This is not maintainable!</em></p>
 <p><strong>Clever Answer</strong>: You'll use a loop!</p>
 <pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
 {
@@ -173,22 +173,24 @@ private ActionBlock[] DisableMessages() =&gt; new[]
 <p>This is why LunyScript provides logic flow constructs as blocks themselves, so that we can run the loop at runtime instead of during <code>Build()</code>:</p>
 <pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
 {
-    // Create ten enemies
+    // Create ten enemies every time we get enabled
     var createEnemy = Object.Create(&quot;Enemy&quot;).With(prefabPath);
     On.Enabled(For(10).Do(createEnemy));
 }
 </code></pre>
-<p>This creates 10 enemies every time the object gets enabled. But it doesn't change the number of enemies yet.</p>
+<p>This creates 10 enemies every time the object gets enabled. You could write that with a C# for loop just as well. We don't change the number of enemies yet.</p>
 <p>To do that, we use a LunyScript runtime variable holding the current number of enemies to spawn:</p>
 <pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
 {
-    // Create an increasing number of enemies
+    // define the runtime variable, 3 is the initial value
     var enemyCount = Var.Define(&quot;num enemies to spawn&quot;, 3);
+
+    // Create an increasing number of enemies by adding 2 to enemyCount
     var createEnemy = Object.Create(&quot;Enemy&quot;).With(prefabPath);
     On.Enabled(For(enemyCount).Do(createEnemy), enemyCount.Add(2));
 }
 </code></pre>
-<p>Now we initially create 3 enemies, and on ever subsequent enable we'll create two more: 5, 7, 9 and so on.</p>
+<p>Now we initially create 3 enemies, and on every subsequent enable we'll create two more: 5, 7, 9 and so forth.</p>
 
 </article>
 
