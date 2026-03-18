@@ -90,8 +90,8 @@
         <article data-uid="">
 <h1 id="luny-semantics-shmemantics">Luny Semantics Shmemantics</h1>
 
-<p>LunyScript and LunyEngine strive to provide consistent, relatable semantics while avoiding terms that are too technical or too vague. But it also borrows semantics from engines where it makes the most sense. The idea is <em>not another opinionated API</em> but to fix game engines' inconsistencies.</p>
-<p>It also follows C# / .NET naming guidelines. Events that already happened use past tense (-ed). Ongoing events use present tense (-ing). Exceptions: Consistently scheduled events use nouns (Heartbeat, FrameUpdate).</p>
+<p>LunyScript and LunyEngine strive to provide consistent, relatable semantics while avoiding terms that are too technical or too vague. But it also borrows semantics from engines where it makes the most sense.</p>
+<p>The idea is <em>not another opinionated API</em> but to fix game engines' inconsistencies, and to more strictly follows C# / .NET naming guidelines. Events that already happened use past tense (-ed). Ongoing events use present tense (-ing). Some exceptions: Consistently scheduled events use nouns (Heartbeat, FrameUpdate), and once-only events may use adjectives (Ready).</p>
 <h2 id="object-lifecycle-events">Object Lifecycle Events</h2>
 <p>These are the object lifecycle events which can run blocks. The table shows how they map to the most widely used game engines' lifecycle events:</p>
 <table>
@@ -209,8 +209,26 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">When.Input.Action</td>
-<td style="text-align: left;">InputAction callbacks</td>
+<td style="text-align: left;">When.Input.Action.Started</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">When.Input.Action.Performed</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">When.Input.Action.Continuing</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">When.Input.Action.Ended</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">N/A</td>
 <td style="text-align: left;"></td>
 </tr>
