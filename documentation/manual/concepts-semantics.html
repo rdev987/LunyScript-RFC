@@ -90,9 +90,10 @@
         <article data-uid="">
 <h1 id="luny-semantics-shmemantics">Luny Semantics Shmemantics</h1>
 
-<p>LunyScript/LunyEngine strive to provide consistent, relatable semantics while avoiding terms that are too technical or too vague. But it also borrows semantics from engines where it makes the most sense.</p>
+<p>LunyScript and LunyEngine strive to provide consistent, relatable semantics while avoiding terms that are too technical or too vague. But it also borrows semantics from engines where it makes the most sense. The idea is <em>not another opinionated API</em> but to fix game engines' inconsistencies.</p>
+<p>It also follows C# / .NET naming guidelines. Events that already happened use past tense (-ed). Ongoing events use present tense (-ing). Exceptions: Consistently scheduled events use nouns (Heartbeat, FrameUpdate).</p>
 <h2 id="object-lifecycle-events">Object Lifecycle Events</h2>
-<p>These are the object lifecycle events how they map to various engines:</p>
+<p>These are the object lifecycle events which can run blocks. The table shows how they map to the most widely used game engines' lifecycle events:</p>
 <table>
 <thead>
 <tr>
@@ -148,23 +149,92 @@
 <tr>
 <td style="text-align: left;">On.Destroyed</td>
 <td style="text-align: left;">OnDestroy</td>
-<td style="text-align: left;">N/A</td>
+<td style="text-align: left;">N/A (not reliable)</td>
 <td style="text-align: left;">UninitializeComponent</td>
 </tr>
 <tr>
-<td style="text-align: left;">On.Quitting</td>
+<td style="text-align: left;">On.Collision(2D).Started</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">On.Collision(2D).Continuing</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">On.Collision(2D).Ended</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">On.Trigger(2D).Entered</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">On.Trigger(2D).Staying</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">On.Trigger(2D).Exited</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>I thoroughly considered each and every semantic carefully. Most terms are borrowed from Unity because its semantics are consistent and relatable, and it's the most widely used engine.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The &quot;heartbeat&quot; may seem unusual. It's where every engine has issues: <code>FixedUpdate</code> .. uh, what is 'fixed' here? Is <code>Update()</code> <em>broken</em>?? And <code>_physics_process</code> is also misleading: it's not just about physics.</p>
+<p>The concept of a heartbeat is simple and relatable: It happens at a steady rate, mostly. But it can also &quot;skip a beat&quot; (not run in a frame), or have an &quot;extra beat&quot;, even &quot;race&quot; (run multiple time per frame). Everyone can relate to such [heart palpitations](<a href="https://en.wikipedia.org/wiki/Palpitations">https://en.wikipedia.org/wiki/Palpitations</a>. 😊</p>
+</div>
+<h2 id="global-events">Global Events</h2>
+<p>This list isn't complete but still provides a broad overview of global/external events that can run blocks:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>LunyScript</strong></th>
+<th style="text-align: left;"><strong>Unity</strong></th>
+<th style="text-align: left;"><strong>Godot</strong></th>
+<th style="text-align: left;"><strong>Unreal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">When.Input.Action</td>
+<td style="text-align: left;">InputAction callbacks</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">When.Scene.Loaded</td>
+<td style="text-align: left;">SceneManager.sceneLoaded</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">When.Scene.Unloaded</td>
+<td style="text-align: left;">SceneManager.sceneUnloaded</td>
+<td style="text-align: left;">N/A</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">When.Quitting</td>
 <td style="text-align: left;">OnApplicationQuit</td>
 <td style="text-align: left;">_notification(NOTIFICATION_WM_CLOSE_REQUEST)</td>
 <td style="text-align: left;">EndPlay</td>
 </tr>
 </tbody>
 </table>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The heartbeat may raise questions. The concept is simple: run code at a steady rate, decoupled from the framerate. That's where engines have issues: <code>FixedUpdate</code> .. uh, what is or gets 'fixed' here? And <code>_physics_process</code> is misleading
-as this isn't just about physics but deterministic updates.</p>
-<p>A heartbeat happens at a steady rate, but it can also &quot;skip a beat&quot;, have an &quot;extra beat&quot;, or race. Everyone experiences these, though I rephrained from calling it <a href="https://en.wikipedia.org/wiki/Palpitations"><code>On.HeartPalpitation</code></a>. But it's the most relatable concept. 😊</p>
-</div>
+<p>The distinction between <code>On.*</code> and <code>When.*</code> is one of 'local' vs 'global': The <code>On.*</code> events relate to the object itself, the <code>When.*</code> events are external events, not targeting a specific object.</p>
 <h2 id="lunyengine-observer-events">LunyEngine Observer Events</h2>
 <p>These events are used by implementations of <a class="xref" href="../api/Luny.ILunyEngineObserver.html"><code>ILunyEngineObserver</code></a>. You will probably not write an observer yourself, but you will likely see those methods in code and callstacks.</p>
 <table>
