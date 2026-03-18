@@ -98,6 +98,18 @@
 Classes
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.CollisionEventBuilderHelper.html">CollisionEventBuilderHelper</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.CollisionEventFilterExtensions.html">CollisionEventFilterExtensions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.CollisionEventHandlerExtensions.html">CollisionEventHandlerExtensions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="LunyScript.Api.CounterBuilderFinalExtensions.html">CounterBuilderFinalExtensions</a></dt>
       <dd></dd>
     </dl>
@@ -107,10 +119,6 @@ Classes
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="LunyScript.Api.ObjectBuilderExtensions.html">ObjectBuilderExtensions</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Api.PhysicsEventLayerExtensions.html">PhysicsEventLayerExtensions</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -146,6 +154,14 @@ Classes
       <dd></dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.TriggerEventFilterExtensions.html">TriggerEventFilterExtensions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.TriggerEventHandlerExtensions.html">TriggerEventHandlerExtensions</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="LunyScript.Api.WhenInputActionBuilderExtensions.html">WhenInputActionBuilderExtensions</a></dt>
       <dd></dd>
     </dl>
@@ -153,19 +169,32 @@ Classes
 Structs
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Api.CollisionBuilderLayered.html">CollisionBuilderLayered</a></dt>
+      <dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder&lt;T&gt;</a></dt>
+      <dd><p>Fluent builder for filtered collision event sequences.
+Filters (Tagged, Named, Layered, Masked, Typed) are order-independent and accumulate.
+Event handlers (Started, Continuing, Ended) are also order-independent.
+Parameters within a filter kind are OR-combined; different kinds are AND-combined.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.CollisionEventSet.html">CollisionEventSet</a></dt>
+      <dd><p>State after at least one event handler is set — filters are no longer available.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.CollisionLayered.html">CollisionLayered</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Api.CollisionBuilderMasked.html">CollisionBuilderMasked</a></dt>
+      <dt><a class="xref" href="LunyScript.Api.CollisionMasked.html">CollisionMasked</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Api.CollisionBuilderReady.html">CollisionBuilderReady</a></dt>
+      <dt><a class="xref" href="LunyScript.Api.CollisionReady.html">CollisionReady</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Api.CollisionBuilderStart.html">CollisionBuilderStart</a></dt>
+      <dt><a class="xref" href="LunyScript.Api.CollisionStart.html">CollisionStart</a></dt>
       <dd></dd>
     </dl>
     <dl class="jumplist">
@@ -256,20 +285,8 @@ In builds these blocks are ignored (no-op).</p>
       <dd></dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Api.OnInputEventBuilder.html">OnInputEventBuilder</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="LunyScript.Api.OnObjectEventBuilder.html">OnObjectEventBuilder</a></dt>
       <dd><p>Handles object centered/targeted events, eg state, update, collision events.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Api.PhysicsEventBuilder-1.html">PhysicsEventBuilder&lt;T&gt;</a></dt>
-      <dd><p>Fluent builder for filtered collision/trigger event sequences.
-Filters (Tagged, Named, Layered, Masked, Typed) are order-independent and accumulate.
-Event handlers (Begins, Updates, Ends) are also order-independent.
-Parameters within a filter kind are OR-combined; different kinds are AND-combined.</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -324,6 +341,35 @@ Transform.ScaleTowards(targetScale).Speed(1).Slerp()</p>
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.TriggerEventBuilder-1.html">TriggerEventBuilder&lt;T&gt;</a></dt>
+      <dd><p>Fluent builder for filtered trigger event sequences.
+Filters (Tagged, Named, Layered, Masked, Typed) are order-independent and accumulate.
+Event handlers (Entered, Staying, Exited) are also order-independent.
+Parameters within a filter kind are OR-combined; different kinds are AND-combined.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.TriggerEventSet.html">TriggerEventSet</a></dt>
+      <dd><p>State after at least one event handler is set — filters are no longer available.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.TriggerLayered.html">TriggerLayered</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.TriggerMasked.html">TriggerMasked</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.TriggerReady.html">TriggerReady</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.TriggerStart.html">TriggerStart</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="LunyScript.Api.WhenGlobalEventBuilder.html">WhenGlobalEventBuilder</a></dt>
       <dd><p>Handles external events: Scene, Input, Collision, Messages.</p>
 </dd>
@@ -350,24 +396,13 @@ Transform.ScaleTowards(targetScale).Speed(1).Slerp()</p>
 Interfaces
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Api.ICollisionBuilderLayered.html">ICollisionBuilderLayered</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Api.ICollisionBuilderMasked.html">ICollisionBuilderMasked</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Api.ICollisionBuilderReady.html">ICollisionBuilderReady</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="LunyScript.Api.ICollisionBuilderStart.html">ICollisionBuilderStart</a></dt>
-      <dd></dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="LunyScript.Api.ICollisionBuilderState.html">ICollisionBuilderState</a></dt>
       <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.ICollisionFilterable.html">ICollisionFilterable</a></dt>
+      <dd><p>Marker: filter methods (Tagged, With, Layered, Masked, Typed, Cooldown) are still available.</p>
+</dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="LunyScript.Api.ICoroutineCounterBuilderState.html">ICoroutineCounterBuilderState</a></dt>
@@ -416,6 +451,15 @@ Interfaces
     <dl class="jumplist">
       <dt><a class="xref" href="LunyScript.Api.ITransformBuilderState.html">ITransformBuilderState</a></dt>
       <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.ITriggerBuilderState.html">ITriggerBuilderState</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="LunyScript.Api.ITriggerFilterable.html">ITriggerFilterable</a></dt>
+      <dd><p>Marker: filter methods (Tagged, With, Layered, Masked, Typed, Cooldown) are still available.</p>
+</dd>
     </dl>
 
 

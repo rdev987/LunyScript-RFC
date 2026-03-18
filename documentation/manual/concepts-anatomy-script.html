@@ -93,29 +93,18 @@
 <p>LunyScript is designed to minimize C# syntax exposure while enabling you to leverage the full power of C# at your discretion.</p>
 <h2 id="lunyscript-and-c">LunyScript and C#</h2>
 <p>When you write regular C# code, it gets compiled into 'CPU instructions' (oversimplified). C# has the full breadth and depth of any high-level programming language: full freedom but enormous complexity.</p>
-<p>LunyScript puts guardrails on that infinite freedom (read: complexity) to accomplish:</p>
+<p>LunyScript puts guardrails on that infinite freedom to accomplish:</p>
 <ul>
+<li>Encouraging experimentation, enabling code sharing - learn AND create, the fun way.</li>
 <li>Self-contained, user extensible code blocks - write once, re-use for years to come.</li>
 <li>Runtime failures won't crash, get logged, use placeholders where possible. That pink cube? A 'missspeled' asset name.</li>
-<li>Asset and object queries are cached/pooled. It runs more efficiently than typical beginner-level code.</li>
-<li>Execution is observable without a highly technical code debugger: Visualize script execution, not visual scripting.</li>
-<li>Problematic operations are detected or prevented, depriving users of the fun of dealing with common runtime behaviour issues.</li>
-<li>Best practices applied internally. Not the cargo cult repeated by tutorials for the past two decades.</li>
-<li>Encouraging experimentation, enabling code sharing - learn AND create, safely.</li>
+<li>Runs more efficiently than typical beginner-level code: Asset/Object queries are efficient and get cached/pooled.</li>
+<li>Observable execution without a technical code debugger: Visualize script execution, not scripting visually.</li>
+<li>Problematic operations are detected/prevented, depriving users the fun in dealing with widespread runtime quirks.</li>
+<li>Best practices applied internally: Not the cargo cult popularized by tutors decades ago.</li>
 </ul>
 <h2 id="how-to-create-a-luny-script">How to create a Luny Script</h2>
-<p>A Luny script always inherits from <code>LunyScript.Script</code>:</p>
-<pre><code class="lang-csharp">public partial class Player : LunyScript.Script
-{
-}
-</code></pre>
-<p>Observations:</p>
-<ul>
-<li>There are no <code>using</code> statements required - though you'll likely need a few eventually.</li>
-<li>The <code>partial</code> keyword will be required to support Roslyn code injection of custom API extensions.</li>
-<li>The above example won't compile: It's missing the implementation of the abstract <code>Build()</code> method.</li>
-</ul>
-<p>This version of the script implements the required <code>Build()</code> method and will compile:</p>
+<p>A Luny script always inherits from <a class="xref" href="../api/LunyScript.Script.html"><code>LunyScript.Script</code></a>:</p>
 <pre><code class="lang-csharp">public partial class Player : LunyScript.Script
 {
     public override void Build(ScriptBuildContext context)
@@ -124,14 +113,20 @@
     }
 }
 </code></pre>
-<p>The <a class="xref" href="../api/LunyScript.ScriptBuildContext.html"><code>ScriptBuildContext</code></a> has a two-fold use:</p>
+<p>Observations:</p>
 <ul>
-<li>It provides input data to the script, for instance Inspector-assigned values and references.</li>
-<li>It provides configurable options to influence how the script is interpreted and executed.</li>
+<li>There are no <code>using</code> statements required - though you'll likely need a few eventually.</li>
+<li>The <code>partial</code> keyword supports Roslyn code injection for custom API extensions that <em>feel native</em>.</li>
+<li><code>Build()</code> is the only required method and the only method LunyScript will call.</li>
+</ul>
+<p>The <a class="xref" href="../api/LunyScript.ScriptBuildContext.html"><code>ScriptBuildContext</code></a> parameter of <code>Build()</code> has two uses:</p>
+<ul>
+<li>It provides input data to the script, e.g. Inspector-assigned values and references.</li>
+<li>It provides configurable options, e.g. to influence how the script is interpreted at runtime.</li>
 </ul>
 <h2 id="when-does-build-run">When Does <code>Build()</code> Run?</h2>
-<p>It runs when an object associated with the script is created. This can happen when a scene loads or when instantiating a new object, typically by using a prefab but even primitives and empty objects can run Luny scripts.</p>
-<p>Currently, a Luny script will run <code>Build()</code> for objects whose name matches the script's class.</p>
+<p>It runs when an object associated with the script is created. This can happen when a scene loads or when instantiating a new object, typically by using a prefab. But even primitives or empty objects will run Luny scripts, thus enabling a code-centric workflow.</p>
+<p>Currently, a Luny script will run on any object whose name matches the script's class name.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>In the future there will options to directly assign a script, and to pattern match script names, or match layers and tags.</p>
@@ -140,7 +135,8 @@
 <p>Typical Object lifecycle:</p>
 <p><code>Create -&gt; [Spawn &lt;=&gt; Despawn] -&gt; Destroy</code></p>
 <h2 id="what-happens-when-build-runs">What happens when <code>Build()</code> Runs?</h2>
-<p><code>Build()</code> is a regular C# method that can run any C# code. You'll use it to write block-based code, such as these log statements that run every time the object gets enabled or disabled:</p>
+<p><code>Build()</code> is a regular C# method that runs any C# code. But primarily you'll use it to write block-based code, with the block builder APIs being provided by the <code>LunyScript.Script</code> base class and through custom extensions injected during compilation.</p>
+<p>A simple example uses <a class="xref" href="../api/LunyScript.Api.DebugApi.html"><code>Debug.Log</code></a> blocks that run every time the object gets enabled or disabled:</p>
 <pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
 {
     On.Enabled(Debug.Log(&quot;I'm back!&quot;));
@@ -149,9 +145,14 @@
 }
 </code></pre>
 <p>To see these logs, change the active checkbox of the object running the script during playmode. Or use an engine-native script to toggle its active state.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The Debug.Log blocks are not to be confused with the <a class="xref" href="https://docs.unity3d.com/ScriptReference/Debug.html">UnityEngine.Debug.Log method</a>. This won't cause a conflict, since the LunyScript API takes precedence within <code>Script</code> classes.</p>
+</div>
 <h2 id="same-event-multiple-blocks">Same Event, Multiple Blocks</h2>
-<p>In regular game engine code you can only have one event method per class or script, for example <code>Start()</code> or <code>_ready()</code>.</p>
-<p>This is not the case with LunyScript: You can have multiple events of the same type. Events will run their blocks in the same order they appear in the script.</p>
+<p>In regular game engine code you can only have one event method per class/script, for example one <code>Start()</code> or one <code>_ready()</code> method.</p>
+<p>In LunyScript, you can use multiple events of the same type in the same script!
+Events will run their blocks in the same order they appear in the script.</p>
 <p>This example complements the dialog by duplicating the <code>On.Enabled</code> and <code>On.Disabled</code> event runners:</p>
 <pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
 {
@@ -159,8 +160,17 @@
     On.Enabled(Debug.Log(&quot;I told you so!&quot;));
     
     On.Disabled(Debug.Log(&quot;I'll be back!&quot;));
-    On.Disabled(Debug.Log(&quot;Nooooo.... (sinks into hotlava)&quot;));
+    On.Disabled(Debug.Log(&quot;Nooooo.... (sinks into lava)&quot;));
 }
+</code></pre>
+<p>This will reliably log messages in that order:</p>
+<pre><code>(object created/enabled)
+&gt; I'm back!
+&gt; I told you so!
+
+(object disabled)
+&gt; I'll be back!
+&gt; Nooooo.... (sinks into lava)
 </code></pre>
 <h2 id="multiple-blocks-everywhere">Multiple Blocks Everywhere</h2>
 <p>You aren't restricted to one block per event runner either. The alternative style is to provide multiple blocks within the same event runner as a comma-separated list:</p>
@@ -171,11 +181,14 @@
     On.Disabled(Debug.Log(&quot;I'll be back!&quot;), Debug.Log(&quot;Nooooo.... (sinks into lava)&quot;));
 }
 </code></pre>
-<p>Use whichever version best suits your style and workflow, focus on readability and maintainability. The gain in performance and memory usage are marginal, and future optimizations may make both styles equal anyway.</p>
+<p>Use whichever version best suits your style and workflow. Prefer readability and maintainability over other concerns!</p>
 <h2 id="how-do-blocks-execute-at-runtime">How Do Blocks Execute At Runtime?</h2>
-<p>That is an interesting question!</p>
-<p>Without going into too much detail, this is mostly handled by <a class="xref" href="../api/Luny.LunyEngine.html">LunyEngine</a> and <a class="xref" href="../api/Luny.Engine.Bridge.LunyObject.html">LunyObject</a>. LunyEngine receives the usual engine lifecycle events (frame processing) and uses them to drive <a class="xref" href="../api/Luny.ILunyEngineObserver.html">engine observers</a> of which LunyScript is but one. This fixes any shortcomings an engine may have. For example, missing &quot;Late Update&quot; or &quot;Application Quit&quot; events.</p>
-<p>For the object lifecycle events, like OnEnable/OnDestroy, all engine objects are wrapped in a LunyObject instance. This then raises the corresponding events. The benefit: it'll work exactly at the same way, in the same order, for every engine. It also &quot;fixes&quot; any shortcomings an engine may have. A missing &quot;Object Destroyed&quot; event for example, , or non-deterministic lifecycle event execution.</p>
+<p>That is an interesting question! Without going into too much detail, this is mostly handled by <a class="xref" href="../api/Luny.LunyEngine.html">LunyEngine</a> and <a class="xref" href="../api/Luny.Engine.Bridge.LunyObject.html">LunyObject</a>.</p>
+<p>LunyEngine receives the usual engine lifecycle events (frame processing) and uses them to drive <a class="xref" href="../api/Luny.ILunyEngineObserver.html">engine observers</a> of which LunyScript is but one. This fixes any shortcomings an engine may have. For example, absent lifecycle events like &quot;Late Update&quot; or &quot;Application Quit&quot;.</p>
+<p>For the object events, like OnEnable/OnDestroy, all engine objects are wrapped in a LunyObject instance. This then raises the corresponding events. It does not hook into or piggyback onto existing engine object/node/actor infrastructure to avoid the many, many lifecycle pitfalls this has. Instead, LunyEngine manages the lifetime of engine objects itself. That is how even a Godot Node will run the <code>On.Destroyed</code> event.</p>
+<p>The benefit: LunyScript (and LunyEngine) work exactly the same in any engine. Even event execution order will be deterministic across engines.</p>
+<p>In summary: LunyEngine is an engine on engines:
+<img src="/images/LunyEngine_Engine_On_Engines.jpg" alt="LunyEngine_Engine_On_Engines.jpg"></p>
 
 </article>
 

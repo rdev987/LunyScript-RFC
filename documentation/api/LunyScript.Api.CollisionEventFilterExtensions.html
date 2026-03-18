@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class CollisionEventFilterExtensions | LunyScript Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CollisionEventFilterExtensions | LunyScript Documentation ">
+      
+      
+      <link rel="icon" href="../images/luny-logo-56x56.png">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <link rel="stylesheet" href="../public/alert.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+      <script type="module" src="./../public/gdscript-loader.js"></script>
+      <script src="../public/highlight-custom.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="/">
+            <img id="logo" class="svg" src="../images/Luny-logo-133x54.png" alt="Script">
+            Script
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="LunyScript.Api.CollisionEventFilterExtensions">
+
+
+
+  <h1 id="LunyScript_Api_CollisionEventFilterExtensions" data-uid="LunyScript.Api.CollisionEventFilterExtensions" class="text-break">
+Class CollisionEventFilterExtensions  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Api.html">Api</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CollisionEventFilterExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">CollisionEventFilterExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="LunyScript_Api_CollisionEventFilterExtensions_Cooldown_" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Cooldown*"></a>
+
+  <h3 id="LunyScript_Api_CollisionEventFilterExtensions_Cooldown__1_LunyScript_Api_CollisionEventBuilder___0__System_Double_" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Cooldown``1(LunyScript.Api.CollisionEventBuilder{``0},System.Double)">
+  Cooldown&lt;T&gt;(CollisionEventBuilder&lt;T&gt;, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Minimum seconds between successive reactions. Zero (default) means no cooldown.
+The cooldown is checked before collision predicates; evaluated per event sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CollisionEventBuilder&lt;CollisionReady&gt; Cooldown&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, double seconds) where T : struct, ICollisionFilterable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>seconds</code> <span class="xref">double</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;<a class="xref" href="LunyScript.Api.CollisionReady.html">CollisionReady</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Api_CollisionEventFilterExtensions_Layered_" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Layered*"></a>
+
+  <h3 id="LunyScript_Api_CollisionEventFilterExtensions_Layered__1_LunyScript_Api_CollisionEventBuilder___0__System_String___" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Layered``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])">
+  Layered&lt;T&gt;(CollisionEventBuilder&lt;T&gt;, params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Only react when the other object is on one of the given layers (OR logic).
+Mutually exclusive with Masked() — Masked() becomes unavailable after calling this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CollisionEventBuilder&lt;CollisionLayered&gt; Layered&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, params string[] layerNames) where T : struct, ICollisionFilterable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>layerNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;<a class="xref" href="LunyScript.Api.CollisionLayered.html">CollisionLayered</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Api_CollisionEventFilterExtensions_Masked_" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Masked*"></a>
+
+  <h3 id="LunyScript_Api_CollisionEventFilterExtensions_Masked__1_LunyScript_Api_CollisionEventBuilder___0__System_Int32_" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.Int32)">
+  Masked&lt;T&gt;(CollisionEventBuilder&lt;T&gt;, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Only react when the other object's layer is included in the given bitmask.
+Mutually exclusive with Layered() — unavailable after Layered() is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CollisionEventBuilder&lt;CollisionMasked&gt; Masked&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, int layerMask) where T : struct, ICollisionFilterable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>layerMask</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;<a class="xref" href="LunyScript.Api.CollisionMasked.html">CollisionMasked</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Api_CollisionEventFilterExtensions_Masked_" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Masked*"></a>
+
+  <h3 id="LunyScript_Api_CollisionEventFilterExtensions_Masked__1_LunyScript_Api_CollisionEventBuilder___0__System_String___" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Masked``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])">
+  Masked&lt;T&gt;(CollisionEventBuilder&lt;T&gt;, params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Only react when the other object's layer name matches one of the given names (OR logic).
+Mutually exclusive with Layered() — unavailable after Layered() is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CollisionEventBuilder&lt;CollisionMasked&gt; Masked&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, params string[] layerNames) where T : struct, ICollisionFilterable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>layerNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;<a class="xref" href="LunyScript.Api.CollisionMasked.html">CollisionMasked</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Api_CollisionEventFilterExtensions_Tagged_" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Tagged*"></a>
+
+  <h3 id="LunyScript_Api_CollisionEventFilterExtensions_Tagged__1_LunyScript_Api_CollisionEventBuilder___0__System_String___" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Tagged``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])">
+  Tagged&lt;T&gt;(CollisionEventBuilder&lt;T&gt;, params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Only react when the other object has one of the given tags (OR logic).
+Combine with other filter kinds for AND logic across kinds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CollisionEventBuilder&lt;CollisionReady&gt; Tagged&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, params string[] tags) where T : struct, ICollisionFilterable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;<a class="xref" href="LunyScript.Api.CollisionReady.html">CollisionReady</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Api_CollisionEventFilterExtensions_Typed_" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Typed*"></a>
+
+  <h3 id="LunyScript_Api_CollisionEventFilterExtensions_Typed__1_LunyScript_Api_CollisionEventBuilder___0__System_Type___" data-uid="LunyScript.Api.CollisionEventFilterExtensions.Typed``1(LunyScript.Api.CollisionEventBuilder{``0},System.Type[])">
+  Typed&lt;T&gt;(CollisionEventBuilder&lt;T&gt;, params Type[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Only react when the other object's component list contains at least one of the given types (OR logic).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CollisionEventBuilder&lt;CollisionReady&gt; Typed&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, params Type[] componentTypes) where T : struct, ICollisionFilterable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>componentTypes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;<a class="xref" href="LunyScript.Api.CollisionReady.html">CollisionReady</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Api_CollisionEventFilterExtensions_With_" data-uid="LunyScript.Api.CollisionEventFilterExtensions.With*"></a>
+
+  <h3 id="LunyScript_Api_CollisionEventFilterExtensions_With__1_LunyScript_Api_CollisionEventBuilder___0__System_String___" data-uid="LunyScript.Api.CollisionEventFilterExtensions.With``1(LunyScript.Api.CollisionEventBuilder{``0},System.String[])">
+  With&lt;T&gt;(CollisionEventBuilder&lt;T&gt;, params string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Only react when the other object's name matches one of the given names (OR logic).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CollisionEventBuilder&lt;CollisionReady&gt; With&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, params string[] names) where T : struct, ICollisionFilterable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>names</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;<a class="xref" href="LunyScript.Api.CollisionReady.html">CollisionReady</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          © 2025-2026 Steffen Itterheim (CodeSmile)
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

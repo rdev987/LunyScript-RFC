@@ -2220,6 +2220,132 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.CollisionEventBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.CollisionEventBuilder-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.CollisionEventBuilder<T>",
+      "Summary": "<p sourcefile=\"api/LunyScript.Api.CollisionEventBuilder-1.yml\" sourcestartlinenumber=\"1\">Fluent builder for filtered collision event sequences.\nFilters (Tagged, Named, Layered, Masked, Typed) are order-independent and accumulate.\nEvent handlers (Started, Continuing, Ended) are also order-independent.\nParameters within a filter kind are OR-combined; different kinds are AND-combined.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.CollisionEventBuilderHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.CollisionEventBuilderHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.CollisionEventBuilderHelper",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.CollisionEventFilterExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.CollisionEventFilterExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.CollisionEventFilterExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.CollisionEventHandlerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.CollisionEventHandlerExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.CollisionEventHandlerExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.CollisionEventSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.CollisionEventSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.CollisionEventSet",
+      "Summary": "<p sourcefile=\"api/LunyScript.Api.CollisionEventSet.yml\" sourcestartlinenumber=\"1\">State after at least one event handler is set — filters are no longer available.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.CollisionLayered.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.CollisionLayered.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.CollisionLayered",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.CollisionMasked.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.CollisionMasked.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.CollisionMasked",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.CollisionReady.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.CollisionReady.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.CollisionReady",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.CollisionStart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.CollisionStart.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.CollisionStart",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LunyScript.Api.ComponentApi.yml",
       "output": {
         ".html": {
@@ -2458,6 +2584,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.ICollisionFilterable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.ICollisionFilterable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.ICollisionFilterable",
+      "Summary": "<p sourcefile=\"api/LunyScript.Api.ICollisionFilterable.yml\" sourcestartlinenumber=\"1\">Marker: filter methods (Tagged, With, Layered, Masked, Typed, Cooldown) are still available.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LunyScript.Api.ICoroutineCounterBuilderState.yml",
       "output": {
         ".html": {
@@ -2623,6 +2763,34 @@
       "IsMRef": true,
       "Title": "LunyScript.Api.ITransformBuilderState",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.ITriggerBuilderState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.ITriggerBuilderState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.ITriggerBuilderState",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.ITriggerFilterable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.ITriggerFilterable.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.ITriggerFilterable",
+      "Summary": "<p sourcefile=\"api/LunyScript.Api.ITriggerFilterable.yml\" sourcestartlinenumber=\"1\">Marker: filter methods (Tagged, With, Layered, Masked, Typed, Cooldown) are still available.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3028,6 +3196,118 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.Api.TransformScaleBuilderExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.TriggerEventBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.TriggerEventBuilder-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.TriggerEventBuilder<T>",
+      "Summary": "<p sourcefile=\"api/LunyScript.Api.TriggerEventBuilder-1.yml\" sourcestartlinenumber=\"1\">Fluent builder for filtered trigger event sequences.\nFilters (Tagged, Named, Layered, Masked, Typed) are order-independent and accumulate.\nEvent handlers (Entered, Staying, Exited) are also order-independent.\nParameters within a filter kind are OR-combined; different kinds are AND-combined.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.TriggerEventFilterExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.TriggerEventFilterExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.TriggerEventFilterExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.TriggerEventHandlerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.TriggerEventHandlerExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.TriggerEventHandlerExtensions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.TriggerEventSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.TriggerEventSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.TriggerEventSet",
+      "Summary": "<p sourcefile=\"api/LunyScript.Api.TriggerEventSet.yml\" sourcestartlinenumber=\"1\">State after at least one event handler is set — filters are no longer available.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.TriggerLayered.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.TriggerLayered.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.TriggerLayered",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.TriggerMasked.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.TriggerMasked.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.TriggerMasked",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.TriggerReady.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.TriggerReady.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.TriggerReady",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Api.TriggerStart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Api.TriggerStart.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Api.TriggerStart",
       "Summary": null
     },
     {
@@ -7088,6 +7368,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/LunyEngine_Engine_On_Engines.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/LunyEngine_Engine_On_Engines.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -7139,6 +7429,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/api-events-engine.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-events-engine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/api-events-global.md",
       "output": {
         ".html": {
@@ -7149,10 +7449,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/api-events-lifecycle.md",
+      "source_relative_path": "manual/api-events-object.md",
       "output": {
         ".html": {
-          "relative_path": "manual/api-events-lifecycle.html"
+          "relative_path": "manual/api-events-object.html"
         }
       },
       "version": ""

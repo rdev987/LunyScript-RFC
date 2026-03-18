@@ -91,9 +91,11 @@
 <h1 id="luny-semantics-shmemantics">Luny Semantics Shmemantics</h1>
 
 <p>LunyScript and LunyEngine strive to provide consistent, relatable semantics while avoiding terms that are too technical or too vague. But it also borrows semantics from engines where it makes the most sense.</p>
-<p>The idea is <em>not another opinionated API</em> but to fix game engines' inconsistencies, and to more strictly follows C# / .NET naming guidelines. Events that already happened use past tense (-ed). Ongoing events use present tense (-ing). Some exceptions: Consistently scheduled events use nouns (Heartbeat, FrameUpdate), and once-only events may use adjectives (Ready).</p>
+<p>The idea is to fix game engines' inconsistencies and to more strictly follows C# / .NET naming guidelines in hope of a standardization (long term). Events that already happened use past tense (-ed). Ongoing events use present tense (-ing). Some exceptions: Consistently scheduled events (<code>On.Heartbeat</code>, <code>On.FrameUpdate</code>) and once-only events (<code>On.Ready</code>).</p>
 <h2 id="object-lifecycle-events">Object Lifecycle Events</h2>
-<p>These are the object lifecycle events which can run blocks. The table shows how they map to the most widely used game engines' lifecycle events:</p>
+<p>These are the object lifecycle events which can run blocks.
+All object-specific events use the <code>On.*</code> prefix.
+The table shows how they map to object lifecycle events in the most popular game engines:</p>
 <table>
 <thead>
 <tr>
@@ -149,55 +151,55 @@
 <tr>
 <td style="text-align: left;">On.Destroyed</td>
 <td style="text-align: left;">OnDestroy</td>
-<td style="text-align: left;">N/A (not reliable)</td>
+<td style="text-align: left;">N/A (manual)</td>
 <td style="text-align: left;">UninitializeComponent</td>
 </tr>
 <tr>
 <td style="text-align: left;">On.Collision(2D).Started</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">OnCollisionEnter(2D)</td>
+<td style="text-align: left;">body_entered</td>
+<td style="text-align: left;">OnComponentHit</td>
 </tr>
 <tr>
 <td style="text-align: left;">On.Collision(2D).Continuing</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">OnCollisionStay(2D)</td>
+<td style="text-align: left;">N/A (manual)</td>
+<td style="text-align: left;">N/A (manual)</td>
 </tr>
 <tr>
 <td style="text-align: left;">On.Collision(2D).Ended</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">OnCollisionExit(2D)</td>
+<td style="text-align: left;">body_exited</td>
+<td style="text-align: left;">N/A (manual)</td>
 </tr>
 <tr>
 <td style="text-align: left;">On.Trigger(2D).Entered</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">OnTriggerEnter(2D)</td>
+<td style="text-align: left;">area_entered</td>
+<td style="text-align: left;">OnComponentBeginOverlap</td>
 </tr>
 <tr>
 <td style="text-align: left;">On.Trigger(2D).Staying</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">OnTriggerStay(2D)</td>
+<td style="text-align: left;">N/A (manual)</td>
+<td style="text-align: left;">N/A (manual)</td>
 </tr>
 <tr>
 <td style="text-align: left;">On.Trigger(2D).Exited</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">OnTriggerExit(2D)</td>
+<td style="text-align: left;">area_exited</td>
+<td style="text-align: left;">OnComponentEndOverlap</td>
 </tr>
 </tbody>
 </table>
-<p>I thoroughly considered each and every semantic carefully. Most terms are borrowed from Unity because its semantics are consistent and relatable, and it's the most widely used engine.</p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>The &quot;heartbeat&quot; may seem unusual. It's where every engine has issues: <code>FixedUpdate</code> .. uh, what is 'fixed' here? Is <code>Update()</code> <em>broken</em>?? And <code>_physics_process</code> is also misleading: it's not just about physics.</p>
-<p>The concept of a heartbeat is simple and relatable: It happens at a steady rate, mostly. But it can also &quot;skip a beat&quot; (not run in a frame), or have an &quot;extra beat&quot;, even &quot;race&quot; (run multiple time per frame). Everyone can relate to such [heart palpitations](<a href="https://en.wikipedia.org/wiki/Palpitations">https://en.wikipedia.org/wiki/Palpitations</a>. 😊</p>
+<p>The concept of a heartbeat is simple and relatable: It happens at a steady rate, mostly. But it can also &quot;skip a beat&quot; (not run in a frame), or have an &quot;extra beat&quot;, even &quot;race&quot; (run multiple time per frame).</p>
 </div>
 <h2 id="global-events">Global Events</h2>
-<p>This list isn't complete but still provides a broad overview of global/external events that can run blocks:</p>
+<p>Global (external) events use the <code>When.*</code> prefix, in contrast to the <code>On.*</code> events which target a specific object.
+This list isn't exhaustive or complete but should provide an overview of the most common global events that can run blocks:</p>
 <table>
 <thead>
 <tr>
@@ -210,49 +212,48 @@
 <tbody>
 <tr>
 <td style="text-align: left;">When.Input.Action.Started</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">started</td>
 <td style="text-align: left;">N/A</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Started</td>
 </tr>
 <tr>
 <td style="text-align: left;">When.Input.Action.Performed</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">performed</td>
 <td style="text-align: left;">N/A</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Triggered</td>
 </tr>
 <tr>
 <td style="text-align: left;">When.Input.Action.Continuing</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">performed</td>
 <td style="text-align: left;">N/A</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Ongoing</td>
 </tr>
 <tr>
 <td style="text-align: left;">When.Input.Action.Ended</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">canceled</td>
 <td style="text-align: left;">N/A</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Canceled/Completed</td>
 </tr>
 <tr>
 <td style="text-align: left;">When.Scene.Loaded</td>
 <td style="text-align: left;">SceneManager.sceneLoaded</td>
-<td style="text-align: left;">N/A</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">N/A (tree_entered on root)</td>
+<td style="text-align: left;">OnLevelLoaded</td>
 </tr>
 <tr>
 <td style="text-align: left;">When.Scene.Unloaded</td>
 <td style="text-align: left;">SceneManager.sceneUnloaded</td>
 <td style="text-align: left;">N/A</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">OnLevelUnloaded</td>
 </tr>
 <tr>
 <td style="text-align: left;">When.Quitting</td>
 <td style="text-align: left;">OnApplicationQuit</td>
 <td style="text-align: left;">_notification(NOTIFICATION_WM_CLOSE_REQUEST)</td>
-<td style="text-align: left;">EndPlay</td>
+<td style="text-align: left;">EndPlay (Reason: Quit)</td>
 </tr>
 </tbody>
 </table>
-<p>The distinction between <code>On.*</code> and <code>When.*</code> is one of 'local' vs 'global': The <code>On.*</code> events relate to the object itself, the <code>When.*</code> events are external events, not targeting a specific object.</p>
 <h2 id="lunyengine-observer-events">LunyEngine Observer Events</h2>
 <p>These events are used by implementations of <a class="xref" href="../api/Luny.ILunyEngineObserver.html"><code>ILunyEngineObserver</code></a>. You will probably not write an observer yourself, but you will likely see those methods in code and callstacks.</p>
 <table>
@@ -309,7 +310,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">OnServiceStartup</td>
-<td style="text-align: left;">After LunyEngine initialization</td>
+<td style="text-align: left;">After LunyEngine and all services' initialization</td>
 </tr>
 <tr>
 <td style="text-align: left;">OnServiceFrameBegins</td>
@@ -337,6 +338,8 @@
 </tr>
 </tbody>
 </table>
+<p>Services have an additional <code>OnServiceInitialize</code> event for internal setup which is required to complete before <code>OnServiceStartup</code>.
+During <code>OnServiceInitialize</code> the LunyEngine's services may not all be available or fully initialized.</p>
 
 </article>
 

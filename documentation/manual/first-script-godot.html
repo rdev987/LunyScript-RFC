@@ -90,9 +90,9 @@
         <article data-uid="">
 <h1 id="your-first-luny-script-in-godot">Your first Luny Script in Godot</h1>
 
-<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene, using GDScript. Since Godot is so much easier to work with!</p>
-<h2 id="status-quo-godot">Status Quo: Godot</h2>
-<p>If you're already familiar with the Godot editor workflows, <a href="#the-gdscript">skip to the GDScript</a>.</p>
+<p><strong>Goal</strong>: You want to create a controllable capsule as your first &quot;Player&quot; in a blank scene. This time you'll try Godot.</p>
+<h2 id="status-quo-godot-46">Status Quo: Godot 4.6</h2>
+<p>If you're already familiar with the Godot editor workflows, <a href="#the-gdscript">skip to the GDScript</a>. Everyone else: brace yourselves.</p>
 <h3 id="create-the-3d-scene">Create the 3D Scene</h3>
 <p>To create a usable 3D scene in Godot, you will have to perform these steps:</p>
 <ul>
@@ -139,11 +139,11 @@
 </ul>
 </li>
 </ul>
-<p>This accomplishes three things Godot doesn't provide out of the box (as of v4.6):</p>
+<p>This accomplishes three things Godot doesn't provide out of the box:</p>
 <ul>
-<li>The 3D scene renders via the <code>Camera3D</code></li>
-<li>The objects will be lit and will cast shadows via the <code>DirectionalLight3D</code></li>
-<li>The world isn't just a flat, solid color but feels three-dimensional thanks to the <code>WorldEnvironment</code>'s sky.</li>
+<li>The 3D scene renders via the <code>Camera3D</code>. Without it you'd just get a solid color window.</li>
+<li>The objects will be lit and will cast shadows via the <code>DirectionalLight3D</code>. Without it, everything would look dim and flat.</li>
+<li>A color gradient resembles the horizon via the <code>WorldEnvironment</code> sky. Without it, it wouldn't feel three-dimensional due to a solid-color backdrop.</li>
 </ul>
 <h3 id="create-the-player-object">Create the Player Object</h3>
 <p>To create a player capsule character with a script in the 3D scene, you will need to perfom these steps:</p>
@@ -223,9 +223,9 @@
 <p>Now you can use these input mappings in your code.</p>
 <p>You could skip the gamepad and joystick setup for now if you prefer, but keep in mind: <strong>players do expect common input devices to be supported!</strong></p>
 <h3 id="why-so-many-extra-steps">Why So Many Extra Steps?</h3>
-<p>Compared to Unity, there's an egregious amount of extra steps to be done in the Godot editor before you even get to scripting with this example.</p>
-<p>Godot deliberately provides <em>clean slates</em> for everything: no <em>meaningful templates</em> and often not even <em>sensible defaults</em>. Its user experience also centers on deeply hierarchical (procedural) user interfaces and an abundance of modal dialogs. This results in a higher number of UI interactions.</p>
-<p>On the other hand, Godot's design provides a comparatively consistent UI that's easier to pick up by beginners and non-technical users. It's in stark contrast to Unreal editor's highly complex UI with many uniquely designed windows. Unity takes the middle ground, approachable but with some complex feature windows.</p>
+<p>Compared to Unity, there's an egregious amount of extra steps to be done in the Godot editor before you even get to scripting.</p>
+<p>Godot deliberately provides <em>clean slates</em> for everything, providing no <em>meaningful templates</em> and lacking <em>sensible defaults</em>. Its user experience centers on <em>deeply hierarchical</em> (procedural) user interfaces and an abundance of <em>modal dialogs</em>. Both together result in higher-than-usual UI interactions.</p>
+<p>While Unreal editor's highly complex UI with many uniquely designed windows shocks beginners, Godot's design provides a consistent UI experience that's easier to pick up. Thanks to the higher number of <em>successful interactions</em> it subjectively feels more rewarding and productive.</p>
 <h3 id="the-gdscript">The GDScript</h3>
 <p>With all those editor setup steps out of the way, at least now you need to write <strong>much less code</strong> in GDScript:</p>
 <pre><code class="lang-gdscript">extends Node3D
@@ -255,15 +255,13 @@ func _process(delta: float):
 
     translate(finalMovement)
 </code></pre>
-<p>That's ten lines you're saving compared to the <a href="first-script-unity.html">Unity MonoBehaviour implementation</a> though the code looks strikingly familiar.</p>
-<p>The savings here derive solely from being able to inline the Input map strings, avoiding the use of fields (class instance variables). The overall code complexity remains exactly the same, with a minor reduction in syntax &quot;noise&quot;.</p>
+<p>That's <strong>ten lines</strong> you're saving compared to the <a href="first-script-unity.html">Unity MonoBehaviour implementation</a>.</p>
+<p>However, the savings derive solely from inlining the Input map strings, thus avoiding field declarations (instance variables). The code looks strikingly familiar: its complexity remains exactly the same, with a minor reduction in syntax elements (braces, semicolons).</p>
 <div class="NOTE">
 <h5>Note</h5>
-<blockquote>
-<p>🤔 Hey, wait! This GDScript is 26 lines but Unity's code snippet was 52 lines!
-Correct, but in all fairness we should stop counting empty lines, and <em>structural lines</em> with only a <code>{</code> or <code>}</code> character in C#.
+<p>| 🤔 Hey, wait! This GDScript is 26 lines but Unity's code snippet was 52 lines!<br>
+Correct, but in all fairness we should stop counting <em>empty lines</em> and <em>structural lines</em> with only a <code>{</code> or <code>}</code> character.
 That makes Unity's solution 30 and the GDScript version 20 <em>actual lines of code</em>.</p>
-</blockquote>
 </div>
 <h2 id="with-lunyscript">With LunyScript</h2>
 <p>Here's the LunyScript C# implementation once again for reference - identical to its Unity version since Luny scripts represent portable code:</p>
@@ -281,11 +279,11 @@ public partial class Player : Script
     }
 }
 </code></pre>
-<p><strong>At 13 lines, that's still 1.5 times fewer lines than GDScript! 😎</strong></p>
+<p><strong>At 7 actual lines of code, the GDScript is almost three times longer! 😎</strong></p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>LunyScript - once ported to Godot - will remain firmly based in C#.
-GDScript is not a portable language and does not handle fluent APIs well.</p>
+<p>LunyScript when ported to Godot will remain in C#.
+GDScript is not a portable language and it does not handle fluent APIs well.</p>
 </div>
 
 </article>
