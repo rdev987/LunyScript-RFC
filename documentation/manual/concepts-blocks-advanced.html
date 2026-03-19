@@ -91,40 +91,6 @@
 <h1 id="advanced-block-uses">Advanced Block Uses</h1>
 
 <p>LunyScript's block-based nature provides scripting opportunities which may not be immediately obvious. We can leverage basic C# functionality to take block-based scripting to the next level.</p>
-<h2 id="methods-returning-blocks">Methods Returning Blocks</h2>
-<p>You can extract the creation of blocks into reusable methods. This also keeps the <code>Build()</code> method clean and readable:</p>
-<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
-{
-    On.Enabled(EnableMessages());
-    
-    On.Disabled(DisableMessages());
-}
-
-private ActionBlock[] EnableMessages() =&gt; new[]
-{
-    Debug.Log(&quot;I'm back!&quot;),
-    Debug.Log(&quot;I told you so!&quot;),
-};
-private ActionBlock[] DisableMessages() =&gt; new[]
-{
-    Debug.Log(&quot;I'll be back!&quot;), 
-    Debug.Log(&quot;Nooooo.... (sinks into lava)&quot;),
-};
-</code></pre>
-<p>This adds several syntax elements to the script we wouldn't usually write. Thus this strategy is for advanced users, not something you would teach to absolute beginners right away.</p>
-<h2 id="caution-blocks-outside-runnable-events-wont-run">Caution: Blocks Outside Runnable Events Won't Run</h2>
-<p>Creating a block outside of a block runner will silently discard that block:</p>
-<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
-{
-    // Nothing will run this block ... it gets discarded
-    Object.Create(&quot;Enemy&quot;).With(&quot;Assets/Prefabs/Enemy&quot;);
-}
-</code></pre>
-<p>Block instances won't run by themselves. If a block isn't assigned to a &quot;block runner&quot; such a stray block won't run. Block runners are containers that hold on to blocks and execute them at runtime. Most commonly the <code>On.*</code> and <code>When.*</code> event handlers.</p>
-<div class="alert alert-tip">
-<h5>Tip</h5>
-<p>I found a way to detect such 'unused' blocks. This may log a warning or error in the future.</p>
-</div>
 <h2 id="assigning-blocks-to-variables">Assigning Blocks To Variables</h2>
 <p>You can create a block and assign it to a variable, and then use the variable:</p>
 <pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
@@ -191,6 +157,40 @@ private ActionBlock[] DisableMessages() =&gt; new[]
 }
 </code></pre>
 <p>Now we initially create 3 enemies, and on every subsequent enable we'll create two more: 5, 7, 9 and so forth.</p>
+<h2 id="methods-returning-blocks">Methods Returning Blocks</h2>
+<p>You can extract the creation of blocks into reusable methods. This also keeps the <code>Build()</code> method clean and readable:</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    On.Enabled(EnableMessages());
+    
+    On.Disabled(DisableMessages());
+}
+
+private ActionBlock[] EnableMessages() =&gt; new[]
+{
+    Debug.Log(&quot;I'm back!&quot;),
+    Debug.Log(&quot;I told you so!&quot;),
+};
+private ActionBlock[] DisableMessages() =&gt; new[]
+{
+    Debug.Log(&quot;I'll be back!&quot;), 
+    Debug.Log(&quot;Nooooo.... (sinks into lava)&quot;),
+};
+</code></pre>
+<p>This adds several syntax elements to the script we wouldn't usually write. Thus this strategy is for advanced users, not something you would teach to absolute beginners right away.</p>
+<h2 id="caution-blocks-outside-runnable-events-wont-run">Caution: Blocks Outside Runnable Events Won't Run</h2>
+<p>Creating a block outside of a block runner will silently discard that block:</p>
+<pre><code class="lang-csharp">public override void Build(ScriptBuildContext context)
+{
+    // Nothing will run this block ... it gets discarded
+    Object.Create(&quot;Enemy&quot;).With(&quot;Assets/Prefabs/Enemy&quot;);
+}
+</code></pre>
+<p>Block instances won't run by themselves. If a block isn't assigned to a &quot;block runner&quot; such a stray block won't run. Block runners are containers that hold on to blocks and execute them at runtime. Most commonly the <code>On.*</code> and <code>When.*</code> event handlers.</p>
+<div class="alert alert-tip">
+<h5>Tip</h5>
+<p>I found a way to detect such 'unused' blocks. This may log a warning or error in the future.</p>
+</div>
 
 </article>
 
