@@ -103,7 +103,7 @@ Class Table.VarHandle
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class Table.VarHandle</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class Table.VarHandle : Table.VarHandleBase</code></pre>
   </div>
 
 
@@ -116,170 +116,33 @@ Class Table.VarHandle
     <dt>Inheritance</dt>
     <dd>
       <div><span class="xref">object</span></div>
+      <div><a class="xref" href="Luny.Table.html">Table</a>.<a class="xref" href="Luny.Table.VarHandleBase.html">VarHandleBase</a></div>
       <div><span class="xref">Table.VarHandle</span></div>
     </dd>
   </dl>
 
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="Luny.Table.ScalarVarHandle.html">Table.ScalarVarHandle</a></div>
-      <div><a class="xref" href="Luny.Table.html">Table</a>.<a class="xref" href="Luny.Table.VarHandle-1.html">VarHandle</a>&lt;T&gt;</div>
-    </dd>
-  </dl>
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <ul>
+    <li>
+      <a class="xref" href="Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Cast__1">Table.VarHandleBase.Cast&lt;T&gt;()</a>
+    </li>
+    <li>
+      <a class="xref" href="Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_As__1_Luny_Table_VarHandle___0___">Table.VarHandleBase.As&lt;T&gt;(out Table.VarHandle&lt;T&gt;)</a>
+    </li>
+    <li>
+      <a class="xref" href="Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Name">Table.VarHandleBase.Name</a>
+    </li>
+    <li>
+      <a class="xref" href="Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_IsConstant">Table.VarHandleBase.IsConstant</a>
+    </li>
+    </ul>
+  </dd></dl>
 
   </details>
-
-
-
-
-
-
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
-  <a id="Luny_Table_VarHandle__ctor_" data-uid="Luny.Table.VarHandle.#ctor*"></a>
-
-  <h3 id="Luny_Table_VarHandle__ctor_Luny_Table_System_String_System_Boolean_" data-uid="Luny.Table.VarHandle.#ctor(Luny.Table,System.String,System.Boolean)">
-  VarHandle(Table, string, bool)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected VarHandle(Table owner, string name, bool isConstant)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <table>
-  <tr>
-  <th>Type</th>
-  <th>Name</th>
-  <th>Description</th>
-  </tr>
-  <dl class="parameters">
-  <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Table.html">Table</a></dt></td>
-    <td style="width: fit-content;white-space: nowrap"><dt><code>owner</code></dt></td>
-    <td style="width: 99%"><dd></dd></td>
-  </tr>
-  <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
-    <td style="width: fit-content;white-space: nowrap"><dt><code>name</code></dt></td>
-    <td style="width: 99%"><dd></dd></td>
-  </tr>
-  <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">bool</span></dt></td>
-    <td style="width: fit-content;white-space: nowrap"><dt><code>isConstant</code></dt></td>
-    <td style="width: 99%"><dd></dd></td>
-  </tr>
-  </dl>
-  </table>
-
-
-
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="Luny_Table_VarHandle__isConstant" data-uid="Luny.Table.VarHandle._isConstant">
-  _isConstant
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly bool _isConstant</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Luny_Table_VarHandle__name" data-uid="Luny.Table.VarHandle._name">
-  _name
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly string _name</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Luny_Table_VarHandle__owner" data-uid="Luny.Table.VarHandle._owner">
-  _owner
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly Table _owner</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Luny.Table.html">Table</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
 
 
 
@@ -290,10 +153,10 @@ Class Table.VarHandle
 </h2>
 
 
-  <a id="Luny_Table_VarHandle_IsConstant_" data-uid="Luny.Table.VarHandle.IsConstant*"></a>
+  <a id="Luny_Table_VarHandle_Variable_" data-uid="Luny.Table.VarHandle.Variable*"></a>
 
-  <h3 id="Luny_Table_VarHandle_IsConstant" data-uid="Luny.Table.VarHandle.IsConstant">
-  IsConstant
+  <h3 id="Luny_Table_VarHandle_Variable" data-uid="Luny.Table.VarHandle.Variable">
+  Variable
   
   </h3>
 
@@ -301,7 +164,7 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool IsConstant { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Variable Variable { get; set; }</code></pre>
   </div>
 
 
@@ -310,38 +173,7 @@ Class Table.VarHandle
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Luny_Table_VarHandle_Name_" data-uid="Luny.Table.VarHandle.Name*"></a>
-
-  <h3 id="Luny_Table_VarHandle_Name" data-uid="Luny.Table.VarHandle.Name">
-  Name
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public string Name { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">string</span></dt>
+    <dt><a class="xref" href="Luny.Variable.html">Variable</a></dt>
     <dd></dd>
   </dl>
 
@@ -356,42 +188,6 @@ Class Table.VarHandle
 </h2>
 
 
-  <a id="Luny_Table_VarHandle_As_" data-uid="Luny.Table.VarHandle.As*"></a>
-
-  <h3 id="Luny_Table_VarHandle_As__1" data-uid="Luny.Table.VarHandle.As``1">
-  As&lt;T&gt;()
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Table.VarHandle&lt;T&gt; As&lt;T&gt;()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Luny.Table.html">Table</a>.<a class="xref" href="Luny.Table.VarHandle-1.html">VarHandle</a>&lt;T&gt;</dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
   <a id="Luny_Table_VarHandle_Reset_" data-uid="Luny.Table.VarHandle.Reset*"></a>
 
   <h3 id="Luny_Table_VarHandle_Reset" data-uid="Luny.Table.VarHandle.Reset">
@@ -403,7 +199,7 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public abstract void Reset()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public override void Reset()</code></pre>
   </div>
 
 
@@ -418,10 +214,10 @@ Class Table.VarHandle
 
 
 
-  <a id="Luny_Table_VarHandle_TryAs_" data-uid="Luny.Table.VarHandle.TryAs*"></a>
+  <a id="Luny_Table_VarHandle_ToString_" data-uid="Luny.Table.VarHandle.ToString*"></a>
 
-  <h3 id="Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___" data-uid="Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)">
-  TryAs&lt;T&gt;(out VarHandle&lt;T&gt;)
+  <h3 id="Luny_Table_VarHandle_ToString" data-uid="Luny.Table.VarHandle.ToString">
+  ToString()
   
   </h3>
 
@@ -429,36 +225,16 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool TryAs&lt;T&gt;(out Table.VarHandle&lt;T&gt; result)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public override string ToString()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <table>
-  <tr>
-  <th>Type</th>
-  <th>Name</th>
-  <th>Description</th>
-  </tr>
-  <dl class="parameters">
-  <tr>
-    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Table.html">Table</a>.<a class="xref" href="Luny.Table.VarHandle-1.html">VarHandle</a>&lt;T&gt;</dt></td>
-    <td style="width: fit-content;white-space: nowrap"><dt><code>result</code></dt></td>
-    <td style="width: 99%"><dd></dd></td>
-  </tr>
-  </dl>
-  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">bool</span></dt>
+    <dt><span class="xref">string</span></dt>
     <dd></dd>
   </dl>
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
 
 
 

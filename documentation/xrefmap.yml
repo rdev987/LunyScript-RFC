@@ -11846,63 +11846,6 @@ references:
   commentId: T:Luny.Table.VarHandle
   fullName: Luny.Table.VarHandle
   nameWithType: Table.VarHandle
-- uid: Luny.Table.VarHandle.#ctor(Luny.Table,System.String,System.Boolean)
-  name: VarHandle(Table, string, bool)
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle__ctor_Luny_Table_System_String_System_Boolean_
-  commentId: M:Luny.Table.VarHandle.#ctor(Luny.Table,System.String,System.Boolean)
-  name.vb: New(Table, String, Boolean)
-  fullName: Luny.Table.VarHandle.VarHandle(Luny.Table, string, bool)
-  fullName.vb: Luny.Table.VarHandle.New(Luny.Table, String, Boolean)
-  nameWithType: Table.VarHandle.VarHandle(Table, string, bool)
-  nameWithType.vb: Table.VarHandle.New(Table, String, Boolean)
-- uid: Luny.Table.VarHandle.#ctor*
-  name: VarHandle
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle__ctor_
-  commentId: Overload:Luny.Table.VarHandle.#ctor
-  name.vb: New
-  fullName: Luny.Table.VarHandle.VarHandle
-  fullName.vb: Luny.Table.VarHandle.New
-  nameWithType: Table.VarHandle.VarHandle
-  nameWithType.vb: Table.VarHandle.New
-- uid: Luny.Table.VarHandle.As*
-  name: As
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_As_
-  commentId: Overload:Luny.Table.VarHandle.As
-  fullName: Luny.Table.VarHandle.As
-  nameWithType: Table.VarHandle.As
-- uid: Luny.Table.VarHandle.As``1
-  name: As<T>()
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_As__1
-  commentId: M:Luny.Table.VarHandle.As``1
-  name.vb: As(Of T)()
-  fullName: Luny.Table.VarHandle.As<T>()
-  fullName.vb: Luny.Table.VarHandle.As(Of T)()
-  nameWithType: Table.VarHandle.As<T>()
-  nameWithType.vb: Table.VarHandle.As(Of T)()
-- uid: Luny.Table.VarHandle.IsConstant
-  name: IsConstant
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_IsConstant
-  commentId: P:Luny.Table.VarHandle.IsConstant
-  fullName: Luny.Table.VarHandle.IsConstant
-  nameWithType: Table.VarHandle.IsConstant
-- uid: Luny.Table.VarHandle.IsConstant*
-  name: IsConstant
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_IsConstant_
-  commentId: Overload:Luny.Table.VarHandle.IsConstant
-  fullName: Luny.Table.VarHandle.IsConstant
-  nameWithType: Table.VarHandle.IsConstant
-- uid: Luny.Table.VarHandle.Name
-  name: Name
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_Name
-  commentId: P:Luny.Table.VarHandle.Name
-  fullName: Luny.Table.VarHandle.Name
-  nameWithType: Table.VarHandle.Name
-- uid: Luny.Table.VarHandle.Name*
-  name: Name
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_Name_
-  commentId: Overload:Luny.Table.VarHandle.Name
-  fullName: Luny.Table.VarHandle.Name
-  nameWithType: Table.VarHandle.Name
 - uid: Luny.Table.VarHandle.Reset
   name: Reset()
   href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_Reset
@@ -11915,39 +11858,138 @@ references:
   commentId: Overload:Luny.Table.VarHandle.Reset
   fullName: Luny.Table.VarHandle.Reset
   nameWithType: Table.VarHandle.Reset
-- uid: Luny.Table.VarHandle.TryAs*
-  name: TryAs
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs_
-  commentId: Overload:Luny.Table.VarHandle.TryAs
-  fullName: Luny.Table.VarHandle.TryAs
-  nameWithType: Table.VarHandle.TryAs
-- uid: Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
-  name: TryAs<T>(out VarHandle<T>)
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_TryAs__1_Luny_Table_VarHandle___0___
-  commentId: M:Luny.Table.VarHandle.TryAs``1(Luny.Table.VarHandle{``0}@)
-  name.vb: TryAs(Of T)(VarHandle(Of T))
-  fullName: Luny.Table.VarHandle.TryAs<T>(out Luny.Table.VarHandle<T>)
-  fullName.vb: Luny.Table.VarHandle.TryAs(Of T)(Luny.Table.VarHandle(Of T))
-  nameWithType: Table.VarHandle.TryAs<T>(out Table.VarHandle<T>)
-  nameWithType.vb: Table.VarHandle.TryAs(Of T)(Table.VarHandle(Of T))
-- uid: Luny.Table.VarHandle._isConstant
+- uid: Luny.Table.VarHandle.ToString
+  name: ToString()
+  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_ToString
+  commentId: M:Luny.Table.VarHandle.ToString
+  fullName: Luny.Table.VarHandle.ToString()
+  nameWithType: Table.VarHandle.ToString()
+- uid: Luny.Table.VarHandle.ToString*
+  name: ToString
+  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_ToString_
+  commentId: Overload:Luny.Table.VarHandle.ToString
+  fullName: Luny.Table.VarHandle.ToString
+  nameWithType: Table.VarHandle.ToString
+- uid: Luny.Table.VarHandle.Variable
+  name: Variable
+  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_Variable
+  commentId: P:Luny.Table.VarHandle.Variable
+  fullName: Luny.Table.VarHandle.Variable
+  nameWithType: Table.VarHandle.Variable
+- uid: Luny.Table.VarHandle.Variable*
+  name: Variable
+  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle_Variable_
+  commentId: Overload:Luny.Table.VarHandle.Variable
+  fullName: Luny.Table.VarHandle.Variable
+  nameWithType: Table.VarHandle.Variable
+- uid: Luny.Table.VarHandleBase
+  name: Table.VarHandleBase
+  href: api/Luny.Table.VarHandleBase.html
+  commentId: T:Luny.Table.VarHandleBase
+  fullName: Luny.Table.VarHandleBase
+  nameWithType: Table.VarHandleBase
+- uid: Luny.Table.VarHandleBase.#ctor(Luny.Table,System.String,System.Boolean)
+  name: VarHandleBase(Table, string, bool)
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase__ctor_Luny_Table_System_String_System_Boolean_
+  commentId: M:Luny.Table.VarHandleBase.#ctor(Luny.Table,System.String,System.Boolean)
+  name.vb: New(Table, String, Boolean)
+  fullName: Luny.Table.VarHandleBase.VarHandleBase(Luny.Table, string, bool)
+  fullName.vb: Luny.Table.VarHandleBase.New(Luny.Table, String, Boolean)
+  nameWithType: Table.VarHandleBase.VarHandleBase(Table, string, bool)
+  nameWithType.vb: Table.VarHandleBase.New(Table, String, Boolean)
+- uid: Luny.Table.VarHandleBase.#ctor*
+  name: VarHandleBase
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase__ctor_
+  commentId: Overload:Luny.Table.VarHandleBase.#ctor
+  name.vb: New
+  fullName: Luny.Table.VarHandleBase.VarHandleBase
+  fullName.vb: Luny.Table.VarHandleBase.New
+  nameWithType: Table.VarHandleBase.VarHandleBase
+  nameWithType.vb: Table.VarHandleBase.New
+- uid: Luny.Table.VarHandleBase.As*
+  name: As
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_As_
+  commentId: Overload:Luny.Table.VarHandleBase.As
+  fullName: Luny.Table.VarHandleBase.As
+  nameWithType: Table.VarHandleBase.As
+- uid: Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{``0}@)
+  name: As<T>(out VarHandle<T>)
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_As__1_Luny_Table_VarHandle___0___
+  commentId: M:Luny.Table.VarHandleBase.As``1(Luny.Table.VarHandle{``0}@)
+  name.vb: As(Of T)(VarHandle(Of T))
+  fullName: Luny.Table.VarHandleBase.As<T>(out Luny.Table.VarHandle<T>)
+  fullName.vb: Luny.Table.VarHandleBase.As(Of T)(Luny.Table.VarHandle(Of T))
+  nameWithType: Table.VarHandleBase.As<T>(out Table.VarHandle<T>)
+  nameWithType.vb: Table.VarHandleBase.As(Of T)(Table.VarHandle(Of T))
+- uid: Luny.Table.VarHandleBase.Cast*
+  name: Cast
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Cast_
+  commentId: Overload:Luny.Table.VarHandleBase.Cast
+  fullName: Luny.Table.VarHandleBase.Cast
+  nameWithType: Table.VarHandleBase.Cast
+- uid: Luny.Table.VarHandleBase.Cast``1
+  name: Cast<T>()
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Cast__1
+  commentId: M:Luny.Table.VarHandleBase.Cast``1
+  name.vb: Cast(Of T)()
+  fullName: Luny.Table.VarHandleBase.Cast<T>()
+  fullName.vb: Luny.Table.VarHandleBase.Cast(Of T)()
+  nameWithType: Table.VarHandleBase.Cast<T>()
+  nameWithType.vb: Table.VarHandleBase.Cast(Of T)()
+- uid: Luny.Table.VarHandleBase.IsConstant
+  name: IsConstant
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_IsConstant
+  commentId: P:Luny.Table.VarHandleBase.IsConstant
+  fullName: Luny.Table.VarHandleBase.IsConstant
+  nameWithType: Table.VarHandleBase.IsConstant
+- uid: Luny.Table.VarHandleBase.IsConstant*
+  name: IsConstant
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_IsConstant_
+  commentId: Overload:Luny.Table.VarHandleBase.IsConstant
+  fullName: Luny.Table.VarHandleBase.IsConstant
+  nameWithType: Table.VarHandleBase.IsConstant
+- uid: Luny.Table.VarHandleBase.Name
+  name: Name
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Name
+  commentId: P:Luny.Table.VarHandleBase.Name
+  fullName: Luny.Table.VarHandleBase.Name
+  nameWithType: Table.VarHandleBase.Name
+- uid: Luny.Table.VarHandleBase.Name*
+  name: Name
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Name_
+  commentId: Overload:Luny.Table.VarHandleBase.Name
+  fullName: Luny.Table.VarHandleBase.Name
+  nameWithType: Table.VarHandleBase.Name
+- uid: Luny.Table.VarHandleBase.Reset
+  name: Reset()
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Reset
+  commentId: M:Luny.Table.VarHandleBase.Reset
+  fullName: Luny.Table.VarHandleBase.Reset()
+  nameWithType: Table.VarHandleBase.Reset()
+- uid: Luny.Table.VarHandleBase.Reset*
+  name: Reset
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase_Reset_
+  commentId: Overload:Luny.Table.VarHandleBase.Reset
+  fullName: Luny.Table.VarHandleBase.Reset
+  nameWithType: Table.VarHandleBase.Reset
+- uid: Luny.Table.VarHandleBase._isConstant
   name: _isConstant
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle__isConstant
-  commentId: F:Luny.Table.VarHandle._isConstant
-  fullName: Luny.Table.VarHandle._isConstant
-  nameWithType: Table.VarHandle._isConstant
-- uid: Luny.Table.VarHandle._name
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase__isConstant
+  commentId: F:Luny.Table.VarHandleBase._isConstant
+  fullName: Luny.Table.VarHandleBase._isConstant
+  nameWithType: Table.VarHandleBase._isConstant
+- uid: Luny.Table.VarHandleBase._name
   name: _name
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle__name
-  commentId: F:Luny.Table.VarHandle._name
-  fullName: Luny.Table.VarHandle._name
-  nameWithType: Table.VarHandle._name
-- uid: Luny.Table.VarHandle._owner
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase__name
+  commentId: F:Luny.Table.VarHandleBase._name
+  fullName: Luny.Table.VarHandleBase._name
+  nameWithType: Table.VarHandleBase._name
+- uid: Luny.Table.VarHandleBase._owner
   name: _owner
-  href: api/Luny.Table.VarHandle.html#Luny_Table_VarHandle__owner
-  commentId: F:Luny.Table.VarHandle._owner
-  fullName: Luny.Table.VarHandle._owner
-  nameWithType: Table.VarHandle._owner
+  href: api/Luny.Table.VarHandleBase.html#Luny_Table_VarHandleBase__owner
+  commentId: F:Luny.Table.VarHandleBase._owner
+  fullName: Luny.Table.VarHandleBase._owner
+  nameWithType: Table.VarHandleBase._owner
 - uid: Luny.Table.VarHandle`1
   name: Table.VarHandle<T>
   href: api/Luny.Table.VarHandle-1.html
@@ -11989,22 +12031,22 @@ references:
   fullName.vb: Luny.Table.VarHandle(Of T).ToString
   nameWithType: Table.VarHandle<T>.ToString
   nameWithType.vb: Table.VarHandle(Of T).ToString
-- uid: Luny.Table.VarHandle`1.Value
-  name: Value
-  href: api/Luny.Table.VarHandle-1.html#Luny_Table_VarHandle_1_Value
-  commentId: P:Luny.Table.VarHandle`1.Value
-  fullName: Luny.Table.VarHandle<T>.Value
-  fullName.vb: Luny.Table.VarHandle(Of T).Value
-  nameWithType: Table.VarHandle<T>.Value
-  nameWithType.vb: Table.VarHandle(Of T).Value
-- uid: Luny.Table.VarHandle`1.Value*
-  name: Value
-  href: api/Luny.Table.VarHandle-1.html#Luny_Table_VarHandle_1_Value_
-  commentId: Overload:Luny.Table.VarHandle`1.Value
-  fullName: Luny.Table.VarHandle<T>.Value
-  fullName.vb: Luny.Table.VarHandle(Of T).Value
-  nameWithType: Table.VarHandle<T>.Value
-  nameWithType.vb: Table.VarHandle(Of T).Value
+- uid: Luny.Table.VarHandle`1.Variable
+  name: Variable
+  href: api/Luny.Table.VarHandle-1.html#Luny_Table_VarHandle_1_Variable
+  commentId: P:Luny.Table.VarHandle`1.Variable
+  fullName: Luny.Table.VarHandle<T>.Variable
+  fullName.vb: Luny.Table.VarHandle(Of T).Variable
+  nameWithType: Table.VarHandle<T>.Variable
+  nameWithType.vb: Table.VarHandle(Of T).Variable
+- uid: Luny.Table.VarHandle`1.Variable*
+  name: Variable
+  href: api/Luny.Table.VarHandle-1.html#Luny_Table_VarHandle_1_Variable_
+  commentId: Overload:Luny.Table.VarHandle`1.Variable
+  fullName: Luny.Table.VarHandle<T>.Variable
+  fullName.vb: Luny.Table.VarHandle(Of T).Variable
+  nameWithType: Table.VarHandle<T>.Variable
+  nameWithType.vb: Table.VarHandle(Of T).Variable
 - uid: Luny.Timer
   name: Timer
   href: api/Luny.Timer.html
@@ -16472,6 +16514,15 @@ references:
   fullName.vb: LunyScript.Api.DebugApi.Log(String)
   nameWithType: DebugApi.Log(string)
   nameWithType.vb: DebugApi.Log(String)
+- uid: LunyScript.Api.DebugApi.Log(System.String[])
+  name: Log(params string[])
+  href: api/LunyScript.Api.DebugApi.html#LunyScript_Api_DebugApi_Log_System_String___
+  commentId: M:LunyScript.Api.DebugApi.Log(System.String[])
+  name.vb: Log(ParamArray String())
+  fullName: LunyScript.Api.DebugApi.Log(params string[])
+  fullName.vb: LunyScript.Api.DebugApi.Log(ParamArray String())
+  nameWithType: DebugApi.Log(params string[])
+  nameWithType.vb: DebugApi.Log(ParamArray String())
 - uid: LunyScript.Api.DebugApi.Log*
   name: Log
   href: api/LunyScript.Api.DebugApi.html#LunyScript_Api_DebugApi_Log_
@@ -19925,6 +19976,18 @@ references:
   commentId: Overload:LunyScript.Blocks.TableVariableBlock.Name
   fullName: LunyScript.Blocks.TableVariableBlock.Name
   nameWithType: TableVariableBlock.Name
+- uid: LunyScript.Blocks.TableVariableBlock.SetImmediate(Luny.Variable)
+  name: SetImmediate(Variable)
+  href: api/LunyScript.Blocks.TableVariableBlock.html#LunyScript_Blocks_TableVariableBlock_SetImmediate_Luny_Variable_
+  commentId: M:LunyScript.Blocks.TableVariableBlock.SetImmediate(Luny.Variable)
+  fullName: LunyScript.Blocks.TableVariableBlock.SetImmediate(Luny.Variable)
+  nameWithType: TableVariableBlock.SetImmediate(Variable)
+- uid: LunyScript.Blocks.TableVariableBlock.SetImmediate*
+  name: SetImmediate
+  href: api/LunyScript.Blocks.TableVariableBlock.html#LunyScript_Blocks_TableVariableBlock_SetImmediate_
+  commentId: Overload:LunyScript.Blocks.TableVariableBlock.SetImmediate
+  fullName: LunyScript.Blocks.TableVariableBlock.SetImmediate
+  nameWithType: TableVariableBlock.SetImmediate
 - uid: LunyScript.Blocks.TableVariableBlock.ToString
   name: ToString()
   href: api/LunyScript.Blocks.TableVariableBlock.html#LunyScript_Blocks_TableVariableBlock_ToString
@@ -20684,6 +20747,48 @@ references:
   commentId: Overload:LunyScript.Blocks.TransformScaleSetLocalBlock.ToString
   fullName: LunyScript.Blocks.TransformScaleSetLocalBlock.ToString
   nameWithType: TransformScaleSetLocalBlock.ToString
+- uid: LunyScript.Blocks.TransformScaleSetLocalUniformBlock
+  name: TransformScaleSetLocalUniformBlock
+  href: api/LunyScript.Blocks.TransformScaleSetLocalUniformBlock.html
+  commentId: T:LunyScript.Blocks.TransformScaleSetLocalUniformBlock
+  fullName: LunyScript.Blocks.TransformScaleSetLocalUniformBlock
+  nameWithType: TransformScaleSetLocalUniformBlock
+- uid: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Create(LunyScript.Blocks.VariableBlock)
+  name: Create(VariableBlock)
+  href: api/LunyScript.Blocks.TransformScaleSetLocalUniformBlock.html#LunyScript_Blocks_TransformScaleSetLocalUniformBlock_Create_LunyScript_Blocks_VariableBlock_
+  commentId: M:LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Create(LunyScript.Blocks.VariableBlock)
+  fullName: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Create(LunyScript.Blocks.VariableBlock)
+  nameWithType: TransformScaleSetLocalUniformBlock.Create(VariableBlock)
+- uid: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Create*
+  name: Create
+  href: api/LunyScript.Blocks.TransformScaleSetLocalUniformBlock.html#LunyScript_Blocks_TransformScaleSetLocalUniformBlock_Create_
+  commentId: Overload:LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Create
+  fullName: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Create
+  nameWithType: TransformScaleSetLocalUniformBlock.Create
+- uid: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Execute(LunyScript.IScriptRuntimeContext)
+  name: Execute(IScriptRuntimeContext)
+  href: api/LunyScript.Blocks.TransformScaleSetLocalUniformBlock.html#LunyScript_Blocks_TransformScaleSetLocalUniformBlock_Execute_LunyScript_IScriptRuntimeContext_
+  commentId: M:LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Execute(LunyScript.IScriptRuntimeContext)
+  fullName: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Execute(LunyScript.IScriptRuntimeContext)
+  nameWithType: TransformScaleSetLocalUniformBlock.Execute(IScriptRuntimeContext)
+- uid: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Execute*
+  name: Execute
+  href: api/LunyScript.Blocks.TransformScaleSetLocalUniformBlock.html#LunyScript_Blocks_TransformScaleSetLocalUniformBlock_Execute_
+  commentId: Overload:LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Execute
+  fullName: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.Execute
+  nameWithType: TransformScaleSetLocalUniformBlock.Execute
+- uid: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.ToString
+  name: ToString()
+  href: api/LunyScript.Blocks.TransformScaleSetLocalUniformBlock.html#LunyScript_Blocks_TransformScaleSetLocalUniformBlock_ToString
+  commentId: M:LunyScript.Blocks.TransformScaleSetLocalUniformBlock.ToString
+  fullName: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.ToString()
+  nameWithType: TransformScaleSetLocalUniformBlock.ToString()
+- uid: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.ToString*
+  name: ToString
+  href: api/LunyScript.Blocks.TransformScaleSetLocalUniformBlock.html#LunyScript_Blocks_TransformScaleSetLocalUniformBlock_ToString_
+  commentId: Overload:LunyScript.Blocks.TransformScaleSetLocalUniformBlock.ToString
+  fullName: LunyScript.Blocks.TransformScaleSetLocalUniformBlock.ToString
+  nameWithType: TransformScaleSetLocalUniformBlock.ToString
 - uid: LunyScript.Blocks.TransformScaleTowardsBlock
   name: TransformScaleTowardsBlock
   href: api/LunyScript.Blocks.TransformScaleTowardsBlock.html
@@ -20795,6 +20900,15 @@ references:
   commentId: Overload:LunyScript.Blocks.VarAccessor.Constant
   fullName: LunyScript.Blocks.VarAccessor.Constant
   nameWithType: VarAccessor.Constant
+- uid: LunyScript.Blocks.VarAccessor.Define(System.String)
+  name: Define(string)
+  href: api/LunyScript.Blocks.VarAccessor.html#LunyScript_Blocks_VarAccessor_Define_System_String_
+  commentId: M:LunyScript.Blocks.VarAccessor.Define(System.String)
+  name.vb: Define(String)
+  fullName: LunyScript.Blocks.VarAccessor.Define(string)
+  fullName.vb: LunyScript.Blocks.VarAccessor.Define(String)
+  nameWithType: VarAccessor.Define(string)
+  nameWithType.vb: VarAccessor.Define(String)
 - uid: LunyScript.Blocks.VarAccessor.Define(System.String,Luny.Variable)
   name: Define(string, Variable)
   href: api/LunyScript.Blocks.VarAccessor.html#LunyScript_Blocks_VarAccessor_Define_System_String_Luny_Variable_
@@ -21005,6 +21119,18 @@ references:
   commentId: Overload:LunyScript.Blocks.VariableBlock.Sub
   fullName: LunyScript.Blocks.VariableBlock.Sub
   nameWithType: VariableBlock.Sub
+- uid: LunyScript.Blocks.VariableBlock.ToString
+  name: ToString()
+  href: api/LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_ToString
+  commentId: M:LunyScript.Blocks.VariableBlock.ToString
+  fullName: LunyScript.Blocks.VariableBlock.ToString()
+  nameWithType: VariableBlock.ToString()
+- uid: LunyScript.Blocks.VariableBlock.ToString*
+  name: ToString
+  href: api/LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_ToString_
+  commentId: Overload:LunyScript.Blocks.VariableBlock.ToString
+  fullName: LunyScript.Blocks.VariableBlock.ToString
+  nameWithType: VariableBlock.ToString
 - uid: LunyScript.Blocks.VariableBlock.Toggle
   name: Toggle()
   href: api/LunyScript.Blocks.VariableBlock.html#LunyScript_Blocks_VariableBlock_Toggle
@@ -29453,6 +29579,42 @@ references:
   commentId: Overload:LunyScript.SmokeTests.TriggerEvents.Build
   fullName: LunyScript.SmokeTests.TriggerEvents.Build
   nameWithType: TriggerEvents.Build
+- uid: LunyScript.SmokeTests.VariablesTest
+  name: VariablesTest
+  href: api/LunyScript.SmokeTests.VariablesTest.html
+  commentId: T:LunyScript.SmokeTests.VariablesTest
+  fullName: LunyScript.SmokeTests.VariablesTest
+  nameWithType: VariablesTest
+- uid: LunyScript.SmokeTests.VariablesTest.#ctor
+  name: VariablesTest()
+  href: api/LunyScript.SmokeTests.VariablesTest.html#LunyScript_SmokeTests_VariablesTest__ctor
+  commentId: M:LunyScript.SmokeTests.VariablesTest.#ctor
+  name.vb: New()
+  fullName: LunyScript.SmokeTests.VariablesTest.VariablesTest()
+  fullName.vb: LunyScript.SmokeTests.VariablesTest.New()
+  nameWithType: VariablesTest.VariablesTest()
+  nameWithType.vb: VariablesTest.New()
+- uid: LunyScript.SmokeTests.VariablesTest.#ctor*
+  name: VariablesTest
+  href: api/LunyScript.SmokeTests.VariablesTest.html#LunyScript_SmokeTests_VariablesTest__ctor_
+  commentId: Overload:LunyScript.SmokeTests.VariablesTest.#ctor
+  name.vb: New
+  fullName: LunyScript.SmokeTests.VariablesTest.VariablesTest
+  fullName.vb: LunyScript.SmokeTests.VariablesTest.New
+  nameWithType: VariablesTest.VariablesTest
+  nameWithType.vb: VariablesTest.New
+- uid: LunyScript.SmokeTests.VariablesTest.Build(LunyScript.ScriptBuildContext)
+  name: Build(ScriptBuildContext)
+  href: api/LunyScript.SmokeTests.VariablesTest.html#LunyScript_SmokeTests_VariablesTest_Build_LunyScript_ScriptBuildContext_
+  commentId: M:LunyScript.SmokeTests.VariablesTest.Build(LunyScript.ScriptBuildContext)
+  fullName: LunyScript.SmokeTests.VariablesTest.Build(LunyScript.ScriptBuildContext)
+  nameWithType: VariablesTest.Build(ScriptBuildContext)
+- uid: LunyScript.SmokeTests.VariablesTest.Build*
+  name: Build
+  href: api/LunyScript.SmokeTests.VariablesTest.html#LunyScript_SmokeTests_VariablesTest_Build_
+  commentId: Overload:LunyScript.SmokeTests.VariablesTest.Build
+  fullName: LunyScript.SmokeTests.VariablesTest.Build
+  nameWithType: VariablesTest.Build
 - uid: LunyScript.TimeApi
   name: TimeApi
   href: api/LunyScript.TimeApi.html

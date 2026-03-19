@@ -1492,6 +1492,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Luny.Table.VarHandleBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Luny.Table.VarHandleBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Luny.Table.VarHandleBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Luny.Table.yml",
       "output": {
         ".html": {
@@ -3844,6 +3858,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.Blocks.TransformScaleSetLocalUniformBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.Blocks.TransformScaleSetLocalUniformBlock.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.Blocks.TransformScaleSetLocalUniformBlock",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LunyScript.Blocks.TransformScaleTowardsBlock.yml",
       "output": {
         ".html": {
@@ -3882,7 +3910,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "LunyScript.Blocks.VarAccessor",
-      "Summary": "<p sourcefile=\"api/LunyScript.Blocks.VarAccessor.yml\" sourcestartlinenumber=\"1\">Provides indexed access to script variables.\nGetter returns a VariableBlock for use in script expressions and conditions.\nSetter performs immediate variable assignment during Build().</p>\n"
+      "Summary": "<p sourcefile=\"api/LunyScript.Blocks.VarAccessor.yml\" sourcestartlinenumber=\"1\">Provides access to script variables.\nGetter returns a VariableBlock for use in script expressions and conditions.\nSetter performs immediate variable assignment during Build().</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -6854,6 +6882,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LunyScript.SmokeTests.VariablesTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LunyScript.SmokeTests.VariablesTest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LunyScript.SmokeTests.VariablesTest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LunyScript.SmokeTests.yml",
       "output": {
         ".html": {
@@ -7609,6 +7651,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/api-variables-definition.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-variables-definition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/api-variables-lunytypes.md",
       "output": {
         ".html": {
@@ -7633,6 +7685,16 @@
       "output": {
         ".html": {
           "relative_path": "manual/api-variables-table.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/api-variables-uses.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/api-variables-uses.html"
         }
       },
       "version": ""
