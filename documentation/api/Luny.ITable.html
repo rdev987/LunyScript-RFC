@@ -96,8 +96,7 @@ Interface ITable
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a></dd> / <dt>Assembly</dt><dd>Luny.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Dictionary-based variable storage..</p>
@@ -111,19 +110,26 @@ Interface ITable
 
 
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
+
 
 
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
+    <ul>
+    <li>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator">IEnumerable&lt;KeyValuePair&lt;string, Variable&gt;&gt;.GetEnumerator()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable.getenumerator">IEnumerable.GetEnumerator()</a>
-    </div>
+    </li>
+    </ul>
   </dd></dl>
+
+  </details>
 
 
 
@@ -145,14 +151,24 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Variable this[string key] { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Variable this[string key] { get; set; }</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>key</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -185,16 +201,29 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Table.ScalarVarHandle DefineConstant(string key, Variable value)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.ScalarVarHandle DefineConstant(string key, Variable value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>key</code> <span class="xref">string</span></dt>
-    <dd></dd>
-    <dt><code>value</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Variable.html">Variable</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>value</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -223,16 +252,29 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Table.ScalarVarHandle DefineVariable(string key, Variable value)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.ScalarVarHandle DefineVariable(string key, Variable value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>key</code> <span class="xref">string</span></dt>
-    <dd></dd>
-    <dt><code>value</code> <a class="xref" href="Luny.Variable.html">Variable</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Variable.html">Variable</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>value</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -261,14 +303,24 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Table.ScalarVarHandle GetHandle(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.ScalarVarHandle GetHandle(string key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>key</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -297,14 +349,24 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Table.VarHandle&lt;T&gt; GetHandle&lt;T&gt;(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">Table.VarHandle&lt;T&gt; GetHandle&lt;T&gt;(string key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>key</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -338,14 +400,24 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">T Get&lt;T&gt;(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">T Get&lt;T&gt;(string key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>key</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -379,14 +451,24 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool Has(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">bool Has(string key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>key</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -415,14 +497,24 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool Remove(string key)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">bool Remove(string key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>key</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>key</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -451,7 +543,7 @@ Interface ITable
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void RemoveAll()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void RemoveAll()</code></pre>
   </div>
 
 
@@ -483,7 +575,7 @@ Copy the values if you want to keep them.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">event EventHandler&lt;VariableChangedArgs&gt; OnVariableChanged</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">event EventHandler&lt;VariableChangedArgs&gt; OnVariableChanged</code></pre>
   </div>
 
 

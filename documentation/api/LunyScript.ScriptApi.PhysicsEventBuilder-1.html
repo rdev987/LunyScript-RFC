@@ -96,8 +96,7 @@ Struct PhysicsEventBuilder&lt;T&gt;
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.ScriptApi.html">ScriptApi</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.ScriptApi.html">ScriptApi</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Fluent builder for filtered collision/trigger event sequences.
@@ -119,9 +118,14 @@ Parameters within a filter kind are OR-combined; different kinds are AND-combine
     <dd></dd>
   </dl>
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
 
 
+
+
+  </details>
 
 
 
@@ -144,14 +148,24 @@ Parameters within a filter kind are OR-combined; different kinds are AND-combine
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Begins(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Begins(params ScriptActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -181,14 +195,24 @@ Parameters within a filter kind are OR-combined; different kinds are AND-combine
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Continues(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Continues(params ScriptActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -219,14 +243,24 @@ The cooldown is checked before collision predicates; evaluated per event sequenc
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Cooldown(double seconds)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Cooldown(double seconds)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>seconds</code> <span class="xref">double</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">double</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>seconds</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -256,14 +290,24 @@ The cooldown is checked before collision predicates; evaluated per event sequenc
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Ends(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Ends(params ScriptActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -294,14 +338,24 @@ Mutually exclusive with Masked() — Masked() becomes unavailable after calling 
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderLayered&gt; Layered(params string[] layerNames)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public PhysicsEventBuilder&lt;CollisionBuilderLayered&gt; Layered(params string[] layerNames)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>layerNames</code> <span class="xref">string</span>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>layerNames</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -332,14 +386,24 @@ Combine with other filter kinds for AND logic across kinds.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Tagged(params string[] tags)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Tagged(params string[] tags)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>tags</code> <span class="xref">string</span>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>tags</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -369,14 +433,24 @@ Combine with other filter kinds for AND logic across kinds.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Typed(params Type[] componentTypes)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; Typed(params Type[] componentTypes)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>componentTypes</code> <span class="xref">Type</span>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">Type</span>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>componentTypes</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -406,14 +480,24 @@ Combine with other filter kinds for AND logic across kinds.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; With(params string[] names)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public PhysicsEventBuilder&lt;CollisionBuilderReady&gt; With(params string[] names)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>names</code> <span class="xref">string</span>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>names</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

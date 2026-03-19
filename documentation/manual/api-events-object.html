@@ -197,7 +197,7 @@ The table shows how they map to object lifecycle events in the most popular game
 <p>This is because <code>On.Heartbeating</code>, <code>On.FrameUpdating</code> and <code>On.Readied</code> seemed rather odd.</p>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Why &quot;heartbeat&quot;? I find that's where every engine has issues: <code>FixedUpdate</code> .. uh, what is 'fixed' here? Is <code>Update()</code> <em>broken</em>?? And <code>_physics_process</code> is too narrow and misleading: it's not (just) about physics.</p>
+<p>Why &quot;heartbeat&quot;? I find that's where every engine has issues: <code>FixedUpdate</code> .. uh, what is 'fixed' here? Is <code>Update()</code> <em>broken</em>?? And <code>_physics_process</code> is too narrow: it's not (just) about physics.</p>
 <p>The concept of a heartbeat is simple and relatable: It happens at a steady rate, most of the time. But it can also &quot;skip a beat&quot; (may not run every frame), or have an &quot;extra beat&quot; or even &quot;race&quot; (run multiple times per frame to <em>catch up</em>).</p>
 </div>
 

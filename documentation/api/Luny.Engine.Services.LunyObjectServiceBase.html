@@ -96,8 +96,7 @@ Class LunyObjectServiceBase
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a>.<a class="xref" href="Luny.Engine.html">Engine</a>.<a class="xref" href="Luny.Engine.Services.html">Services</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a>.<a class="xref" href="Luny.Engine.html">Engine</a>.<a class="xref" href="Luny.Engine.Services.html">Services</a></dd> / <dt>Assembly</dt><dd>Luny.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -109,6 +108,9 @@ Class LunyObjectServiceBase
 
 
 
+
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
@@ -137,31 +139,35 @@ Class LunyObjectServiceBase
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
+    <ul>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceInitialize">LunyEngineServiceBase.OnServiceInitialize()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceStartup">LunyEngineServiceBase.OnServiceStartup()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceShutdown">LunyEngineServiceBase.OnServiceShutdown()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins">LunyEngineServiceBase.OnServiceFrameBegins()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceHeartbeat">LunyEngineServiceBase.OnServiceHeartbeat()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameUpdate">LunyEngineServiceBase.OnServiceFrameUpdate()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameLateUpdate">LunyEngineServiceBase.OnServiceFrameLateUpdate()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameEnds">LunyEngineServiceBase.OnServiceFrameEnds()</a>
-    </div>
+    </li>
+    </ul>
   </dd></dl>
+
+  </details>
 
 
 
@@ -183,7 +189,7 @@ Class LunyObjectServiceBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LunyObjectServiceBase()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected LunyObjectServiceBase()</code></pre>
   </div>
 
 
@@ -213,22 +219,44 @@ Class LunyObjectServiceBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract ILunyObject Clone(ILunyObject original, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public abstract ILunyObject Clone(ILunyObject original, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>original</code> <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
-    <dd></dd>
-    <dt><code>parent</code> <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
-    <dd></dd>
-    <dt><code>position</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt>
-    <dd></dd>
-    <dt><code>rotation</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a>?</dt>
-    <dd></dd>
-    <dt><code>scale</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>original</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>parent</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>position</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>rotation</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>scale</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -257,22 +285,44 @@ Class LunyObjectServiceBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract ILunyObject CreateEmpty(string name, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public abstract ILunyObject CreateEmpty(string name, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>name</code> <span class="xref">string</span></dt>
-    <dd></dd>
-    <dt><code>parent</code> <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
-    <dd></dd>
-    <dt><code>position</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt>
-    <dd></dd>
-    <dt><code>rotation</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a>?</dt>
-    <dd></dd>
-    <dt><code>scale</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>name</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>parent</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>position</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>rotation</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>scale</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -302,22 +352,44 @@ Class LunyObjectServiceBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract ILunyObject CreateFromPrefab(ILunyPrefab prefab, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public abstract ILunyObject CreateFromPrefab(ILunyPrefab prefab, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>prefab</code> <a class="xref" href="Luny.Engine.Bridge.ILunyPrefab.html">ILunyPrefab</a></dt>
-    <dd></dd>
-    <dt><code>parent</code> <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
-    <dd></dd>
-    <dt><code>position</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt>
-    <dd></dd>
-    <dt><code>rotation</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a>?</dt>
-    <dd></dd>
-    <dt><code>scale</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyPrefab.html">ILunyPrefab</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>prefab</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>parent</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>position</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>rotation</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>scale</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -346,24 +418,49 @@ Class LunyObjectServiceBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract ILunyObject CreatePrimitive(string name, LunyPrimitiveType type, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public abstract ILunyObject CreatePrimitive(string name, LunyPrimitiveType type, ILunyObject parent, LunyVector3? position, LunyQuaternion? rotation, LunyVector3? scale)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>name</code> <span class="xref">string</span></dt>
-    <dd></dd>
-    <dt><code>type</code> <a class="xref" href="Luny.Engine.Bridge.LunyPrimitiveType.html">LunyPrimitiveType</a></dt>
-    <dd></dd>
-    <dt><code>parent</code> <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
-    <dd></dd>
-    <dt><code>position</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt>
-    <dd></dd>
-    <dt><code>rotation</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a>?</dt>
-    <dd></dd>
-    <dt><code>scale</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>name</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyPrimitiveType.html">LunyPrimitiveType</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>type</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>parent</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>position</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>rotation</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a>?</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>scale</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

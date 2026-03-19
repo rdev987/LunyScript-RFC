@@ -96,8 +96,7 @@ Struct DebugApi
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.ScriptApi.html">ScriptApi</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.ScriptApi.html">ScriptApi</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Provides diagnostics blocks which are omitted from release builds,
@@ -112,9 +111,14 @@ unless the scripting symbol LUNYSCRIPT_DEBUG is defined.</p>
 
 
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
 
 
+
+
+  </details>
 
 
 
@@ -139,14 +143,24 @@ Only breaks when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Break(string message = null)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ScriptActionBlock Break(string message = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>message</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>message</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -176,14 +190,24 @@ Only breaks when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Log(VariableBlock variableBlock)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ScriptActionBlock Log(VariableBlock variableBlock)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>variableBlock</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>variableBlock</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -213,14 +237,24 @@ Only breaks when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock Log(string message)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ScriptActionBlock Log(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>message</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>message</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -251,14 +285,24 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock LogError(string message)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ScriptActionBlock LogError(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>message</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>message</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -288,14 +332,24 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock LogInfo(VariableBlock variableBlock)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ScriptActionBlock LogInfo(VariableBlock variableBlock)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>variableBlock</code> <a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.VariableBlock.html">VariableBlock</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>variableBlock</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -326,14 +380,24 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock LogInfo(string message)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ScriptActionBlock LogInfo(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>message</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>message</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -364,14 +428,24 @@ Only logs when DEBUG or LUNYSCRIPT_DEBUG is defined, stripped in release builds.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptActionBlock LogWarning(string message)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ScriptActionBlock LogWarning(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>message</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>message</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

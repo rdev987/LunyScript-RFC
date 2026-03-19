@@ -16181,21 +16181,6 @@ references:
   commentId: T:LunyScript.Api.CollisionEventHandlerExtensions
   fullName: LunyScript.Api.CollisionEventHandlerExtensions
   nameWithType: CollisionEventHandlerExtensions
-- uid: LunyScript.Api.CollisionEventHandlerExtensions.Continuing*
-  name: Continuing
-  href: api/LunyScript.Api.CollisionEventHandlerExtensions.html#LunyScript_Api_CollisionEventHandlerExtensions_Continuing_
-  commentId: Overload:LunyScript.Api.CollisionEventHandlerExtensions.Continuing
-  fullName: LunyScript.Api.CollisionEventHandlerExtensions.Continuing
-  nameWithType: CollisionEventHandlerExtensions.Continuing
-- uid: LunyScript.Api.CollisionEventHandlerExtensions.Continuing``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
-  name: Continuing<T>(CollisionEventBuilder<T>, params ActionBlock[])
-  href: api/LunyScript.Api.CollisionEventHandlerExtensions.html#LunyScript_Api_CollisionEventHandlerExtensions_Continuing__1_LunyScript_Api_CollisionEventBuilder___0__LunyScript_Blocks_ActionBlock___
-  commentId: M:LunyScript.Api.CollisionEventHandlerExtensions.Continuing``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
-  name.vb: Continuing(Of T)(CollisionEventBuilder(Of T), ParamArray ActionBlock())
-  fullName: LunyScript.Api.CollisionEventHandlerExtensions.Continuing<T>(LunyScript.Api.CollisionEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
-  fullName.vb: LunyScript.Api.CollisionEventHandlerExtensions.Continuing(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
-  nameWithType: CollisionEventHandlerExtensions.Continuing<T>(CollisionEventBuilder<T>, params ActionBlock[])
-  nameWithType.vb: CollisionEventHandlerExtensions.Continuing(Of T)(CollisionEventBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.CollisionEventHandlerExtensions.Ended*
   name: Ended
   href: api/LunyScript.Api.CollisionEventHandlerExtensions.html#LunyScript_Api_CollisionEventHandlerExtensions_Ended_
@@ -16226,6 +16211,21 @@ references:
   fullName.vb: LunyScript.Api.CollisionEventHandlerExtensions.Started(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
   nameWithType: CollisionEventHandlerExtensions.Started<T>(CollisionEventBuilder<T>, params ActionBlock[])
   nameWithType.vb: CollisionEventHandlerExtensions.Started(Of T)(CollisionEventBuilder(Of T), ParamArray ActionBlock())
+- uid: LunyScript.Api.CollisionEventHandlerExtensions.Touching*
+  name: Touching
+  href: api/LunyScript.Api.CollisionEventHandlerExtensions.html#LunyScript_Api_CollisionEventHandlerExtensions_Touching_
+  commentId: Overload:LunyScript.Api.CollisionEventHandlerExtensions.Touching
+  fullName: LunyScript.Api.CollisionEventHandlerExtensions.Touching
+  nameWithType: CollisionEventHandlerExtensions.Touching
+- uid: LunyScript.Api.CollisionEventHandlerExtensions.Touching``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: Touching<T>(CollisionEventBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.CollisionEventHandlerExtensions.html#LunyScript_Api_CollisionEventHandlerExtensions_Touching__1_LunyScript_Api_CollisionEventBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.CollisionEventHandlerExtensions.Touching``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: Touching(Of T)(CollisionEventBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.CollisionEventHandlerExtensions.Touching<T>(LunyScript.Api.CollisionEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.CollisionEventHandlerExtensions.Touching(Of T)(LunyScript.Api.CollisionEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: CollisionEventHandlerExtensions.Touching<T>(CollisionEventBuilder<T>, params ActionBlock[])
+  nameWithType.vb: CollisionEventHandlerExtensions.Touching(Of T)(CollisionEventBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.CollisionEventSet
   name: CollisionEventSet
   href: api/LunyScript.Api.CollisionEventSet.html
@@ -18892,21 +18892,21 @@ references:
   fullName.vb: LunyScript.Api.TriggerEventHandlerExtensions.Exited(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
   nameWithType: TriggerEventHandlerExtensions.Exited<T>(TriggerEventBuilder<T>, params ActionBlock[])
   nameWithType.vb: TriggerEventHandlerExtensions.Exited(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
-- uid: LunyScript.Api.TriggerEventHandlerExtensions.Staying*
-  name: Staying
-  href: api/LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Staying_
-  commentId: Overload:LunyScript.Api.TriggerEventHandlerExtensions.Staying
-  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Staying
-  nameWithType: TriggerEventHandlerExtensions.Staying
-- uid: LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
-  name: Staying<T>(TriggerEventBuilder<T>, params ActionBlock[])
-  href: api/LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Staying__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
-  commentId: M:LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
-  name.vb: Staying(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
-  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Staying<T>(LunyScript.Api.TriggerEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
-  fullName.vb: LunyScript.Api.TriggerEventHandlerExtensions.Staying(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
-  nameWithType: TriggerEventHandlerExtensions.Staying<T>(TriggerEventBuilder<T>, params ActionBlock[])
-  nameWithType.vb: TriggerEventHandlerExtensions.Staying(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+- uid: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping*
+  name: Overlapping
+  href: api/LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Overlapping_
+  commentId: Overload:LunyScript.Api.TriggerEventHandlerExtensions.Overlapping
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping
+  nameWithType: TriggerEventHandlerExtensions.Overlapping
+- uid: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name: Overlapping<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  href: api/LunyScript.Api.TriggerEventHandlerExtensions.html#LunyScript_Api_TriggerEventHandlerExtensions_Overlapping__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___
+  commentId: M:LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])
+  name.vb: Overlapping(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
+  fullName: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping<T>(LunyScript.Api.TriggerEventBuilder<T>, params LunyScript.Blocks.ActionBlock[])
+  fullName.vb: LunyScript.Api.TriggerEventHandlerExtensions.Overlapping(Of T)(LunyScript.Api.TriggerEventBuilder(Of T), ParamArray LunyScript.Blocks.ActionBlock())
+  nameWithType: TriggerEventHandlerExtensions.Overlapping<T>(TriggerEventBuilder<T>, params ActionBlock[])
+  nameWithType.vb: TriggerEventHandlerExtensions.Overlapping(Of T)(TriggerEventBuilder(Of T), ParamArray ActionBlock())
 - uid: LunyScript.Api.TriggerEventSet
   name: TriggerEventSet
   href: api/LunyScript.Api.TriggerEventSet.html

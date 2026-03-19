@@ -96,8 +96,7 @@ Class IfBlock
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Blocks.html">Blocks</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Blocks.html">Blocks</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Builder for constructing 'If' blocks with 'ElseIf' and 'Else' branches.</p>
@@ -110,6 +109,9 @@ Class IfBlock
 
 
 
+
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
@@ -132,10 +134,14 @@ Class IfBlock
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
+    <ul>
+    <li>
       <a class="xref" href="LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___">ActionBlock.IsNullOrEmpty(ActionBlock[])</a>
-    </div>
+    </li>
+    </ul>
   </dd></dl>
+
+  </details>
 
 
 
@@ -157,14 +163,24 @@ Class IfBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ActionBlock Else(params ActionBlock[] actions)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ActionBlock Else(params ActionBlock[] actions)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>actions</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>actions</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -193,14 +209,24 @@ Class IfBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IfBlock ElseIf(params ConditionBlock[] conditions)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public IfBlock ElseIf(params ConditionBlock[] conditions)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>conditions</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>conditions</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -229,14 +255,24 @@ Class IfBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void Execute(IScriptRuntimeContext runtimeContext)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected override void Execute(IScriptRuntimeContext runtimeContext)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>runtimeContext</code> <a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>runtimeContext</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -260,14 +296,24 @@ Class IfBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IfBlock Then(params ActionBlock[] actions)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public IfBlock Then(params ActionBlock[] actions)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>actions</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>actions</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

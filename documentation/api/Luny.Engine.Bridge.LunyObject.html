@@ -96,8 +96,7 @@ Class LunyObject
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a>.<a class="xref" href="Luny.Engine.html">Engine</a>.<a class="xref" href="Luny.Engine.Bridge.html">Bridge</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a>.<a class="xref" href="Luny.Engine.html">Engine</a>.<a class="xref" href="Luny.Engine.Bridge.html">Bridge</a></dd> / <dt>Assembly</dt><dd>Luny.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Engine-agnostic wrapper for engine objects.
@@ -111,6 +110,9 @@ Safeguards against NullReferenceExceptions when the engine-native object may hav
 
 
 
+
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
@@ -128,6 +130,8 @@ Safeguards against NullReferenceExceptions when the engine-native object may hav
   </dl>
 
 
+
+  </details>
 
 
 
@@ -150,20 +154,39 @@ Safeguards against NullReferenceExceptions when the engine-native object may hav
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LunyObject(object nativeObject, long nativeObjectId, bool isNativeObjectEnabled, bool isNativeObjectVisible)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected LunyObject(object nativeObject, long nativeObjectId, bool isNativeObjectEnabled, bool isNativeObjectVisible)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>nativeObject</code> <span class="xref">object</span></dt>
-    <dd></dd>
-    <dt><code>nativeObjectId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd></dd>
-    <dt><code>isNativeObjectEnabled</code> <span class="xref">bool</span></dt>
-    <dd></dd>
-    <dt><code>isNativeObjectVisible</code> <span class="xref">bool</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">object</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>nativeObject</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>nativeObjectId</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">bool</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>isNativeObjectEnabled</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">bool</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>isNativeObjectVisible</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -192,7 +215,7 @@ Safeguards against NullReferenceExceptions when the engine-native object may hav
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsEnabled { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool IsEnabled { get; set; }</code></pre>
   </div>
 
 
@@ -229,7 +252,7 @@ the object's IsVisible state will also change to true.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsEnabledInHierarchy { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool IsEnabledInHierarchy { get; }</code></pre>
   </div>
 
 
@@ -261,7 +284,7 @@ the object's IsVisible state will also change to true.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsNativeObjectValid { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool IsNativeObjectValid { get; }</code></pre>
   </div>
 
 
@@ -293,7 +316,7 @@ the object's IsVisible state will also change to true.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsValid { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool IsValid { get; }</code></pre>
   </div>
 
 
@@ -325,7 +348,7 @@ the object's IsVisible state will also change to true.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsVisible { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool IsVisible { get; set; }</code></pre>
   </div>
 
 
@@ -361,7 +384,7 @@ be outside the camera's frame, obstructed by other objects, fully transparent, s
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LunyObjectId LunyObjectId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public LunyObjectId LunyObjectId { get; }</code></pre>
   </div>
 
 
@@ -393,7 +416,7 @@ be outside the camera's frame, obstructed by other objects, fully transparent, s
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public string Name { get; set; }</code></pre>
   </div>
 
 
@@ -429,7 +452,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object NativeObject { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public object NativeObject { get; }</code></pre>
   </div>
 
 
@@ -461,7 +484,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LunyNativeObjectId NativeObjectId { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public LunyNativeObjectId NativeObjectId { get; }</code></pre>
   </div>
 
 
@@ -496,7 +519,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LunyTransform Transform { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public LunyTransform Transform { get; }</code></pre>
   </div>
 
 
@@ -532,7 +555,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T As&lt;T&gt;() where T : class</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public T As&lt;T&gt;() where T : class</code></pre>
   </div>
 
 
@@ -569,7 +592,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Cast&lt;T&gt;() where T : class</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public T Cast&lt;T&gt;() where T : class</code></pre>
   </div>
 
 
@@ -606,7 +629,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract ILunyObject Clone()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public abstract ILunyObject Clone()</code></pre>
   </div>
 
 
@@ -638,14 +661,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract ILunyObject Clone(LunyTransform parent)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public abstract ILunyObject Clone(LunyTransform parent)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>parent</code> <a class="xref" href="Luny.Engine.Bridge.LunyTransform.html">LunyTransform</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyTransform.html">LunyTransform</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>parent</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -675,7 +708,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Destroy()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void Destroy()</code></pre>
   </div>
 
 
@@ -704,7 +737,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void DestroyNativeObject()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract void DestroyNativeObject()</code></pre>
   </div>
 
 
@@ -730,7 +763,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ~LunyObject()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected ~LunyObject()</code></pre>
   </div>
 
 
@@ -756,7 +789,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract bool GetNativeObjectEnabled()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract bool GetNativeObjectEnabled()</code></pre>
   </div>
 
 
@@ -787,7 +820,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract bool GetNativeObjectEnabledInHierarchy()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract bool GetNativeObjectEnabledInHierarchy()</code></pre>
   </div>
 
 
@@ -818,7 +851,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract string GetNativeObjectName()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract string GetNativeObjectName()</code></pre>
   </div>
 
 
@@ -849,7 +882,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract LunyTransform GetNativeTransform()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract LunyTransform GetNativeTransform()</code></pre>
   </div>
 
 
@@ -880,7 +913,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void Initialize()</code></pre>
   </div>
 
 
@@ -906,14 +939,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnCollisionEntered(LunyCollision collision)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnCollisionEntered(LunyCollision collision)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collision</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollision.html">LunyCollision</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollision.html">LunyCollision</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collision</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -937,14 +980,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnCollisionEntered2D(LunyCollision2D collision)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnCollisionEntered2D(LunyCollision2D collision)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collision</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollision2D.html">LunyCollision2D</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollision2D.html">LunyCollision2D</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collision</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -968,14 +1021,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnCollisionExited(LunyCollision collision)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnCollisionExited(LunyCollision collision)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collision</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollision.html">LunyCollision</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollision.html">LunyCollision</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collision</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -999,14 +1062,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnCollisionExited2D(LunyCollision2D collision)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnCollisionExited2D(LunyCollision2D collision)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collision</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollision2D.html">LunyCollision2D</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollision2D.html">LunyCollision2D</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collision</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -1030,14 +1103,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnCollisionUpdate(LunyCollision collision)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnCollisionUpdate(LunyCollision collision)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collision</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollision.html">LunyCollision</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollision.html">LunyCollision</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collision</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -1061,14 +1144,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnCollisionUpdate2D(LunyCollision2D collision)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnCollisionUpdate2D(LunyCollision2D collision)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collision</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollision2D.html">LunyCollision2D</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollision2D.html">LunyCollision2D</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collision</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -1092,14 +1185,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnTriggerEntered(LunyCollider collider)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnTriggerEntered(LunyCollider collider)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collider</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollider.html">LunyCollider</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollider.html">LunyCollider</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collider</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -1123,14 +1226,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnTriggerEntered2D(LunyCollider2D collider)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnTriggerEntered2D(LunyCollider2D collider)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collider</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollider2D.html">LunyCollider2D</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollider2D.html">LunyCollider2D</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collider</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -1154,14 +1267,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnTriggerExited(LunyCollider collider)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnTriggerExited(LunyCollider collider)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collider</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollider.html">LunyCollider</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollider.html">LunyCollider</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collider</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -1185,14 +1308,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnTriggerExited2D(LunyCollider2D collider)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnTriggerExited2D(LunyCollider2D collider)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collider</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollider2D.html">LunyCollider2D</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollider2D.html">LunyCollider2D</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collider</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -1216,14 +1349,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnTriggerUpdate(LunyCollider collider)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnTriggerUpdate(LunyCollider collider)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collider</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollider.html">LunyCollider</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollider.html">LunyCollider</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collider</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -1247,14 +1390,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvokeOnTriggerUpdate2D(LunyCollider2D collider)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void InvokeOnTriggerUpdate2D(LunyCollider2D collider)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>collider</code> <a class="xref" href="Luny.Engine.Bridge.LunyCollider2D.html">LunyCollider2D</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyCollider2D.html">LunyCollider2D</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>collider</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -1278,7 +1431,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract bool IsNativeObjectReferenceValid()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract bool IsNativeObjectReferenceValid()</code></pre>
   </div>
 
 
@@ -1309,7 +1462,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void SetNativeObjectDisabled()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract void SetNativeObjectDisabled()</code></pre>
   </div>
 
 
@@ -1335,7 +1488,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void SetNativeObjectEnabled()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract void SetNativeObjectEnabled()</code></pre>
   </div>
 
 
@@ -1361,7 +1514,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void SetNativeObjectInvisible()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract void SetNativeObjectInvisible()</code></pre>
   </div>
 
 
@@ -1387,14 +1540,24 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void SetNativeObjectName(string name)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract void SetNativeObjectName(string name)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>name</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>name</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -1418,7 +1581,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void SetNativeObjectVisible()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract void SetNativeObjectVisible()</code></pre>
   </div>
 
 
@@ -1444,7 +1607,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public override string ToString()</code></pre>
   </div>
 
 
@@ -1475,16 +1638,29 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static bool TryGetCached(long nativeId, out ILunyObject lunyObject)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected static bool TryGetCached(long nativeId, out ILunyObject lunyObject)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>nativeId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd></dd>
-    <dt><code>lunyObject</code> <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>nativeId</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>lunyObject</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -1517,7 +1693,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollision&gt; OnCollisionEntered</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollision&gt; OnCollisionEntered</code></pre>
   </div>
 
 
@@ -1547,7 +1723,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollision2D&gt; OnCollisionEntered2D</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollision2D&gt; OnCollisionEntered2D</code></pre>
   </div>
 
 
@@ -1578,7 +1754,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollision&gt; OnCollisionExited</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollision&gt; OnCollisionExited</code></pre>
   </div>
 
 
@@ -1608,7 +1784,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollision2D&gt; OnCollisionExited2D</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollision2D&gt; OnCollisionExited2D</code></pre>
   </div>
 
 
@@ -1639,7 +1815,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollision&gt; OnCollisionUpdate</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollision&gt; OnCollisionUpdate</code></pre>
   </div>
 
 
@@ -1669,7 +1845,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollision2D&gt; OnCollisionUpdate2D</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollision2D&gt; OnCollisionUpdate2D</code></pre>
   </div>
 
 
@@ -1700,7 +1876,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action OnCreated</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action OnCreated</code></pre>
   </div>
 
 
@@ -1735,7 +1911,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action OnDestroyed</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action OnDestroyed</code></pre>
   </div>
 
 
@@ -1769,7 +1945,7 @@ Use the <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html#Luny_Engine_Br
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action OnDisabled</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action OnDisabled</code></pre>
   </div>
 
 
@@ -1801,7 +1977,7 @@ Also runs right after OnCreated if the object starts enabled.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action OnEnabled</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action OnEnabled</code></pre>
   </div>
 
 
@@ -1833,7 +2009,7 @@ If the object starts disabled, OnReady runs after the object first gets enabled.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action OnReady</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action OnReady</code></pre>
   </div>
 
 
@@ -1870,7 +2046,7 @@ OnReady =&gt; OnHeartbeat (object's first) =&gt; OnFrameUpdate (object's first)<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollider&gt; OnTriggerEntered</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollider&gt; OnTriggerEntered</code></pre>
   </div>
 
 
@@ -1900,7 +2076,7 @@ OnReady =&gt; OnHeartbeat (object's first) =&gt; OnFrameUpdate (object's first)<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollider2D&gt; OnTriggerEntered2D</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollider2D&gt; OnTriggerEntered2D</code></pre>
   </div>
 
 
@@ -1931,7 +2107,7 @@ OnReady =&gt; OnHeartbeat (object's first) =&gt; OnFrameUpdate (object's first)<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollider&gt; OnTriggerExited</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollider&gt; OnTriggerExited</code></pre>
   </div>
 
 
@@ -1961,7 +2137,7 @@ OnReady =&gt; OnHeartbeat (object's first) =&gt; OnFrameUpdate (object's first)<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollider2D&gt; OnTriggerExited2D</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollider2D&gt; OnTriggerExited2D</code></pre>
   </div>
 
 
@@ -1992,7 +2168,7 @@ OnReady =&gt; OnHeartbeat (object's first) =&gt; OnFrameUpdate (object's first)<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollider&gt; OnTriggerUpdate</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollider&gt; OnTriggerUpdate</code></pre>
   </div>
 
 
@@ -2026,7 +2202,7 @@ OnReady =&gt; OnHeartbeat (object's first) =&gt; OnFrameUpdate (object's first)<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public event Action&lt;LunyCollider2D&gt; OnTriggerUpdate2D</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public event Action&lt;LunyCollider2D&gt; OnTriggerUpdate2D</code></pre>
   </div>
 
 

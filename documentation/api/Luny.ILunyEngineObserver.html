@@ -96,8 +96,7 @@ Interface ILunyEngineObserver
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a></dd> / <dt>Assembly</dt><dd>Luny.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Lifecycle observer interface. To be implemented by observers of LunyEngine which wish to receive the engine-agnostic lifecycle callbacks.</p>
@@ -111,9 +110,14 @@ Interface ILunyEngineObserver
 
 
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
 
 
+
+
+  </details>
 
 
 
@@ -135,7 +139,7 @@ Interface ILunyEngineObserver
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool Enabled { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">bool Enabled { get; }</code></pre>
   </div>
 
 
@@ -171,7 +175,7 @@ Interface ILunyEngineObserver
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnEngineFrameBegins()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void OnEngineFrameBegins()</code></pre>
   </div>
 
 
@@ -198,7 +202,7 @@ Interface ILunyEngineObserver
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnEngineFrameEnds()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void OnEngineFrameEnds()</code></pre>
   </div>
 
 
@@ -225,7 +229,7 @@ Interface ILunyEngineObserver
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnEngineFrameLateUpdate()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void OnEngineFrameLateUpdate()</code></pre>
   </div>
 
 
@@ -252,7 +256,7 @@ Interface ILunyEngineObserver
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnEngineFrameUpdate()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void OnEngineFrameUpdate()</code></pre>
   </div>
 
 
@@ -279,7 +283,7 @@ Interface ILunyEngineObserver
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnEngineHeartbeat()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void OnEngineHeartbeat()</code></pre>
   </div>
 
 
@@ -313,7 +317,7 @@ The behaviour depends on each frame's delta time (frame rate) and the engine's f
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnEngineShutdown()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void OnEngineShutdown()</code></pre>
   </div>
 
 
@@ -340,7 +344,7 @@ The behaviour depends on each frame's delta time (frame rate) and the engine's f
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnEngineStartup()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void OnEngineStartup()</code></pre>
   </div>
 
 
@@ -368,14 +372,24 @@ engine object to LunyEngine. Runs before the object's OnCreated callback.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnObjectRegistered(ILunyObject lunyObject)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void OnObjectRegistered(ILunyObject lunyObject)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>lunyObject</code> <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>lunyObject</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -402,14 +416,24 @@ can still be accessed.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnObjectUnregistered(ILunyObject lunyObject)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void OnObjectUnregistered(ILunyObject lunyObject)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>lunyObject</code> <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>lunyObject</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -434,14 +458,24 @@ can still be accessed.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnSceneLoaded(ILunyScene loadedScene)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void OnSceneLoaded(ILunyScene loadedScene)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>loadedScene</code> <a class="xref" href="Luny.Engine.Bridge.ILunyScene.html">ILunyScene</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyScene.html">ILunyScene</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>loadedScene</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -466,14 +500,24 @@ can still be accessed.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void OnSceneUnloaded(ILunyScene unloadedScene)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">void OnSceneUnloaded(ILunyScene unloadedScene)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>unloadedScene</code> <a class="xref" href="Luny.Engine.Bridge.ILunyScene.html">ILunyScene</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyScene.html">ILunyScene</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>unloadedScene</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 

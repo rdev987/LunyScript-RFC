@@ -96,8 +96,7 @@ Class CollisionEventHandlerExtensions
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Api.html">Api</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Api.html">Api</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -110,6 +109,9 @@ Class CollisionEventHandlerExtensions
 
 
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
+
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
@@ -121,6 +123,8 @@ Class CollisionEventHandlerExtensions
 
 
 
+  </details>
+
 
 
 
@@ -128,50 +132,6 @@ Class CollisionEventHandlerExtensions
 
   <h2 class="section" id="methods">Methods
 </h2>
-
-
-  <a id="LunyScript_Api_CollisionEventHandlerExtensions_Continuing_" data-uid="LunyScript.Api.CollisionEventHandlerExtensions.Continuing*"></a>
-
-  <h3 id="LunyScript_Api_CollisionEventHandlerExtensions_Continuing__1_LunyScript_Api_CollisionEventBuilder___0__LunyScript_Blocks_ActionBlock___" data-uid="LunyScript.Api.CollisionEventHandlerExtensions.Continuing``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])">
-  Continuing&lt;T&gt;(CollisionEventBuilder&lt;T&gt;, params ActionBlock[])
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Blocks to run each physics step while the collision persists.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CollisionEventBuilder&lt;CollisionEventSet&gt; Continuing&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ICollisionBuilderState</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;<a class="xref" href="LunyScript.Api.CollisionEventSet.html">CollisionEventSet</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
 
 
   <a id="LunyScript_Api_CollisionEventHandlerExtensions_Ended_" data-uid="LunyScript.Api.CollisionEventHandlerExtensions.Ended*"></a>
@@ -186,16 +146,29 @@ Class CollisionEventHandlerExtensions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CollisionEventBuilder&lt;CollisionEventSet&gt; Ended&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ICollisionBuilderState</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static CollisionEventBuilder&lt;CollisionEventSet&gt; Ended&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ICollisionBuilderState</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -230,16 +203,86 @@ Class CollisionEventHandlerExtensions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CollisionEventBuilder&lt;CollisionEventSet&gt; Started&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ICollisionBuilderState</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static CollisionEventBuilder&lt;CollisionEventSet&gt; Started&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ICollisionBuilderState</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  </dl>
+  </table>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;<a class="xref" href="LunyScript.Api.CollisionEventSet.html">CollisionEventSet</a>&gt;</dt>
     <dd></dd>
   </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LunyScript_Api_CollisionEventHandlerExtensions_Touching_" data-uid="LunyScript.Api.CollisionEventHandlerExtensions.Touching*"></a>
+
+  <h3 id="LunyScript_Api_CollisionEventHandlerExtensions_Touching__1_LunyScript_Api_CollisionEventBuilder___0__LunyScript_Blocks_ActionBlock___" data-uid="LunyScript.Api.CollisionEventHandlerExtensions.Touching``1(LunyScript.Api.CollisionEventBuilder{``0},LunyScript.Blocks.ActionBlock[])">
+  Touching&lt;T&gt;(CollisionEventBuilder&lt;T&gt;, params ActionBlock[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Blocks to run each physics step while the collision persists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static CollisionEventBuilder&lt;CollisionEventSet&gt; Touching&lt;T&gt;(this CollisionEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ICollisionBuilderState</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
+  <dl class="parameters">
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.CollisionEventBuilder-1.html">CollisionEventBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

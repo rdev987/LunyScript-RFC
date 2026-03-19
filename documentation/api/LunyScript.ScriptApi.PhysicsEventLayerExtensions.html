@@ -96,8 +96,7 @@ Class PhysicsEventLayerExtensions
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.ScriptApi.html">ScriptApi</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.ScriptApi.html">ScriptApi</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -110,6 +109,9 @@ Class PhysicsEventLayerExtensions
 
 
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
+
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
@@ -120,6 +122,8 @@ Class PhysicsEventLayerExtensions
 
 
 
+
+  </details>
 
 
 
@@ -143,16 +147,29 @@ Mutually exclusive with Layered() — unavailable after Layered() is called.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static PhysicsEventBuilder&lt;CollisionBuilderMasked&gt; Masked&lt;T&gt;(this PhysicsEventBuilder&lt;T&gt; b, int layerMask) where T : struct, ICollisionBuilderStart</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static PhysicsEventBuilder&lt;CollisionBuilderMasked&gt; Masked&lt;T&gt;(this PhysicsEventBuilder&lt;T&gt; b, int layerMask) where T : struct, ICollisionBuilderStart</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.ScriptApi.PhysicsEventBuilder-1.html">PhysicsEventBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>layerMask</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.ScriptApi.PhysicsEventBuilder-1.html">PhysicsEventBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>layerMask</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -188,16 +205,29 @@ Mutually exclusive with Layered() — unavailable after Layered() is called.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static PhysicsEventBuilder&lt;CollisionBuilderMasked&gt; Masked&lt;T&gt;(this PhysicsEventBuilder&lt;T&gt; b, params string[] layerNames) where T : struct, ICollisionBuilderStart</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static PhysicsEventBuilder&lt;CollisionBuilderMasked&gt; Masked&lt;T&gt;(this PhysicsEventBuilder&lt;T&gt; b, params string[] layerNames) where T : struct, ICollisionBuilderStart</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.ScriptApi.PhysicsEventBuilder-1.html">PhysicsEventBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>layerNames</code> <span class="xref">string</span>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.ScriptApi.PhysicsEventBuilder-1.html">PhysicsEventBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>layerNames</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

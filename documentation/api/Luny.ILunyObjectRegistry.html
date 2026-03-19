@@ -96,8 +96,7 @@ Interface ILunyObjectRegistry
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a></dd> / <dt>Assembly</dt><dd>Luny.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -110,9 +109,14 @@ Interface ILunyObjectRegistry
 
 
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
 
 
+
+
+  </details>
 
 
 
@@ -134,7 +138,7 @@ Interface ILunyObjectRegistry
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerable&lt;ILunyObject&gt; AllObjects { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">IEnumerable&lt;ILunyObject&gt; AllObjects { get; }</code></pre>
   </div>
 
 
@@ -165,7 +169,7 @@ Interface ILunyObjectRegistry
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int Count { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">int Count { get; }</code></pre>
   </div>
 
 
@@ -200,14 +204,24 @@ Interface ILunyObjectRegistry
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ILunyObject Find(string objectName)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">ILunyObject Find(string objectName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>objectName</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>objectName</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -236,14 +250,24 @@ Interface ILunyObjectRegistry
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ILunyObject GetCached(string objectName)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">ILunyObject GetCached(string objectName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>objectName</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>objectName</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -272,16 +296,29 @@ Interface ILunyObjectRegistry
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool TryGetByLunyID(LunyObjectId lunyObjectID, out ILunyObject lunyObject)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">bool TryGetByLunyID(LunyObjectId lunyObjectID, out ILunyObject lunyObject)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>lunyObjectID</code> <a class="xref" href="Luny.Engine.Bridge.LunyObjectId.html">LunyObjectId</a></dt>
-    <dd></dd>
-    <dt><code>lunyObject</code> <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyObjectId.html">LunyObjectId</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>lunyObjectID</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>lunyObject</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -310,16 +347,29 @@ Interface ILunyObjectRegistry
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool TryGetByNativeId(LunyNativeObjectId lunyNativeObjectID, out ILunyObject lunyObject)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">bool TryGetByNativeId(LunyNativeObjectId lunyNativeObjectID, out ILunyObject lunyObject)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>lunyNativeObjectID</code> <a class="xref" href="Luny.Engine.Bridge.LunyNativeObjectId.html">LunyNativeObjectId</a></dt>
-    <dd></dd>
-    <dt><code>lunyObject</code> <a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyNativeObjectId.html">LunyNativeObjectId</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>lunyNativeObjectID</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.ILunyObject.html">ILunyObject</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>lunyObject</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

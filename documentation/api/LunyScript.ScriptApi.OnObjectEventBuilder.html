@@ -96,8 +96,7 @@ Struct OnObjectEventBuilder
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.ScriptApi.html">ScriptApi</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.ScriptApi.html">ScriptApi</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Handles object centered/targeted events, eg state, update, collision events.</p>
@@ -111,9 +110,14 @@ Struct OnObjectEventBuilder
 
 
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
 
 
+
+
+  </details>
 
 
 
@@ -136,14 +140,24 @@ Struct OnObjectEventBuilder
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISequenceBlock AfterFrameUpdate(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ISequenceBlock AfterFrameUpdate(params ScriptActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -175,7 +189,7 @@ Chain filter methods (Tagged, Named, Layered, Masked, Typed, Cooldown) then even
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderStart&gt; Collision()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public PhysicsEventBuilder&lt;CollisionBuilderStart&gt; Collision()</code></pre>
   </div>
 
 
@@ -207,14 +221,24 @@ Chain filter methods (Tagged, Named, Layered, Masked, Typed, Cooldown) then even
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISequenceBlock Created(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ISequenceBlock Created(params ScriptActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -244,14 +268,24 @@ Chain filter methods (Tagged, Named, Layered, Masked, Typed, Cooldown) then even
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISequenceBlock Destroyed(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ISequenceBlock Destroyed(params ScriptActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -282,14 +316,24 @@ Runs directly before 'Destroyed' if the object was enabled as it got destroyed.<
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISequenceBlock Disabled(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ISequenceBlock Disabled(params ScriptActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -320,14 +364,24 @@ Runs directly after 'Created' if the object was just instantiated.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISequenceBlock Enabled(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ISequenceBlock Enabled(params ScriptActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -357,14 +411,24 @@ Runs directly after 'Created' if the object was just instantiated.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISequenceBlock FrameUpdate(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ISequenceBlock FrameUpdate(params ScriptActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -396,14 +460,24 @@ May run multiple times per frame and may not run in every frame.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISequenceBlock Heartbeat(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ISequenceBlock Heartbeat(params ScriptActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -433,14 +507,24 @@ May run multiple times per frame and may not run in every frame.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISequenceBlock Ready(params ScriptActionBlock[] blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ISequenceBlock Ready(params ScriptActionBlock[] blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ScriptActionBlock.html">ScriptActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -472,7 +556,7 @@ Chain filter methods (Tagged, Named, Layered, Masked, Typed, Cooldown) then even
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PhysicsEventBuilder&lt;CollisionBuilderStart&gt; Trigger()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public PhysicsEventBuilder&lt;CollisionBuilderStart&gt; Trigger()</code></pre>
   </div>
 
 

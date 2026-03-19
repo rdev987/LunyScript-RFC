@@ -93,15 +93,17 @@
 <p>LunyScript is designed to minimize C# syntax exposure while enabling you to leverage the full power of C# at your discretion.</p>
 <h2 id="lunyscript-and-c">LunyScript and C#</h2>
 <p>When you write regular C# code, it gets compiled into 'CPU instructions' (oversimplified). C# has the full breadth and depth of any high-level programming language: full freedom but enormous complexity.</p>
-<p>LunyScript puts guardrails on that infinite freedom to accomplish:</p>
+<p>LunyScript puts guardrails on that infinite freedom to make game programming more accessible than visual scripting:</p>
 <ul>
-<li>Encouraging experimentation, enabling code sharing - learn AND create, the fun way.</li>
-<li>Self-contained, user extensible code blocks - write once, re-use for years to come.</li>
-<li>Runtime failures won't crash, get logged, use placeholders where possible. That pink cube? A 'missspeled' asset name.</li>
-<li>Runs more efficiently than typical beginner-level code: Asset/Object queries are efficient and get cached/pooled.</li>
-<li>Observable execution without a technical code debugger: Visualize script execution, not scripting visually.</li>
-<li>Problematic operations are detected/prevented, depriving users the fun in dealing with widespread runtime quirks.</li>
-<li>Best practices applied internally: Not the cargo cult popularized by tutors decades ago.</li>
+<li>🔬Encourages experimentation</li>
+<li>📤Simplifies sharing code libraries</li>
+<li>🧱Teaches modular design 'by accident'</li>
+<li>🌱Scales with the user, remains relevant</li>
+<li>🤦Makes 'mitsakes' visible via placeholders</li>
+<li>🛝Introduces C# syntax and concepts gradually</li>
+<li>🏃Improves runtime performance by caching queries</li>
+<li>🔎️Makes execution observable without technical tools</li>
+<li>🤓Deprives users the fun in dealing with runtime quirks</li>
 </ul>
 <h2 id="how-to-create-a-luny-script">How to create a Luny Script</h2>
 <p>A Luny script always inherits from <a class="xref" href="../api/LunyScript.Script.html"><code>LunyScript.Script</code></a>:</p>
@@ -187,7 +189,7 @@ Events will run their blocks in the same order they appear in the script.</p>
 <p>LunyEngine receives the usual engine lifecycle events (frame processing) and uses them to drive <a class="xref" href="../api/Luny.ILunyEngineObserver.html">engine observers</a> of which LunyScript is but one. This fixes any shortcomings an engine may have. For example, absent lifecycle events like &quot;Late Update&quot; or &quot;Application Quit&quot;.</p>
 <p>For the object events, like OnEnable/OnDestroy, all engine objects are wrapped in a LunyObject instance. This then raises the corresponding events. It does not hook into or piggyback onto existing engine object/node/actor infrastructure to avoid the many, many lifecycle pitfalls this has. Instead, LunyEngine manages the lifetime of engine objects itself. That is how even a Godot Node will run the <code>On.Destroyed</code> event.</p>
 <p>The benefit: LunyScript (and LunyEngine) work exactly the same in any engine. Even event execution order will be deterministic across engines.</p>
-<p>In summary:
+<p>In summary:<br>
 <img src="../images/LunyEngine_Engine_On_Engines.jpg" alt="LunyEngine_Engine_On_Engines.jpg"></p>
 
 </article>

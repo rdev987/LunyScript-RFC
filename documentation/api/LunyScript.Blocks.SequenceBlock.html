@@ -96,8 +96,7 @@ Class SequenceBlock
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Blocks.html">Blocks</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Blocks.html">Blocks</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Abstract base for sequence blocks that contain child action blocks.</p>
@@ -110,6 +109,9 @@ Class SequenceBlock
 
 
 
+
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
@@ -133,10 +135,14 @@ Class SequenceBlock
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
+    <ul>
+    <li>
       <a class="xref" href="LunyScript.Blocks.ActionBlock.html#LunyScript_Blocks_ActionBlock_IsNullOrEmpty_LunyScript_Blocks_ActionBlock___">ActionBlock.IsNullOrEmpty(ActionBlock[])</a>
-    </div>
+    </li>
+    </ul>
   </dd></dl>
+
+  </details>
 
 
 
@@ -158,14 +164,24 @@ Class SequenceBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SequenceBlock(IReadOnlyList&lt;ActionBlock&gt; blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public SequenceBlock(IReadOnlyList&lt;ActionBlock&gt; blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>&gt;</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -193,7 +209,7 @@ Class SequenceBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ActionBlock&gt; Blocks { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public IReadOnlyList&lt;ActionBlock&gt; Blocks { get; }</code></pre>
   </div>
 
 
@@ -224,7 +240,7 @@ Class SequenceBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptBlockId Id { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ScriptBlockId Id { get; }</code></pre>
   </div>
 
 
@@ -255,7 +271,7 @@ Class SequenceBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool IsEmpty { get; }</code></pre>
   </div>
 
 
@@ -290,14 +306,24 @@ Class SequenceBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void Execute(IScriptRuntimeContext runtimeContext)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected override void Execute(IScriptRuntimeContext runtimeContext)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>runtimeContext</code> <a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>runtimeContext</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -321,14 +347,24 @@ Class SequenceBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SequenceBlock TryCreate(IReadOnlyList&lt;ActionBlock&gt; blocks)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static SequenceBlock TryCreate(IReadOnlyList&lt;ActionBlock&gt; blocks)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>blocks</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>&gt;</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

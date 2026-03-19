@@ -96,8 +96,7 @@ Class LunyApplicationServiceBase
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a>.<a class="xref" href="Luny.Engine.html">Engine</a>.<a class="xref" href="Luny.Engine.Services.html">Services</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a>.<a class="xref" href="Luny.Engine.html">Engine</a>.<a class="xref" href="Luny.Engine.Services.html">Services</a></dd> / <dt>Assembly</dt><dd>Luny.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -109,6 +108,9 @@ Class LunyApplicationServiceBase
 
 
 
+
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
@@ -137,31 +139,35 @@ Class LunyApplicationServiceBase
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
+    <ul>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceInitialize">LunyEngineServiceBase.OnServiceInitialize()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceStartup">LunyEngineServiceBase.OnServiceStartup()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceShutdown">LunyEngineServiceBase.OnServiceShutdown()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameBegins">LunyEngineServiceBase.OnServiceFrameBegins()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceHeartbeat">LunyEngineServiceBase.OnServiceHeartbeat()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameUpdate">LunyEngineServiceBase.OnServiceFrameUpdate()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameLateUpdate">LunyEngineServiceBase.OnServiceFrameLateUpdate()</a>
-    </div>
-    <div>
+    </li>
+    <li>
       <a class="xref" href="Luny.Engine.Services.LunyEngineServiceBase.html#Luny_Engine_Services_LunyEngineServiceBase_OnServiceFrameEnds">LunyEngineServiceBase.OnServiceFrameEnds()</a>
-    </div>
+    </li>
+    </ul>
   </dd></dl>
+
+  </details>
 
 
 
@@ -183,7 +189,7 @@ Class LunyApplicationServiceBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected LunyApplicationServiceBase()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected LunyApplicationServiceBase()</code></pre>
   </div>
 
 
@@ -214,7 +220,7 @@ Class LunyApplicationServiceBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract bool IsEditor { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public abstract bool IsEditor { get; }</code></pre>
   </div>
 
 
@@ -246,7 +252,7 @@ Class LunyApplicationServiceBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract bool IsPlaying { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public abstract bool IsPlaying { get; }</code></pre>
   </div>
 
 
@@ -282,15 +288,25 @@ Class LunyApplicationServiceBase
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void Quit(int exitCode = 0)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public abstract void Quit(int exitCode = 0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>exitCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>Exit code (default: 0)</p>
-</dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>exitCode</code></dt></td>
+    <td style="width: 99%"><dd><p>Exit code (default: 0)</p>
+</dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 

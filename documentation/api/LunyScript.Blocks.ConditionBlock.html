@@ -96,8 +96,7 @@ Class ConditionBlock
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Blocks.html">Blocks</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Blocks.html">Blocks</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Abstract base for condition blocks that evaluate to a boolean result.</p>
@@ -110,6 +109,9 @@ Class ConditionBlock
 
 
 
+
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
@@ -135,6 +137,8 @@ Class ConditionBlock
   </dl>
 
 
+  </details>
+
 
 
 
@@ -155,7 +159,7 @@ Class ConditionBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected ConditionBlock()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected ConditionBlock()</code></pre>
   </div>
 
 
@@ -185,14 +189,24 @@ Class ConditionBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract bool Evaluate(IScriptRuntimeContext runtimeContext)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected abstract bool Evaluate(IScriptRuntimeContext runtimeContext)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>runtimeContext</code> <a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.IScriptRuntimeContext.html">IScriptRuntimeContext</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>runtimeContext</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -225,16 +239,29 @@ Class ConditionBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ConditionBlock operator &amp;(ConditionBlock left, ConditionBlock right)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static ConditionBlock operator &amp;(ConditionBlock left, ConditionBlock right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
-    <dd></dd>
-    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>left</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>right</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -263,16 +290,29 @@ Class ConditionBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ConditionBlock operator |(ConditionBlock left, ConditionBlock right)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static ConditionBlock operator |(ConditionBlock left, ConditionBlock right)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>left</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
-    <dd></dd>
-    <dt><code>right</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>left</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>right</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -301,14 +341,24 @@ Class ConditionBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator false(ConditionBlock _)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static bool operator false(ConditionBlock _)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>_</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>_</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -337,14 +387,24 @@ Class ConditionBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ConditionBlock operator !(ConditionBlock block)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static ConditionBlock operator !(ConditionBlock block)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>block</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>block</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -373,14 +433,24 @@ Class ConditionBlock
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator true(ConditionBlock _)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static bool operator true(ConditionBlock _)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>_</code> <a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ConditionBlock.html">ConditionBlock</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>_</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

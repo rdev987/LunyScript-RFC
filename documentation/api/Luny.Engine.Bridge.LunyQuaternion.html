@@ -96,8 +96,7 @@ Struct LunyQuaternion
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a>.<a class="xref" href="Luny.Engine.html">Engine</a>.<a class="xref" href="Luny.Engine.Bridge.html">Bridge</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a>.<a class="xref" href="Luny.Engine.html">Engine</a>.<a class="xref" href="Luny.Engine.Bridge.html">Bridge</a></dd> / <dt>Assembly</dt><dd>Luny.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -110,6 +109,9 @@ Struct LunyQuaternion
 
 
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
+
 
   <dl class="typelist implements">
     <dt>Implements</dt>
@@ -119,6 +121,8 @@ Struct LunyQuaternion
   </dl>
 
 
+
+  </details>
 
 
 
@@ -140,20 +144,39 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LunyQuaternion(float x, float y, float z, float w)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public LunyQuaternion(float x, float y, float z, float w)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>x</code> <span class="xref">float</span></dt>
-    <dd></dd>
-    <dt><code>y</code> <span class="xref">float</span></dt>
-    <dd></dd>
-    <dt><code>z</code> <span class="xref">float</span></dt>
-    <dd></dd>
-    <dt><code>w</code> <span class="xref">float</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>x</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>y</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>z</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>w</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -181,7 +204,7 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LunyVector3 EulerAngles { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public LunyVector3 EulerAngles { get; set; }</code></pre>
   </div>
 
 
@@ -212,7 +235,7 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion Identity { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion Identity { get; }</code></pre>
   </div>
 
 
@@ -243,14 +266,24 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float this[int index] { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public float this[int index] { get; set; }</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>index</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -279,7 +312,7 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LunyQuaternion Normalized { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public LunyQuaternion Normalized { get; }</code></pre>
   </div>
 
 
@@ -310,7 +343,7 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float W { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public float W { get; set; }</code></pre>
   </div>
 
 
@@ -341,7 +374,7 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float X { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public float X { get; set; }</code></pre>
   </div>
 
 
@@ -372,7 +405,7 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Y { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public float Y { get; set; }</code></pre>
   </div>
 
 
@@ -403,7 +436,7 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float Z { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public float Z { get; set; }</code></pre>
   </div>
 
 
@@ -438,16 +471,29 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float Angle(LunyQuaternion a, LunyQuaternion b)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static float Angle(LunyQuaternion a, LunyQuaternion b)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>a</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>b</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>a</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -476,16 +522,29 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion AngleAxis(float angle, LunyVector3 axis)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion AngleAxis(float angle, LunyVector3 axis)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>angle</code> <span class="xref">float</span></dt>
-    <dd></dd>
-    <dt><code>axis</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>angle</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>axis</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -514,14 +573,24 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion Conjugate(LunyQuaternion value)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion Conjugate(LunyQuaternion value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>value</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>value</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -550,16 +619,29 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float Dot(LunyQuaternion a, LunyQuaternion b)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static float Dot(LunyQuaternion a, LunyQuaternion b)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>a</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>b</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>a</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -588,14 +670,24 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Equals(LunyQuaternion other)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool Equals(LunyQuaternion other)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>other</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>other</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -624,14 +716,24 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public override bool Equals(object obj)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>obj</code> <span class="xref">object</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">object</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>obj</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -660,14 +762,24 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion Euler(LunyVector3 euler)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion Euler(LunyVector3 euler)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>euler</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>euler</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -696,18 +808,34 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion Euler(double x, double y, double z)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion Euler(double x, double y, double z)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>x</code> <span class="xref">double</span></dt>
-    <dd></dd>
-    <dt><code>y</code> <span class="xref">double</span></dt>
-    <dd></dd>
-    <dt><code>z</code> <span class="xref">double</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">double</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>x</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">double</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>y</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">double</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>z</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -736,18 +864,34 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion Euler(float x, float y, float z)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion Euler(float x, float y, float z)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>x</code> <span class="xref">float</span></dt>
-    <dd></dd>
-    <dt><code>y</code> <span class="xref">float</span></dt>
-    <dd></dd>
-    <dt><code>z</code> <span class="xref">float</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>x</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>y</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>z</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -776,7 +920,7 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public override int GetHashCode()</code></pre>
   </div>
 
 
@@ -807,14 +951,24 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion Inverse(LunyQuaternion rotation)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion Inverse(LunyQuaternion rotation)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>rotation</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>rotation</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -843,18 +997,34 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion Lerp(LunyQuaternion a, LunyQuaternion b, float t)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion Lerp(LunyQuaternion a, LunyQuaternion b, float t)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>a</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>b</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>t</code> <span class="xref">float</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>a</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>t</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -883,18 +1053,34 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion LerpUnclamped(LunyQuaternion a, LunyQuaternion b, float t)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion LerpUnclamped(LunyQuaternion a, LunyQuaternion b, float t)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>a</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>b</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>t</code> <span class="xref">float</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>a</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>t</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -923,14 +1109,24 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion LookRotation(LunyVector3 forward)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion LookRotation(LunyVector3 forward)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>forward</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>forward</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -959,16 +1155,29 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion LookRotation(LunyVector3 forward, LunyVector3 upwards)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion LookRotation(LunyVector3 forward, LunyVector3 upwards)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>forward</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt>
-    <dd></dd>
-    <dt><code>upwards</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>forward</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>upwards</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -997,7 +1206,7 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Normalize()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void Normalize()</code></pre>
   </div>
 
 
@@ -1023,18 +1232,34 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion RotateTowards(LunyQuaternion from, LunyQuaternion to, float maxDegreesDelta)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion RotateTowards(LunyQuaternion from, LunyQuaternion to, float maxDegreesDelta)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>from</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>to</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>maxDegreesDelta</code> <span class="xref">float</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>from</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>to</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>maxDegreesDelta</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -1063,20 +1288,39 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Set(float newX, float newY, float newZ, float newW)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public void Set(float newX, float newY, float newZ, float newW)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>newX</code> <span class="xref">float</span></dt>
-    <dd></dd>
-    <dt><code>newY</code> <span class="xref">float</span></dt>
-    <dd></dd>
-    <dt><code>newZ</code> <span class="xref">float</span></dt>
-    <dd></dd>
-    <dt><code>newW</code> <span class="xref">float</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>newX</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>newY</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>newZ</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>newW</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -1100,18 +1344,34 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion Slerp(LunyQuaternion a, LunyQuaternion b, float t)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion Slerp(LunyQuaternion a, LunyQuaternion b, float t)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>a</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>b</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>t</code> <span class="xref">float</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>a</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>t</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -1140,18 +1400,34 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion SlerpUnclamped(LunyQuaternion a, LunyQuaternion b, float t)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion SlerpUnclamped(LunyQuaternion a, LunyQuaternion b, float t)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>a</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>b</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>t</code> <span class="xref">float</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>a</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">float</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>t</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -1180,7 +1456,7 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public override string ToString()</code></pre>
   </div>
 
 
@@ -1211,14 +1487,24 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToString(string format)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public string ToString(string format)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>format</code> <span class="xref">string</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>format</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -1251,16 +1537,29 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator ==(LunyQuaternion lhs, LunyQuaternion rhs)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static bool operator ==(LunyQuaternion lhs, LunyQuaternion rhs)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>lhs</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>rhs</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>lhs</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>rhs</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -1289,16 +1588,29 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator !=(LunyQuaternion lhs, LunyQuaternion rhs)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static bool operator !=(LunyQuaternion lhs, LunyQuaternion rhs)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>lhs</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>rhs</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>lhs</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>rhs</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -1327,16 +1639,29 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyQuaternion operator *(LunyQuaternion lhs, LunyQuaternion rhs)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyQuaternion operator *(LunyQuaternion lhs, LunyQuaternion rhs)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>lhs</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>rhs</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>lhs</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>rhs</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -1365,16 +1690,29 @@ Struct LunyQuaternion
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LunyVector3 operator *(LunyQuaternion rotation, LunyVector3 point)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static LunyVector3 operator *(LunyQuaternion rotation, LunyVector3 point)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>rotation</code> <a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt>
-    <dd></dd>
-    <dt><code>point</code> <a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyQuaternion.html">LunyQuaternion</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>rotation</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Engine.Bridge.LunyVector3.html">LunyVector3</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>point</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

@@ -96,8 +96,7 @@ Class TimerBuilderWhenExtensions
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Api.html">Api</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Api.html">Api</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -110,6 +109,9 @@ Class TimerBuilderWhenExtensions
 
 
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
+
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
@@ -120,6 +122,8 @@ Class TimerBuilderWhenExtensions
 
 
 
+
+  </details>
 
 
 
@@ -142,16 +146,29 @@ Class TimerBuilderWhenExtensions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CoroutineTimerBuilder&lt;T&gt; WhenPaused&lt;T&gt;(this CoroutineTimerBuilder&lt;T&gt; b, params ActionBlock[] pausedBlocks) where T : struct, ICoroutineTimerWhen</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static CoroutineTimerBuilder&lt;T&gt; WhenPaused&lt;T&gt;(this CoroutineTimerBuilder&lt;T&gt; b, params ActionBlock[] pausedBlocks) where T : struct, ICoroutineTimerWhen</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CoroutineTimerBuilder-1.html">CoroutineTimerBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>pausedBlocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.CoroutineTimerBuilder-1.html">CoroutineTimerBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>pausedBlocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -186,16 +203,29 @@ Class TimerBuilderWhenExtensions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CoroutineTimerBuilder&lt;T&gt; WhenProcessed&lt;T&gt;(this CoroutineTimerBuilder&lt;T&gt; b, params ActionBlock[] processBlocks) where T : struct, ICoroutineTimerWhen</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static CoroutineTimerBuilder&lt;T&gt; WhenProcessed&lt;T&gt;(this CoroutineTimerBuilder&lt;T&gt; b, params ActionBlock[] processBlocks) where T : struct, ICoroutineTimerWhen</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CoroutineTimerBuilder-1.html">CoroutineTimerBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>processBlocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.CoroutineTimerBuilder-1.html">CoroutineTimerBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>processBlocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -230,16 +260,29 @@ Class TimerBuilderWhenExtensions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CoroutineTimerBuilder&lt;T&gt; WhenResumed&lt;T&gt;(this CoroutineTimerBuilder&lt;T&gt; b, params ActionBlock[] resumedBlocks) where T : struct, ICoroutineTimerWhen</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static CoroutineTimerBuilder&lt;T&gt; WhenResumed&lt;T&gt;(this CoroutineTimerBuilder&lt;T&gt; b, params ActionBlock[] resumedBlocks) where T : struct, ICoroutineTimerWhen</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CoroutineTimerBuilder-1.html">CoroutineTimerBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>resumedBlocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.CoroutineTimerBuilder-1.html">CoroutineTimerBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>resumedBlocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -274,16 +317,29 @@ Class TimerBuilderWhenExtensions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CoroutineTimerBuilder&lt;T&gt; WhenStarted&lt;T&gt;(this CoroutineTimerBuilder&lt;T&gt; b, params ActionBlock[] startedBlocks) where T : struct, ICoroutineTimerWhen</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static CoroutineTimerBuilder&lt;T&gt; WhenStarted&lt;T&gt;(this CoroutineTimerBuilder&lt;T&gt; b, params ActionBlock[] startedBlocks) where T : struct, ICoroutineTimerWhen</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CoroutineTimerBuilder-1.html">CoroutineTimerBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>startedBlocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.CoroutineTimerBuilder-1.html">CoroutineTimerBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>startedBlocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -318,16 +374,29 @@ Class TimerBuilderWhenExtensions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CoroutineTimerBuilder&lt;T&gt; WhenStopped&lt;T&gt;(this CoroutineTimerBuilder&lt;T&gt; b, params ActionBlock[] stoppedBlocks) where T : struct, ICoroutineTimerWhen</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static CoroutineTimerBuilder&lt;T&gt; WhenStopped&lt;T&gt;(this CoroutineTimerBuilder&lt;T&gt; b, params ActionBlock[] stoppedBlocks) where T : struct, ICoroutineTimerWhen</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.Api.CoroutineTimerBuilder-1.html">CoroutineTimerBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>stoppedBlocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.CoroutineTimerBuilder-1.html">CoroutineTimerBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>stoppedBlocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

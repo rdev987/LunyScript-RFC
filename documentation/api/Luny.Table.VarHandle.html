@@ -96,8 +96,7 @@ Class Table.VarHandle
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Luny.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Luny.html">Luny</a></dd> / <dt>Assembly</dt><dd>Luny.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -109,6 +108,9 @@ Class Table.VarHandle
 
 
 
+
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
 
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
@@ -127,6 +129,8 @@ Class Table.VarHandle
     </dd>
   </dl>
 
+
+  </details>
 
 
 
@@ -148,18 +152,34 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected VarHandle(Table owner, string name, bool isConstant)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected VarHandle(Table owner, string name, bool isConstant)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>owner</code> <a class="xref" href="Luny.Table.html">Table</a></dt>
-    <dd></dd>
-    <dt><code>name</code> <span class="xref">string</span></dt>
-    <dd></dd>
-    <dt><code>isConstant</code> <span class="xref">bool</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Table.html">Table</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>owner</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">string</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>name</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">bool</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>isConstant</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -186,7 +206,7 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly bool _isConstant</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly bool _isConstant</code></pre>
   </div>
 
 
@@ -216,7 +236,7 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly string _name</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly string _name</code></pre>
   </div>
 
 
@@ -246,7 +266,7 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly Table _owner</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">protected readonly Table _owner</code></pre>
   </div>
 
 
@@ -281,7 +301,7 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsConstant { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool IsConstant { get; }</code></pre>
   </div>
 
 
@@ -312,7 +332,7 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public string Name { get; }</code></pre>
   </div>
 
 
@@ -347,7 +367,7 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Table.VarHandle&lt;T&gt; As&lt;T&gt;()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public Table.VarHandle&lt;T&gt; As&lt;T&gt;()</code></pre>
   </div>
 
 
@@ -383,7 +403,7 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void Reset()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public abstract void Reset()</code></pre>
   </div>
 
 
@@ -409,14 +429,24 @@ Class Table.VarHandle
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool TryAs&lt;T&gt;(out Table.VarHandle&lt;T&gt; result)</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public bool TryAs&lt;T&gt;(out Table.VarHandle&lt;T&gt; result)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>result</code> <a class="xref" href="Luny.Table.html">Table</a>.<a class="xref" href="Luny.Table.VarHandle-1.html">VarHandle</a>&lt;T&gt;</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="Luny.Table.html">Table</a>.<a class="xref" href="Luny.Table.VarHandle-1.html">VarHandle</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>result</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

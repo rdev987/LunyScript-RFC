@@ -96,8 +96,7 @@ Class TriggerEventHandlerExtensions
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Api.html">Api</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Api.html">Api</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
@@ -110,6 +109,9 @@ Class TriggerEventHandlerExtensions
 
 
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
+
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
@@ -120,6 +122,8 @@ Class TriggerEventHandlerExtensions
 
 
 
+
+  </details>
 
 
 
@@ -142,16 +146,29 @@ Class TriggerEventHandlerExtensions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TriggerEventBuilder&lt;TriggerEventSet&gt; Entered&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ITriggerBuilderState</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerEventSet&gt; Entered&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ITriggerBuilderState</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.Api.TriggerEventBuilder-1.html">TriggerEventBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.TriggerEventBuilder-1.html">TriggerEventBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -186,16 +203,29 @@ Class TriggerEventHandlerExtensions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TriggerEventBuilder&lt;TriggerEventSet&gt; Exited&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ITriggerBuilderState</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerEventSet&gt; Exited&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ITriggerBuilderState</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.Api.TriggerEventBuilder-1.html">TriggerEventBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.TriggerEventBuilder-1.html">TriggerEventBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
@@ -218,10 +248,10 @@ Class TriggerEventHandlerExtensions
 
 
 
-  <a id="LunyScript_Api_TriggerEventHandlerExtensions_Staying_" data-uid="LunyScript.Api.TriggerEventHandlerExtensions.Staying*"></a>
+  <a id="LunyScript_Api_TriggerEventHandlerExtensions_Overlapping_" data-uid="LunyScript.Api.TriggerEventHandlerExtensions.Overlapping*"></a>
 
-  <h3 id="LunyScript_Api_TriggerEventHandlerExtensions_Staying__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___" data-uid="LunyScript.Api.TriggerEventHandlerExtensions.Staying``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])">
-  Staying&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, params ActionBlock[])
+  <h3 id="LunyScript_Api_TriggerEventHandlerExtensions_Overlapping__1_LunyScript_Api_TriggerEventBuilder___0__LunyScript_Blocks_ActionBlock___" data-uid="LunyScript.Api.TriggerEventHandlerExtensions.Overlapping``1(LunyScript.Api.TriggerEventBuilder{``0},LunyScript.Blocks.ActionBlock[])">
+  Overlapping&lt;T&gt;(TriggerEventBuilder&lt;T&gt;, params ActionBlock[])
   
   </h3>
 
@@ -230,16 +260,29 @@ Class TriggerEventHandlerExtensions
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static TriggerEventBuilder&lt;TriggerEventSet&gt; Staying&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ITriggerBuilderState</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public static TriggerEventBuilder&lt;TriggerEventSet&gt; Overlapping&lt;T&gt;(this TriggerEventBuilder&lt;T&gt; b, params ActionBlock[] blocks) where T : struct, ITriggerBuilderState</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>b</code> <a class="xref" href="LunyScript.Api.TriggerEventBuilder-1.html">TriggerEventBuilder</a>&lt;T&gt;</dt>
-    <dd></dd>
-    <dt><code>blocks</code> <a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Api.TriggerEventBuilder-1.html">TriggerEventBuilder</a>&lt;T&gt;</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>b</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.Blocks.ActionBlock.html">ActionBlock</a>[]</dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blocks</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">

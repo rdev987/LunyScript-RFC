@@ -96,8 +96,7 @@ Class ScriptBlockProfiler
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Diagnostics.html">Diagnostics</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LunyScript.html">LunyScript</a>.<a class="xref" href="LunyScript.Diagnostics.html">Diagnostics</a></dd> / <dt>Assembly</dt><dd>LunyScript.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>Concrete implementation of block-level profiling for LunyScript execution.
@@ -113,6 +112,9 @@ Public methods use [Conditional] attributes - completely stripped in release bui
 
 
 
+  <details>
+  <summary style="display: list-item; font-size: 15px"><i>Expand Details ...</i></summary>
+
   <dl class="typelist inheritance">
     <dt>Inheritance</dt>
     <dd>
@@ -123,6 +125,8 @@ Public methods use [Conditional] attributes - completely stripped in release bui
 
 
 
+
+  </details>
 
 
 
@@ -144,7 +148,7 @@ Public methods use [Conditional] attributes - completely stripped in release bui
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptBlockProfiler()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ScriptBlockProfiler()</code></pre>
   </div>
 
 
@@ -174,7 +178,7 @@ Public methods use [Conditional] attributes - completely stripped in release bui
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int RollingAverageWindow { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public int RollingAverageWindow { get; set; }</code></pre>
   </div>
 
 
@@ -209,16 +213,26 @@ Public methods use [Conditional] attributes - completely stripped in release bui
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">[Conditional(&quot;DEBUG&quot;)]
 [Conditional(&quot;LUNYSCRIPT_DEBUG&quot;)]
 public void BeginBlock(ScriptBlockId scriptBlockId)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>scriptBlockId</code> <a class="xref" href="LunyScript.ScriptBlockId.html">ScriptBlockId</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.ScriptBlockId.html">ScriptBlockId</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>scriptBlockId</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -242,19 +256,32 @@ public void BeginBlock(ScriptBlockId scriptBlockId)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">[Conditional(&quot;DEBUG&quot;)]
 [Conditional(&quot;LUNYSCRIPT_DEBUG&quot;)]
 [Conditional(&quot;LUNYSCRIPT_PROFILE&quot;)]
 public void EndBlock(ScriptBlockId scriptBlockId, Type blockType)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>scriptBlockId</code> <a class="xref" href="LunyScript.ScriptBlockId.html">ScriptBlockId</a></dt>
-    <dd></dd>
-    <dt><code>blockType</code> <span class="xref">Type</span></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.ScriptBlockId.html">ScriptBlockId</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>scriptBlockId</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><span class="xref">Type</span></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>blockType</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -278,19 +305,32 @@ public void EndBlock(ScriptBlockId scriptBlockId, Type blockType)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">[Conditional(&quot;DEBUG&quot;)]
 [Conditional(&quot;LUNYSCRIPT_DEBUG&quot;)]
 [Conditional(&quot;LUNYSCRIPT_PROFILE&quot;)]
 public void RecordError(ScriptBlockId scriptBlockId, Exception ex)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
+  <table>
+  <tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th>Description</th>
+  </tr>
   <dl class="parameters">
-    <dt><code>scriptBlockId</code> <a class="xref" href="LunyScript.ScriptBlockId.html">ScriptBlockId</a></dt>
-    <dd></dd>
-    <dt><code>ex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
-    <dd></dd>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="LunyScript.ScriptBlockId.html">ScriptBlockId</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>scriptBlockId</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
+  <tr>
+    <td style="width: fit-content;white-space: nowrap"><dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt></td>
+    <td style="width: fit-content;white-space: nowrap"><dt><code>ex</code></dt></td>
+    <td style="width: 99%"><dd></dd></td>
+  </tr>
   </dl>
+  </table>
 
 
 
@@ -314,7 +354,7 @@ public void RecordError(ScriptBlockId scriptBlockId, Exception ex)</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Conditional(&quot;DEBUG&quot;)]
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">[Conditional(&quot;DEBUG&quot;)]
 [Conditional(&quot;LUNYSCRIPT_DEBUG&quot;)]
 [Conditional(&quot;LUNYSCRIPT_PROFILE&quot;)]
 public void Reset()</code></pre>
@@ -343,7 +383,7 @@ public void Reset()</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ScriptBlockProfilerSnapshot TakeSnapshot()</code></pre>
+    <pre><code class="lang-csharp hljs" style="display: block;white-space: pre-wrap;padding-left: 6em;text-indent: -5em;">public ScriptBlockProfilerSnapshot TakeSnapshot()</code></pre>
   </div>
 
 
