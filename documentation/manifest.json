@@ -7471,46 +7471,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/api-events-engine.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-events-engine.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-events-global.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-events-global.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-events-object.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-events-object.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-events.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-events.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "manual/api-input-multiplayer.md",
       "output": {
         ".html": {
@@ -7555,16 +7515,6 @@
       "output": {
         ".html": {
           "relative_path": "manual/api-object.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-overview.html"
         }
       },
       "version": ""
@@ -7631,96 +7581,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/api-variables-arithmetics.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-variables-arithmetics.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-variables-comparisons.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-variables-comparisons.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-variables-definition.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-variables-definition.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-variables-lunytypes.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-variables-lunytypes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-variables-number.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-variables-number.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-variables-strings.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-variables-strings.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-variables-table.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-variables-table.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-variables-uses.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-variables-uses.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/api-variables.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/api-variables.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "manual/concepts-anatomy-script.md",
       "output": {
         ".html": {
@@ -7751,10 +7611,160 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/concepts-events-engine.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-events-engine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-events-global.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-events-global.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-events-object.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-events-object.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-events.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-events.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-overview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/concepts-semantics.md",
       "output": {
         ".html": {
           "relative_path": "manual/concepts-semantics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-variables-arithmetics.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-variables-arithmetics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-variables-comparisons.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-variables-comparisons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-variables-definition.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-variables-definition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-variables-lunytypes.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-variables-lunytypes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-variables-number.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-variables-number.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-variables-strings.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-variables-strings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-variables-table.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-variables-table.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-variables-uses.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-variables-uses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/concepts-variables.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/concepts-variables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/first-install.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/first-install.html"
         }
       },
       "version": ""
