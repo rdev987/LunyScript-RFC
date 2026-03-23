@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>String Variables | LunyScript Documentation </title>
+      <title>LunyScript Concepts | LunyScript Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="String Variables | LunyScript Documentation ">
+      <meta name="title" content="LunyScript Concepts | LunyScript Documentation ">
       
       
       <link rel="icon" href="../images/luny-logo-56x56.png">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/api-variables-strings.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/concepts-overview.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -88,39 +88,18 @@
         </div>
 
         <article data-uid="">
-<h1 id="string-variables">String Variables</h1>
+<h1 id="lunyscript-concepts">LunyScript Concepts</h1>
 
-<p>String variables can be <em>added together</em> (concatenated) and tested for equality/inequality.</p>
-<h2 id="adding-strings">Adding Strings</h2>
-<p>Concatenating strings is the only allowed arithmetic operation on string variables.</p>
-<pre><code class="lang-csharp">var str1 = Var.Define(&quot;str1&quot;, &quot;A long, long time ago ...&quot;);
-var str2 = Var.Define(&quot;str2&quot;, &quot; in a galaxy far, far away.&quot;);
-
-On.Ready(str1.Add(str2), Debug.Log(str1));
-</code></pre>
-<p>This will log:</p>
-<blockquote>
-<p><em>A long, long time ago ... in a galaxy far, far away.</em></p>
-</blockquote>
-<h2 id="comparing-strings">Comparing Strings</h2>
-<p>String variables can also be tested for equality and inequality:</p>
-<pre><code class="lang-csharp">var message = Var.Define(&quot;peace&quot;, &quot;We come in peace!&quot;);
-
-On.Ready(If(message != &quot;We come in peace!&quot;)
-        .Then(Debug.Log(&quot;You'll leave in pieces!&quot;))
-        .Else(Debug.Log(&quot;Welcome, friends!&quot;))
-);
-</code></pre>
-<h2 id="other-operations-error">Other Operations: ERROR</h2>
-<div class="CAUTION">
-<h5>Caution</h5>
-<p>Other arithmetic operations and comparisons on string variables are not meaningful and will log an error.</p>
-</div>
+<p>Learn the core concepts of LunyScript. Sorted by most fundamental first. And definitely in most reasonable order to digest -&gt; so in case you happen to read this manual end-to-end you needn't skip ahead.</p>
+<ul>
+<li><a href="concepts-events.html">Events</a></li>
+<li><a href="concepts-variables.html">Variables</a></li>
+</ul>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/api-variables-strings.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/CodeSmile-0000011110110111/Luny-Docs/blob/main/manual/concepts-overview.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
